@@ -1,0 +1,71 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: MARCO - One Page Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* COLOR CONF */
+
+
+/* Links */
+a {
+    color: #859900;
+}
+
+.si i {
+	color: #859900;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: #ffffff;
+background-color: #859900;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+color: #859900;
+}
+
+.btn-theme {
+  background-color: #859900;
+}
+
+.tabbable .nav-stacked > li:active, li:focus, li.active h4 {
+	color: #859900;
+}
+
+#cta-bar:hover {
+	background: #859900;	
+}
+
+p.capitalize:first-letter {
+	background: #859900; 
+}
+
+.team-info {
+  background: #859900;
+}
+
+#black i {
+	color: #859900;
+}
+
+.progress-bar-theme {
+  background-color: #859900;
+}
+
+.team-stat i {
+	color: #859900;
+}
+
+.pricing-table-plan {
+	border-top: 4px solid #859900;
+}
+
+.blog-post blockquote {
+  border-left: 4px solid #000066;
+}
+
