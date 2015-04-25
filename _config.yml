@@ -1,0 +1,18 @@
+# Site settings
+title: Gregory Macfarlane, Ph.D.
+header-img: img/desert_creek.jpg
+email: gregmacfarlane@gmail.com
+description: "Greg Macfarlane's personal website."
+baseurl: ""
+url: "http://gregmacfarlane.github.io//"
+twitter_username: greg_macfarlane
+github_username: gregmacfarlane 
+se_username: gregmacfarlane
+bitbucket_username: gregmacfarlane
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
