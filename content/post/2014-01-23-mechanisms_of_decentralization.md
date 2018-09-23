@@ -7,8 +7,9 @@ slug: decentralization
 categories: [blog]
 tags: [tech]
 header:
-  caption: ''
-  image: ''
+  caption: '"<a href="http://commons.wikimedia.org/wiki/File:Suburbia_by_David_Shankbone.jpg#/media/File:Suburbia_by_David_Shankbone.jpg">Suburbia by David Shankbone</a>" by <a rel="nofollow" class="external text" href="http://blog.shankbone.org">David Shankbone</a> - <a rel="nofollow" class="external text" href="http://blog.shankbone.org">David Shankbone</a>. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
+'
+  image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Suburbia_by_David_Shankbone.jpg/1024px-Suburbia_by_David_Shankbone.jpg'
 ---
 
 <em>Note: This essay was originally written for Brian Stone's graduate Land Use and Transportation Course.</em>
@@ -118,5 +119,3 @@ of their lives anywhere but within the walls of their own homes.</p>
 Liverpool: University Press of Liverpool.</p>
 
 </div>
-
-"<a href="http://commons.wikimedia.org/wiki/File:Suburbia_by_David_Shankbone.jpg#/media/File:Suburbia_by_David_Shankbone.jpg">Suburbia by David Shankbone</a>" by <a rel="nofollow" class="external text" href="http://blog.shankbone.org">David Shankbone</a> - <a rel="nofollow" class="external text" href="http://blog.shankbone.org">David Shankbone</a>. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
