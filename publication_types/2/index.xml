@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Greg Macfarlane</title>
+    <link>/publication_types/2/</link>
+    <description>Recent content in 2 on Greg Macfarlane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 01 Aug 2015 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do Atlanta residents value MARTA? Selecting an autoregressive model to recover willingness to pay</title>
+      <link>/publication/homeprices/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/homeprices/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>The impact of real-time information on bus ridership in New York City</title>
+      <link>/publication/realtime/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/realtime/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>The influences of past and present residential locations on vehicle ownership decisions</title>
+      <link>/publication/learnedpreferences/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/learnedpreferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data</title>
+      <link>/publication/emissions/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0700</pubDate>
+      
+      <guid>/publication/emissions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

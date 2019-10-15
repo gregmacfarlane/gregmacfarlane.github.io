@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.52" />
+  <meta name="author" content="Gregory S. Macfarlane">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="In the classic Robert Zemeckis movie Back to the Future, Marty McFly explains to Doc Brown that the Delorean/time machine he (Doc) invented is nuclear-powered,1 and that the only obstacle to sending Marty back to the future (1985) is obtaining some plutonium. I love Doc&rsquo;s response:
+ I&rsquo;m sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it&rsquo;s a little hard to come by.
+ The irony in this statement of course being that in spite of sweeping changes to fashions, music, politics – and Marty&rsquo;s own mother – plutonium is still mercifully difficult to obtain, and the future Doc Brown had to contract with Libyan terrorists to get some.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/back-to-the-future/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Greg Macfarlane">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Greg Macfarlane">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/back-to-the-future/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@greg_macfarlane">
+  <meta property="twitter:creator" content="@greg_macfarlane">
+  
+  <meta property="og:site_name" content="Greg Macfarlane">
+  <meta property="og:url" content="/post/back-to-the-future/">
+  <meta property="og:title" content="Back to the Future | Greg Macfarlane">
+  <meta property="og:description" content="In the classic Robert Zemeckis movie Back to the Future, Marty McFly explains to Doc Brown that the Delorean/time machine he (Doc) invented is nuclear-powered,1 and that the only obstacle to sending Marty back to the future (1985) is obtaining some plutonium. I love Doc&rsquo;s response:
+ I&rsquo;m sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it&rsquo;s a little hard to come by.
+ The irony in this statement of course being that in spite of sweeping changes to fashions, music, politics – and Marty&rsquo;s own mother – plutonium is still mercifully difficult to obtain, and the future Doc Brown had to contract with Libyan terrorists to get some."><meta property="og:image" content="/img/https:/pmcvariety.files.wordpress.com/2015/03/back-to-the-future-tribeca.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2013-08-14T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2013-08-14T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Back to the Future | Greg Macfarlane</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Greg Macfarlane</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+<div class="article-header">
+  
+  
+  <img src="https://pmcvariety.files.wordpress.com/2015/03/back-to-the-future-tribeca.jpg?w=1000&amp;h=563&amp;crop=1" class="article-banner" itemprop="image" alt="">
+  
+
+  <span class="article-header-caption">Universal Pictures</span>
+</div>
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Back to the Future</h1>
+
+  
+  <p class="page-subtitle">Why the hyperloop isn&rsquo;t the solution to everything.</p>
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Gregory S. Macfarlane">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2013-08-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2013-08-14 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Aug 14, 2013
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Gregory S. Macfarlane">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/blog/">blog</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Back%20to%20the%20Future&amp;url=%2fpost%2fback-to-the-future%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fback-to-the-future%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fback-to-the-future%2f&amp;title=Back%20to%20the%20Future"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fback-to-the-future%2f&amp;title=Back%20to%20the%20Future"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Back%20to%20the%20Future&amp;body=%2fpost%2fback-to-the-future%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>In the classic Robert Zemeckis movie <em>Back to the Future</em>, Marty
+McFly explains to Doc Brown that the Delorean/time machine he (Doc) invented is
+nuclear-powered,<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> and that the only
+obstacle to sending Marty back to the future (1985) is obtaining some plutonium.
+I love Doc&rsquo;s response:</p>
+
+<blockquote>
+<p>I&rsquo;m sure that in 1985, plutonium is available in every corner drugstore, but
+in 1955, it&rsquo;s a little hard to come by.</p>
+</blockquote>
+
+<p>The irony in this statement of course being that in spite of sweeping changes to
+fashions, music, politics – and Marty&rsquo;s own mother – plutonium is still
+mercifully difficult to obtain, and the future Doc Brown had to contract with
+Libyan terrorists to get some. Sometimes the future doesn&rsquo;t come as fast as we
+think it might.</p>
+
+<p>At the end of the movie, Doc returns from 2015 having outfitted the Delorean
+with turbofan VTOL tires and a &ldquo;Mr. Trash&rdquo; appliance that generates 1.21
+Gigawatts from household food scraps. I haven&rsquo;t made up my mind as to whether
+this epilogue continues the irony of the plutonium comment or whether Zemeckis
+falls into the same trap that he set for Doc Brown, imagining an impossibly
+technological future. Certainly science moves quickly. The line between tech
+journalism and science fiction can seem very thin, particularly when we live in
+a world of <a href="http://www.economist.com/blogs/babbage/2013/08/praise-artificial-meat" target="_blank">synthetic hamburgers</a>
+and <a href="http://www.autoblog.com/2013/08/13/2015-audi-a3-augmented-reality-app-owners-manual-video/" target="_blank">augmented
+reality</a>
+Almost none of my friends had cell phones in high school, and now most middle
+schoolers seem to. On the other hand, 2015 is sixteen months away, and I don&rsquo;t
+see any flying cars or household nuclear reactors.</p>
+
+<p><a href="http://ite.ce.gatech.edu/wp-content/uploads/2013/08/musk-hyperloop-sketches.jpg"><img
+src="http://ite.ce.gatech.edu/wp-content/uploads/2013/08/musk-hyperloop-sketches.jpg"
+width="575" height="430" /></a></p>
+
+<p>So what are we as transportation professionals to make of Elon Musk&rsquo;s <a
+href="http://www.spacex.com/hyperloop" target="_blank">Hyperloop</a>? Is this
+the transport mode of the future, or a literal pipe dream? My first reaction is
+that Musk seems to have put considerably more thought into the physics of this
+system than similar proposals, like <a href="http://www.et3.com/">ET3</a>.
+Indeed, I think enclosed-tube transportation systems solve lots of the obvious
+safety issues involved with high speed objects traveling near ground level. If I
+were to dream up a new mode of transportation, it would probably look a lot like
+this.</p>
+
+<p>I am an engineer in the loosest sense, and I&rsquo;m not a physicist at all, so I
+can&rsquo;t really comment on the feasibility of the mechanisms. But I can look at the
+volume calculations. Based on Musk&rsquo;s design abstract,  the maximum passenger
+limit of the Hyperloop is 3360 passengers per hour.<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> Certainly in operation
+the efficiency will be lower as passengers board and alight. If you discount it
+by 30%, the total volume of the system is roughly that of a freeway lane[4. With
+an average occupancy just north of 1.1], but considerably lower than an
+intercity rail line. Scaling the system for higher volume routes such as the
+northeast corridor would only be possible with multiple tubes. This is of course
+not prohibitive, but it wasn&rsquo;t mentioned.  In all, I think we can pass him on
+this metric.</p>
+
+<p>More worrying is the discussion of energy use. The &ldquo;energy per passenger
+journey&rdquo; presumably doesn&rsquo;t include the amortized production energy from the
+vehicles and the infrastructure.<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>  With each pod
+carrying a large battery made of rare or heavy metals and running on a tube made
+from high-performance steel, it will seem a little less attractive from an
+energy standpoint. More importantly, I really don&rsquo;t buy the argument that the
+steel in the tube and the concrete in the pylons is going to be any less
+voluminous than the steel rails and concrete ties they are supposed to replace.
+Musk really needs to run through these numbers again.</p>
+
+<p>Perhaps counter-intuitively, the discussion of  unsolved problems is where he
+really goes off the rails. Certainly
+there are problems to be worked out, and Musk acknowledges this. The <a
+href="http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf">white
+paper</a> lists the following unresolved challenges (last page):
+<ol>
+    <li>More expansion on the control mechanism for Hyperloop capsules, including
+attitude thruster or control moment gyros.</li>
+    <li>Detailed station designs with loading and unloading of both passenger and
+passenger plus vehicle versions of the Hyperloop capsules.</li>
+    <li>Trades comparing the costs and benefits of Hyperloop with
+more conventional magnetic levitation systems.</li>
+    <li>Sub-scale testing based on a further optimized design to demonstrate the
+physics of Hyperloop.</li>
+</ol>
+These issues are minutely specific, whereas some of the most fundamental ones
+have not been addressed. He treats the problem of you know, consumer demand for
+such a system, as given. Of course people want to take the fastest, cheapest
+option! But human choices are more complicated than that. Intercity mode choice
+is a function of cost and time to be sure, but people will also pay for comfort,
+familiarity, convenience, and other attributes. An enormous part of the best
+econometric models of transportation choice is the appropriate treatment of
+residual random error.</p>
+
+<p>That Musk hasn&rsquo;t fully processed the demand equation is evident on the home
+page, where he says that his system is most appropriate for trips shorter than
+about 1500 miles, because &ldquo;Around that inflection point, I suspect that
+supersonic air travel ends up being faster and cheaper.&rdquo; Well, London had
+supersonic commercial air service before it had Lady Thatcher, and there wasn&rsquo;t
+enough demand for it to justify updating the Concorde. Musk may blame this on
+international regulations against overland sonic booms, but there are are plenty
+of transoceanic routes that should have worked<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> except the Concorde&rsquo;s speed
+limited its range and passenger volume. Its unique attribute is precisely what
+made it economically infeasible, and Musk&rsquo;s inability to recognize this makes me
+doubt his seriousness.</p>
+
+<p>Besides, why sell himself short? If you count airport-to-city center trips in
+the time calculation, Hyperloop could beat the Concorde to LA from Atlanta.</p>
+
+<p>But the single thing that shows me this project is not going to be running
+anytime soon? The thing that shows Musk is a Silicon Valley entrepreneur who
+mistakenly thinks the world around him is waiting for him to solve its problems,
+and that if he applies his superior mind to them, they will be? He thinks it
+will be <a
+href="http://www.businessinsider.com/elon-musk-takes-questions-on-the-hyperloop-2013-8">running
+in ten years</a>. <i>Great Scot! </i>Good luck getting the EIS approved in ten
+years, Elon.</p>
+
+<p><em>Next time: <a title="Zombies" href="http://ite.ce.gatech.edu/?p=1080">the
+zombie that is personal rapid transit</a>.</em></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">&ldquo;No, no, it&rsquo;s electrical, but I need&hellip;&rdquo; blah, blah
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:2">28 people per pod, 30 second headways
+ <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
+<li id="fn:3">By the way, Elon, figures for the Tesla Model S needs to start including this energy cost as well.
+ <a class="footnote-return" href="#fnref:3"><sup>^</sup></a></li>
+<li id="fn:4">Sydney to Hong Kong, Tokyo to San Francisco, Singapore to Dubai, etc.
+ <a class="footnote-return" href="#fnref:4"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/tech/">tech</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.png" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Gregory S. Macfarlane</a></h5>
+    <h6 class="card-subtitle">Assistant Professor of Civil Engineering</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/greg_macfarlane" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=MEztOCoAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/gregmacfarlane" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/files/cv.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+

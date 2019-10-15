@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>church on Greg Macfarlane</title>
+    <link>/tags/church/</link>
+    <description>Recent content in church on Greg Macfarlane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 13 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/church/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Urban Church</title>
+      <link>/post/urbanchurch/urban-temples/</link>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/urbanchurch/urban-temples/</guid>
+      <description>Last night I read the surprising announcement that the Church of Jesus Christ of Latter-day Saints is financing the development and construction of a 32 floor residential and commercial building in the heart of downtown Philadelphia. The Church has owned this property for a while, and has already begun construction on the adjacent Philadelphia Temple, to be opened in 2016.
+The Church is no stranger to urban development. A central doctrine of early Mormonism was the idea of Zion, a city where the faithful would gather to prepare the world for the return of Christ.</description>
+    </item>
+    
+  </channel>
+</rss>

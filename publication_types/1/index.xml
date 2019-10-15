@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Greg Macfarlane</title>
+    <link>/publication_types/1/</link>
+    <description>Recent content in 1 on Greg Macfarlane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing the Daily Schedules in the NHTS from 2009 and 2017</title>
+      <link>/publication/nhts2017/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/nhts2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using passive data to build an agile tour-based model: A case study in Asheville</title>
+      <link>/publication/ashevilleav/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/ashevilleav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public transport infrastructure and home price stability</title>
+      <link>/publication/resiliency/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 -0700</pubDate>
+      
+      <guid>/publication/resiliency/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

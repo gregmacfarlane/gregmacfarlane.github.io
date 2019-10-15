@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Greg Macfarlane</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on Greg Macfarlane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing the Daily Schedules in the NHTS from 2009 and 2017</title>
+      <link>/publication/nhts2017/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/nhts2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using passive data to build an agile tour-based model: A case study in Asheville</title>
+      <link>/publication/ashevilleav/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/ashevilleav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Do Atlanta residents value MARTA? Selecting an autoregressive model to recover willingness to pay</title>
+      <link>/publication/homeprices/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/homeprices/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>The impact of real-time information on bus ridership in New York City</title>
+      <link>/publication/realtime/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/realtime/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>The influences of past and present residential locations on vehicle ownership decisions</title>
+      <link>/publication/learnedpreferences/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/learnedpreferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public transport infrastructure and home price stability</title>
+      <link>/publication/resiliency/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 -0700</pubDate>
+      
+      <guid>/publication/resiliency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data</title>
+      <link>/publication/emissions/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0700</pubDate>
+      
+      <guid>/publication/emissions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
