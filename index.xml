@@ -11,6 +11,182 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Transit Safety</title>
+      <link>/post/safety/transit-safety/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/safety/transit-safety/</guid>
+      <description>
+
+
+&lt;p&gt;I came across this graphic from an
+&lt;a href=&#34;https://www.apta.com/wp-content/uploads/Resources/resources/statistics/Documents/FactBook/APTA_2011_Fact_Book.pdf&#34;&gt;APTA Factbook&lt;/a&gt;(p. 20)
+which shows transit with an enormous safety advantage over automobiles. I was
+curious if I could update the data using information from the Bureau of Transportation
+Statistics.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://i.imgur.com/7txj1aA.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7txj1aA.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;div id=&#34;passenger-miles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Passenger Miles&lt;/h2&gt;
+&lt;p&gt;First, we want to get passenger miles traveled by different modes. The BTS
+has this data in an Excel spreadsheet at
+&lt;a href=&#34;https://www.bts.gov/content/us-passenger-miles&#34;&gt;https://www.bts.gov/content/us-passenger-miles&lt;/a&gt;.
+The data in the spreadsheet is somewhat spotty, and there are &lt;em&gt;plenty&lt;/em&gt; of footnotes
+describing the fact that the sources of the different elements have
+changed over the years. But let’s go with just data from 2000 onward.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I wanted to read the Excel files directly from the BTS website, but there was
+just too much cleaning that needed to be done to make them machine-readable in a
+nice way. You can find the lightly modified spreadsheet I used, including a
+separate analysis from this one, &lt;a href=&#34;/files/passmiles.xlsx&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get Excel file from BTS
+passmiles &amp;lt;- read_excel(here(&amp;quot;content/post/safety/passmiles.xlsx&amp;quot;), 
+                        skip = 1, sheet = &amp;quot;passenger_miles&amp;quot;) %&amp;gt;%
+  filter(!is.na(Mode)) %&amp;gt;%
+  select(Group, Mode, `2000`:`2018`) %&amp;gt;%
+  pivot_longer(cols = `2000`:`2018`, names_to = &amp;quot;year&amp;quot;, values_to = &amp;quot;passmiles&amp;quot;, 
+               names_transform = list(year = as.integer)) %&amp;gt;%
+  # convert from million miles to miles
+  mutate( passmiles = passmiles * 1e6 ) %&amp;gt;%
+  distinct() &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The numbers in the data table are given in Millions. To keep our units
+straight, we are going to use straight miles for now.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(passmiles, aes(x = year, y = passmiles, label = Mode, color = Mode, 
+                      group = str_c(Group, Mode))) +
+  geom_path() + facet_wrap(~Group, scales = &amp;quot;free_y&amp;quot;) + 
+  geom_dl(method = list(dl.trans(x = x + 0.2), &amp;quot;last.points&amp;quot;, cex = 0.6)) +
+  geom_dl(method = list(dl.trans(x = x - 0.2), &amp;quot;first.points&amp;quot;, cex = 0.6))  +
+  scale_x_continuous(limits = c(1995, 2022)) +
+  scale_color_discrete(guide = FALSE) +
+  ylab(&amp;quot;Passenger Miles&amp;quot;) + xlab(&amp;quot;Year&amp;quot;) +
+  theme_bw()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/safety/2020-06-02-transit-safety_files/figure-html/passmiles-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fatalities-by-mode&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fatalities by Mode&lt;/h2&gt;
+&lt;p&gt;The BTS also publishes statistics on fatality broken up by mode at: &lt;a href=&#34;https://www.bts.gov/content/transportation-fatalities-modea&#34;&gt;https://www.bts.gov/content/transportation-fatalities-modea&lt;/a&gt;. However, there are a number of potential issues
+arising from these data. First, transit fatalities are grouped by workers and
+vehicle occupants, but are not separated by mode. Additionally, there are a
+number of redundant categories.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fatalities &amp;lt;- read_excel(here(&amp;quot;content/post/safety/passmiles.xlsx&amp;quot;), 
+                        sheet = &amp;quot;fatalities&amp;quot;) %&amp;gt;%
+  filter(!is.na(Mode)) %&amp;gt;%
+  select(Group, Mode, `2000`:`2018`) %&amp;gt;%
+  pivot_longer(cols = `2000`:`2018`, names_to = &amp;quot;year&amp;quot;, values_to = &amp;quot;fatalities&amp;quot;, 
+               names_transform = list(year = as.integer))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fatalities %&amp;gt;% filter(Group %in% c(&amp;quot;Air&amp;quot;, &amp;quot;Highway&amp;quot;, &amp;quot;Rail&amp;quot;, &amp;quot;Transit&amp;quot;)),
+       aes(x = year, y = fatalities, label = Mode, color = Mode,  
+           group = str_c(Group, Mode))) +
+  geom_path() + facet_wrap(~Group, scales = &amp;quot;free_y&amp;quot;) + 
+  geom_dl(method = list(dl.trans(x = x + 0.2), &amp;quot;last.points&amp;quot;, cex = 0.6)) +
+  geom_dl(method = list(dl.trans(x = x - 0.2), &amp;quot;first.points&amp;quot;, cex = 0.6))  +
+  scale_x_continuous(limits = c(1995, 2022)) +
+  scale_color_discrete(guide = FALSE) +
+  ylab(&amp;quot;Fatalities&amp;quot;) + xlab(&amp;quot;Year&amp;quot;) +
+  theme_bw()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 6 row(s) containing missing values (geom_path).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/safety/2020-06-02-transit-safety_files/figure-html/fatalities-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fatalities-per-100-million-miles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fatalities per 100 Million Miles&lt;/h2&gt;
+&lt;p&gt;Because the two report tables use different modal definitions, we will consider
+only group-levels with the following pairs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Air: all fatalities and passenger miles&lt;/li&gt;
+&lt;li&gt;Highway: all fatalities and passenger miles, minus bus fatalities and miles&lt;/li&gt;
+&lt;li&gt;Transit: fatalities and passenger miles by rail and non-rail&lt;/li&gt;
+&lt;li&gt;Rail: Only Intercity rail miles; passenger rail fatalities minus transit rail fatalities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;miles_summary &amp;lt;- passmiles %&amp;gt;% 
+  # remove bus miles from highway group
+  filter(!(Group == &amp;quot;Highway&amp;quot; &amp;amp; Mode == &amp;quot;Bus&amp;quot;)) %&amp;gt;%
+  # only keep intercity rail
+  filter(!(Group == &amp;quot;Rail&amp;quot; %in% c(&amp;quot;Light Rail&amp;quot;, &amp;quot;Heavy Rail&amp;quot;, &amp;quot;Commuter Rail&amp;quot;, &amp;quot;All&amp;quot;))) %&amp;gt;%
+  # remove summary miles from all other groups
+  filter(!(Group == &amp;quot;Transit&amp;quot; &amp;amp; Mode == &amp;quot;All&amp;quot;)) %&amp;gt;%
+  filter(!(Group == &amp;quot;Highway&amp;quot; &amp;amp; Mode == &amp;quot;All&amp;quot;)) %&amp;gt;%
+  # simplify transit modes into rail and non-rail
+  mutate(
+    Mode = case_when(
+      Group == &amp;quot;Transit&amp;quot; &amp;amp; Mode %in% c(&amp;quot;Light Rail&amp;quot;, &amp;quot;Heavy Rail&amp;quot;, &amp;quot;Commuter Rail&amp;quot;) ~ &amp;quot;Rail&amp;quot;,
+      Group == &amp;quot;Transit&amp;quot; ~ &amp;quot;Non-Rail&amp;quot;,
+      Group == &amp;quot;Highway&amp;quot; ~ &amp;quot;All&amp;quot;,
+      Group == &amp;quot;Rail&amp;quot; ~ &amp;quot;All&amp;quot;,
+      Group == &amp;quot;Air&amp;quot; ~ &amp;quot;All&amp;quot;,
+      TRUE ~ Mode
+    )
+  ) %&amp;gt;%
+  group_by(Group, Mode, year) %&amp;gt;%
+  summarise(passmiles = sum(passmiles))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fatalities_summary &amp;lt;- fatalities %&amp;gt;%
+  mutate(
+    keep = case_when(
+      # all air
+      Group == &amp;quot;Air&amp;quot; &amp;amp; Mode == &amp;quot;All&amp;quot; ~ T,
+      # all highway but bus
+      Group == &amp;quot;Highway&amp;quot; &amp;amp; !(Mode %in% c(&amp;quot;All&amp;quot;, &amp;quot;Bus&amp;quot;)) ~ T,
+      # transit rail  and non-rail
+      Group == &amp;quot;Transit&amp;quot; &amp;amp; Mode %in% c(&amp;quot;Non-Rail&amp;quot;, &amp;quot;Rail&amp;quot;) ~ T,
+      # passenger rail
+      Group == &amp;quot;Rail&amp;quot; &amp;amp; Mode == &amp;quot;All&amp;quot; ~ T,
+      TRUE ~ F
+    ),
+    Mode = ifelse(Group == &amp;quot;Highway&amp;quot;, &amp;quot;All&amp;quot;, Mode), 
+  ) %&amp;gt;% filter(keep) %&amp;gt;%
+  group_by(Group, Mode, year) %&amp;gt;%
+  summarise(fatalities = sum(fatalities))
+  
+# remove transit rail fatalities from rail 
+transit_rail_fatalities &amp;lt;- fatalities_summary %&amp;gt;% filter(Mode == &amp;quot;Rail&amp;quot;) %&amp;gt;% pull(fatalities)
+  
+fatalities_summary &amp;lt;- fatalities_summary %&amp;gt;%
+  mutate(
+    transit_rail_fatalities = transit_rail_fatalities,
+    fatalities = ifelse(Group == &amp;quot;Rail&amp;quot;, fatalities - transit_rail_fatalities, fatalities)
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we can join the two datasets together, and compute the fatalities per
+100 million miles.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fatal_rate &amp;lt;- left_join(miles_summary, fatalities_summary, 
+                        by = c(&amp;quot;Group&amp;quot;, &amp;quot;Mode&amp;quot;, &amp;quot;year&amp;quot;)) %&amp;gt;%
+  mutate(
+    fatal_rate = fatalities / (passmiles / 1e8) # fatalities per 100 million miles
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fatal_rate, aes(
+  x = year, y = fatal_rate, 
+  color = str_c(Group, Mode, sep = &amp;quot; &amp;quot;), 
+  label = str_c(Group, Mode, sep = &amp;quot; &amp;quot;), 
+  )) +
+  geom_path() +
+  geom_dl(method = list(dl.trans(x = x + 0.2), &amp;quot;last.points&amp;quot;, cex = 0.6)) +
+  geom_dl(method = list(dl.trans(x = x - 0.2), &amp;quot;first.points&amp;quot;, cex = 0.6))  +
+  scale_x_continuous(limits = c(1999, 2019)) +
+  scale_color_discrete(guide = FALSE) +
+  ylab(&amp;quot;Fatalities per 100 Million Passenger Miles&amp;quot;) + 
+  xlab(&amp;quot;Year&amp;quot;) + 
+  theme_bw()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/safety/2020-06-02-transit-safety_files/figure-html/fatal-rate-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;From my understanding, if a light rail train hits a pedestrian, it counts as a
+highway fatality &lt;em&gt;and&lt;/em&gt; a transit fatality. Given that a large number of the
+rail fatalities are due to trespassers and at-grade crossings, this may overstate
+the safety to rail &lt;em&gt;passengers&lt;/em&gt;. Also, it double-counts fatalities resulting from
+a commuter rail train colliding with a private automobile.&lt;/p&gt;
+&lt;p&gt;My thoughs on the APTA chart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I believe they used Vehicle Miles Traveled (VMT) instead of passenger miles traveled.
+Because the average occupancy of a vehicle is somewhat over 1.0, this overstates
+the relative danger of highway modes.&lt;/li&gt;
+&lt;li&gt;I believe they considered only fatalities among &lt;em&gt;transit passengers&lt;/em&gt; resulting
+from &lt;em&gt;train crashes&lt;/em&gt;, and did not include fatalities among transit workers or
+other users killed by trains. I believe they did, however, include all highway
+fatalities, and not simply vehicle occupants. You could make the argument that
+this is the correct comparison, but I don’t believe that it is fair.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Modeling the impacts of park access on health outcomes: a utility-based accessibility approach</title>
       <link>/publication/park_access/</link>
       <pubDate>Mon, 28 Oct 2019 13:33:05 -0600</pubDate>
@@ -377,15 +553,6 @@ of their lives anywhere but within the walls of their own homes.&lt;/p&gt;
 Liverpool: University Press of Liverpool.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data</title>
-      <link>/publication/emissions/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 -0700</pubDate>
-      
-      <guid>/publication/emissions/</guid>
-      <description></description>
     </item>
     
   </channel>

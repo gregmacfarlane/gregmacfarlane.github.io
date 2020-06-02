@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Transit Safety</title>
+      <link>/post/safety/transit-safety/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/safety/transit-safety/</guid>
+      <description>I came across this graphic from an APTA Factbook(p. 20) which shows transit with an enormous safety advantage over automobiles. I was curious if I could update the data using information from the Bureau of Transportation Statistics.
+knitr::include_graphics(&amp;quot;https://i.imgur.com/7txj1aA.png&amp;quot;) Passenger Miles First, we want to get passenger miles traveled by different modes. The BTS has this data in an Excel spreadsheet at https://www.bts.gov/content/us-passenger-miles. The data in the spreadsheet is somewhat spotty, and there are plenty of footnotes describing the fact that the sources of the different elements have changed over the years.</description>
+    </item>
+    
+    <item>
       <title>Modeling Autonomous Vehicles with Passive Data</title>
       <link>/post/passiveavs/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
