@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>student-work on Greg Macfarlane</title>
+    <link>/tags/student-work/</link>
+    <description>Recent content in student-work on Greg Macfarlane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/student-work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Covid and Highway Operations</title>
+      <link>/post/covid-highways/covid-highway-operations/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/covid-highways/covid-highway-operations/</guid>
+      <description>This is a post written by the listed student authors as part of their term project for Introduction to Transportation Engineering in Winter 2020.
+ As he entered the office on the morning of Friday March 13th, 2020, Brian Cromar, a Civil Engineer Technician for the Colorado Department of Transportation, was immediately sent home. Speaking of that morning, Cromar recalled his boss&amp;rsquo;s greeting: &amp;ldquo;Good morning, nice to see you, Brian.</description>
+    </item>
+    
+  </channel>
+</rss>

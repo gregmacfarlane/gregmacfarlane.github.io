@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>COVID</title>
+      <link>/tags/covid/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/covid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0600</pubDate>
@@ -72,6 +81,15 @@
       <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/church/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>student-work</title>
+      <link>/tags/student-work/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/student-work/</guid>
       <description></description>
     </item>
     
