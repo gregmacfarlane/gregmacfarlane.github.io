@@ -11,6 +11,43 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Covid and Transportation: Student Projects</title>
+      <link>/post/2021-04-16-winter-2021-projects/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-04-16-winter-2021-projects/</guid>
+      <description>&lt;p&gt;For their term projects this semester, the students in my Intro to
+Transportation class wrote blog posts summarizing the effects of COVID on various
+dimensions of transportation. I think they did a great job overall; here are links
+to the blog posts by topic area:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://joshuaflake.com/&#34; target=&#34;_blank&#34;&gt;Aviation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bri-hansen36.medium.com/4-ways-the-pandemic-has-forever-changed-our-travel-behavior-516150a9aa49&#34; target=&#34;_blank&#34;&gt;Travel Behavior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/covid-highways/covid-highway-operations/&#34;&gt;Highway Operations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://almajean14.medium.com/effects-of-covid-19-on-public-transit-in-the-u-s-349a6539ad6&#34; target=&#34;_blank&#34;&gt;Public Transit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.et.byu.edu/~dapelu22/Transpo/361_project.html&#34; target=&#34;_blank&#34;&gt;Active Transportation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jaidieb5.medium.com/freight-and-covid-22f103d4ec2d&#34; target=&#34;_blank&#34;&gt;Freight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://emily-dicataldo.medium.com/e-commerce-transportation-why-we-still-need-to-talk-about-covid-19-impacts-7966759afd17&#34; target=&#34;_blank&#34;&gt;E-Commerce&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://htt489880669.wordpress.com/2021/04/13/ce-en-361-final-project/&#34; target=&#34;_blank&#34;&gt;Modern Mobility Systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I selected a blog post format for this assignment because I feel the students
+actually write too many technical reports as engineering majors. Not that these
+technical reports are unimportant, but a major role of engineers in modern
+society is to communicate with a less-technical or even a non-technical
+audience. And frankly, word processing documents are not the way most people read
+anything anymore. By writing in this more accessible and less formal medium, I
+hope the students can exercise these outreach muscles.&lt;/p&gt;
+
+&lt;p&gt;Also, I love the irony of the header image, which I pulled from the student post
+on &lt;a href=&#34;/post/covid-highways/covid-highway-operations/&#34;&gt;highway operations&lt;/a&gt;. From a
+highway operations and safety persepective, slowing down is exactly what
+&lt;a href=&#34;https://www.washingtonpost.com/local/trafficandcommuting/the-coronavirus-pandemic-emptied-americas-highways-now-speeders-have-taken-over/2020/05/10/c98d570c-8bb4-11ea-9dfd-990f9dcc71fc_story.html&#34; target=&#34;_blank&#34;&gt;coronavirus did not do&lt;/a&gt;, but it probably should have.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Covid and Highway Operations</title>
       <link>/post/covid-highways/covid-highway-operations/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
@@ -517,15 +554,6 @@ posts:&lt;/p&gt;
       <guid>/publication/realtime/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>The influences of past and present residential locations on vehicle ownership decisions</title>
-      <link>/publication/learnedpreferences/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 -0600</pubDate>
-      
-      <guid>/publication/learnedpreferences/</guid>
-      <description></description>
     </item>
     
   </channel>

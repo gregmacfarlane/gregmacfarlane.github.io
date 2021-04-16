@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/2021-04-16-winter-2021-projects/</loc>
+      <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/covid-highways/covid-highway-operations/</loc>
       <lastmod>2021-04-01T00:00:00+00:00</lastmod>
     </url>
@@ -347,6 +355,15 @@
     
       <loc>/tags/church/</loc>
       <lastmod>2014-02-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/student-work/</loc>
+      <lastmod>2021-04-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
