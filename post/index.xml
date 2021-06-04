@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Java systems and OpenTripPlanner for R</title>
+      <link>/post/2021-06-04-java/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-06-04-java/</guid>
+      <description>I am using the opentripplanner package, which requires a specific version of Java (1.8, to be precise). This is an older version of Java, and so I have more than one JDK on my system (MacOS 11.2.3)
+I have been able to wrangle my java versions using the jenv command line tool. But Rstudio seems to ignore both the global and locally-defined java versions that I have specified. If I open a standard terminal pointed at my project folder, I get the same version of java with both the terminal and with R inside of that terminal.</description>
+    </item>
+    
+    <item>
       <title>Covid and Transportation: Student Projects</title>
       <link>/post/2021-04-16-winter-2021-projects/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
