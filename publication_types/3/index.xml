@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 13 May 2021 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Utility-Based Accessibility to Community Resources: An Application of Location-Based Services Data</title>
+      <link>/publication/community_resources/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/community_resources/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Rider Perceptions of an On-Demand Microtransit Service in Salt Lake County, Utah</title>
