@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech | Greg Macfarlane</title>
+    <link>https://gregmacfarlane.github.io/tag/tech/</link>
+      <atom:link href="https://gregmacfarlane.github.io/tag/tech/index.xml" rel="self" type="application/rss+xml" />
+    <description>tech</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Greg Macfarlane</copyright><lastBuildDate>Sat, 17 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gregmacfarlane.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>tech</title>
+      <link>https://gregmacfarlane.github.io/tag/tech/</link>
+    </image>
+    
+    <item>
+      <title>Modeling Autonomous Vehicles with Passive Data</title>
+      <link>https://gregmacfarlane.github.io/post/passiveavs/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/post/passiveavs/</guid>
+      <description>&lt;p&gt;Last summer I did some work with my friend and colleague Josie Kressner applying
+our data-driven model to potential AV scenarios. I wrote this up over at the
+&lt;a href=&#34;https://transportfoundry.com/blog&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Transport Foundry blog&lt;/a&gt; in a series of three
+posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://transportfoundry.com/blog/2017/6/6/modeling-autonomous-vehicles-with-passive-data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling autonomous vehicles with passive data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://transportfoundry.com/blog/2017/6/23/modeling-shared-automated-vehicles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling shared autonomous vehicles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://transportfoundry.com/blog/2017/10/30/modeling-private-autonomous-vehicles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling private autonomous vehicles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mechanisms of Decentralization</title>
+      <link>https://gregmacfarlane.github.io/post/decentralization/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/post/decentralization/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: This essay was originally written for Brian Stone&amp;rsquo;s graduate Land Use and Transportation Course.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;The true center of the new [suburb] is not in some downtown business district but in each residential unit. - Robert Fishman&lt;/blockquote&gt;
+&lt;p&gt;The typical city in the United States in the early part of the twenty-first
+century has a radically different urban form compared to its urban predecessors
+at the turn of the nineteenth or even the twentieth. Fishman, in the quote above
+this essay, argues that the modern city has completely disintegrated into the
+homes of its residents in an extreme polycentrism that is fundamentally
+different from what existed before. There was once a true center, in “some
+downtown business district,” and now there is not; each family or domestic unit
+has turned themselves inward towards their own lives and home rather than
+engaging with society around a particular core. This perspective is certainly
+valid, but is nonetheless urban-centric. There is a parallel perspective – if
+not necessarily a competing one – that the “true center” was never in that
+business district to begin with.&lt;/p&gt;
+&lt;p&gt;What Fishman means by “true center” is clear from an account he repeats of a
+Beverly Hills family whose several members travel hundreds miles over Los
+Angeles as part of their daily routine, observing “Each family was its own
+‘core’ in a decentralized city” (Fishman 1987, 172). The difference between Los
+Angeles and previous metropolises is that the activities Fishman describes (or
+their pre-modern equivalents) would have occurred closer to the home; or rather,
+the home would have been situated closer to the activities. It can be argued
+that the “true center” has always been within each residence but that these
+centers overlapped in the preindustrial (or even the pre-automobile) city,
+giving the illusion of mono-centric form dominated by an urban core. Cities were
+always poly-centric, but the multiple centers happened to be stacked in
+two-dimensional space. In this view, a latent demand for the decentralization of
+urban areas is enabled by the automobile and other technologies and their
+concomitant reduction in transportation costs, rather than caused by the
+inventions. This latent demand also inspired federal policies designed to
+facilitate the divorcement of suburbs from urban centers.&lt;/p&gt;
+&lt;p&gt;In this essay, I discuss how the cost of transportation is a primary
+mechanical influence on the existence of cities, how changing transportation
+costs would enable decentralization, and how cities may or may not decentralize
+further with future improvements in telecommunication technologies. This leads
+to a discussion of the social attitudes underlying decentralization and the
+resulting policies that made decentralization possible.&lt;/p&gt;
+&lt;h1&gt;A Location Theory Perspective&lt;/h1&gt;
+&lt;div&gt;
+&lt;p&gt;Cities exist at all, in a microeconomic context at least, as a result of two related but distinct phenomena: economies of agglomeration and economies of scale. Firms in general wish to maximize profits by decreasing their marginal cost of producing goods and by selling as many of those goods as possible to the market. Agglomeration is the effect of firms seeking locations with the lowest labor and capital costs. Large manufacturers locate near points where their costs of production would be lowest, and attract supporting firms that sell to the manufacturers, their laborers, or draw from a trained labor force. Economies of scale result from the fact that twice the expenditure in capital and labor can produce more than twice the number of goods, at least to a point. A single craftsman must understand how to construct each element of his product; two craftsmen can divide the tasks and specialize in a particular part of the process, producing more together than both could separately. Whereas agglomeration provides the motivation for a city in the first place, scale encourages that agglomeration to be as large as economically possible.&lt;/p&gt;
+&lt;p&gt;The desire for firms to exploit economies of aggregation and scale through advantageous location leads to competition in the urban land market. Service firms (offices) claim the centermost points because these firms value proximity to other firms to reduce the transportation time costs of their relatively expensive labor but require little space, and can consequentially afford to outbid all others. Manufacturers require more space but also have high transportation costs for their goods, encouraging them to bid for the next most central locations. Residences are pushed to the periphery because their transportation costs are low; “they need only transport themselves to and from their workplace twice each day” (Moore et al., 2007, p. 30). Using more competitive land for residences would be expensive and would result in sub-optimal housing environments, a truth implied in the hope that Sunnyside Gardens could be designed “for more spacious and beautiful living without additional cost” (Stein and Wright 1951, p. 22). The result of these several processes is a mono-centric city. But as transportation costs decrease, the particular placement of firms matters less. Agglomeration effects are spread over a larger distance, and so there is more incentive for manufacturers to scale on the most affordable land possible rather than cluster together. Eventually, the poly-centric city is inevitable.&lt;/p&gt;
+&lt;h2&gt;Telecommunications Technologies&lt;/h2&gt;
+&lt;p&gt;The advent and continued improvement of advanced telecommunications technologies will certainly have an impact on urban form and scale. Whether its effect will be further population dispersal, however, cannot be confidently claimed. At some point the theory of locational competition will collide with the observed decision-making behavior of people as the cost of a service drops.&lt;/p&gt;
+&lt;p&gt;Location theory considered independently would predict continuing decentralization. Telecommunications can be seen as a replacement for physical transportation, rendering transportation costs inconsequential and incentivizing firms and households to occupy as much land as they were willing to acquire. Service workers could work entirely from home, and even manufacturing labor could operate their sophisticated machinery remotely. Friedman observes, after describing JetBlue’s practice of using Utah homemakers as call center workers from within their own homes,  “Homesourcing (sic) to Salt Lake City and outsourcing to Bangalore [are] just flip sides of the same coin … it is now possible for companies and individuals to source work anywhere” (Friedman 2007, 40). The situation he observes is not dissimilar from the science fantasy constructed by Moore et al., where they imagine the effect of matter transporters on urban scale: “Households and firms would spread themselves widely. … Just as in high-cost [of transportation] medieval times, in this low-cost future, production and population would be spread out.” (Moore et al. 2007, p. 21) This is of course working under the assumption that the natural desired state of households is away from others.&lt;/p&gt;
+&lt;p&gt;This assumption, however, might be in conflict with Jevons’ paradox, developed after he observed English firms did not lessen their total expenditure on coal when its price dropped. Rather, the firms capitalized on the opportunity to acquire more coal with their existing budget. This same phenomenon has been observed with fuel-efficient vehicles, whose owners tend to drive them more and therefore erase some part of the savings (Small and Van Dender 2005). It might be that improved telecommunications will lower the cost of human connections, and people would then desire to have more of them. “All those electronic interactions are creating a more relationship-intensive world, … and those relationships need both e-mail and interpersonal contact.” (Glaeser 2012, p. 38) The time spent on each relationship may decrease as transportation or communications costs drop, but the total relationship time spent by humans may not. When information is free and rapid the competitive distinction of firms will be personal connections, as in London of the eighteenth century, “Its leading merchants depended on rapid knowledge that was available to them only through a multitude of face-to-face contacts” (Fishman 1987, p. 21). A desire to be in contact with more people could in fact encourage development in central cities, if that is where the most genuine connections are to be had.&lt;/p&gt;
+&lt;h2&gt;A Word on Residences&lt;/h2&gt;
+&lt;p&gt;The arguments for structural location theory break down, in my view, when considering the behavior of residents as transportation costs decrease. Households in a purely economic construction do not benefit from economies of scale. Manufacturers might acquire cheaper land away from the urban center in an effort to enlarge their operations, but households would only seek to decentralize if they derived utility from the act. The existence of such utility in separation is the subject of the next section.&lt;/p&gt;
+&lt;h1&gt;A Rational Planning Perspective&lt;/h1&gt;
+&lt;p&gt;Why would households decentralize if they were not being outbid for their land? Households gain more from their homes and properties than simply a location in space; there are social and cultural factors that influence their choice of residence. And one of those factors, throughout American urban history, seems to be that a preponderance of people don’t want to live in a distinctly “urban” area. Even before the invention of steam locomotives, ferries to Brooklyn drew away Manhattan workers with a combination of “easy access, pleasant surroundings, cheap land, [and] low taxes” (Jackson 1987, p. 29).  Ebenezer Howard lauded the benefits of the country as “the symbol of God’s love and care for man” (Howard 1898, p. 349). Planners in the early part of the twentieth century saw urban areas as problems to be solved, through carefully planned neighborhoods subsidized by the state.&lt;/p&gt;
+&lt;p&gt;The idea that proper planning alone could solve such sweeping problems as urban blight relies on a &lt;em&gt;mechanistic&lt;/em&gt; worldview; effects have causes, problems have solutions, and the struggle merely lies in finding the correct causes.  “If the problem to be solved could be reduced to a set of independent subproblems (sic), then the solution to the whole was nothing more than the sum of the solution of its parts.” (Ackoff 1974, p. 10) For the members of the Regional Planning Association of America (RPAA), crowded and dirty and noisy urban areas were the cause of a list of societal ills, and the solution was a new type of residential system built around Ebenezer Howard’s Garden City ideal. The project in Radburn, NJ, illustrates the solutions that the RPAA devised: separate networks for vehicles and pedestrians, a dendritic progression of street classes, the provision of public and private green space, and segregation of land uses into residential and commercial purposes (Stein and Wright 1951, p. 46, Figure 23). The problem with the Radburn/RPAA plan, and with mechanism in general, is that the cause-effect relationship may be overly simplistic for a system as complicated as a city. The RPAA did not anticipate the self-centering feedback loops in the Radburn prototype: with each successive neighborhood inspired by Radburn the private green space expanded at the expense of the public, pedestrian paths were discarded and vehicles became the exclusive transport mode, and commercial activities were pushed further and further from the homes. In short, they inspired the Fishman Decentralization Assertion that motivates this essay.&lt;/p&gt;
+&lt;p&gt;Regardless of these subsequent problems, the truth that so many neighborhoods have been constructed in the Radburn heritage is a testament to the emotional power of the Garden City ideal, and also to the power of the federal government to shape social geography.&lt;/p&gt;
+&lt;h2&gt;Federal Housing and the Great Depression&lt;/h2&gt;
+&lt;p&gt;A number of new or expanded federal programs aimed at stabilizing or stimulating the economy during the Great Depression have driven the decentralization of urban areas.  The Home Owners Loan Corporation, in a practice largely continued by the Federal Housing Administration (FHA) to the present day, insured home loans against default; banks relied on this insurance to resume lending after the crash, and the HOLC-turned-FHA used its position to impel the banks to create terms favorable to lenders. To protect itself from undue risk, the agency developed a neighborhood-based appraisal system to classify the quality of its insured mortgages. These “security maps” gave higher assessment scores to new, white neighborhoods that followed more or less the RPAA ideals. “Although HOLC appraisers marked down [some older] neighborhoods because of true slum conditions, their negative attitudes toward city living in general also affected their judgments” (Jackson 1987, 201). Insuring an urban mortgage became more costly for lenders, and so were offered to homeowners on less favorable terms. An additional result of the FHA’s preference for low-risk properties is the &lt;i&gt;de facto&lt;/i&gt; institutionalization of discriminatory lending practices.&lt;/p&gt;
+&lt;p&gt;These terms encouraged by the FHA’s insurance policies were themselves powerful decentralizing tools. Virtually every working person could afford a fully-amortized, thirty-year fixed rate loan on a modest home in a suburban neighborhood, and so virtually everyone acquired such a home. Prior to the FHA, “the provision of decent homes for low paid workers was an economic impossibility” (Stein and Wright 1951, 39). In the post-war period as the effects of FHA loans were combined with veteran’s benefits, the proportion of Americans living in owner-occupied residences increased by twenty percentage points (Jackson 1987, 216).&lt;/p&gt;
+&lt;h2&gt;Steps Back&lt;/h2&gt;
+&lt;p&gt;Were the federal government to identify recentralization as a goal, two policies would have the largest effect. The first would be to eliminate the home mortgage interest tax deduction. The deduction is an effective mandate for home ownership, and it subsidizes the purchase of large homes at the expense of apartment-dwellers. The marginal benefit of owning a (probably suburban) home would decrease relative to a (likely semi-urban) apartment building, and more people would choose the apartment. A second policy would be to internalize the costs of the transportation system by assessing user fees on highways and waterways. The full cost of a trip (on almost any mode) is rarely borne by the traveler; reducing the subsidy on transportation would incentivize shorter trips, and would bring the disparate “centers of the new suburb” closer to each other.&lt;/p&gt;
+&lt;p&gt;In closing this section, it should be noted that the vision of the RPAA did not evolve in a vacuum, nor were the federal policies designed to implement it foisted upon an unwilling populace. “It is hazardous to condemn a government for adopting policies in accord with the preference of a majority of its citizens.” (Jackson 1987, p. 216) People from all walks of life elected to move into suburbs, and the form’s enduring popularity may spell doom for these proposals.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The story presented thus far, and retold in this essay, is one of
+decentralization; households that used to live in core areas moved to suburbs.
+But this story alone is mathematically implausible given the large population
+shifts from rural to urban areas. “The highly developed societies of today are
+the first dominantly urban societies in history” (Ackoff 1974, 5).  Immigration
+and self-generated urban population growth together cannot explain the
+proportional abandonment of rural areas. The story of suburban expansion in the
+United States must be one of aggregation at least as much as it is one of
+dispersal. People accustomed to open spaces and social independence might not
+eagerly adapt to the crowded and tumultuous conditions of pre-suburban cities.
+Using my own history as an admittedly narrow anecdote, few of my progenitors
+back through the fifteenth century (at least) lived in anything more than a
+shepherd’s village until my grandfather moved into an American suburb in the
+1950’s. Never for these people certainly, and maybe for no one, was the center
+of their lives anywhere but within the walls of their own homes.&lt;/p&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Ackoff, R. 1974. “The Revolution We Are In.” In &lt;i&gt;Redesigning the Future&lt;/i&gt;, 3–15. John Wiley &amp;amp; Sons.&lt;/p&gt;
+&lt;p&gt;Fishman, Robert. 1987. &lt;i&gt;Bourgeois Utopias: The Rise and Fall of Suburbia&lt;/i&gt;. New York: Basic Books.&lt;/p&gt;
+&lt;p&gt;Friedman, Thomas L. 2007. &lt;i&gt;The World Is Flat: A Brief History of the Twenty-first Century&lt;/i&gt;. 3.0 ed. New York: Picador.&lt;/p&gt;
+&lt;p&gt;Glaeser, Edward. 2012. &lt;i&gt;Triumph of the City: How Our Greatest Invention Makes Us Richer, Smarter, Greener, Healthier, and Happier&lt;/i&gt;. 1st ed. London: Penguin Books.&lt;/p&gt;
+&lt;p&gt;Howard, Ebenezer. 1898. “Garden Cities of Tomorrow.” In &lt;i&gt;The City Reader&lt;/i&gt;, ed. R. LeGates and F. Stout, 346–353. Routledge, New York.&lt;/p&gt;
+&lt;p&gt;Jackson, Kenneth T. 1987. &lt;i&gt;Crabgrass Frontier: The Suburbanization of the United States&lt;/i&gt;. New York: Oxford University Press.&lt;/p&gt;
+&lt;p&gt;Moore, Terry, Paul Thorsnes, and Bruce Appleyard. 2007. &lt;i&gt;The Transportation/Land Use Connection&lt;/i&gt;. American Planning Association (Planners Press).&lt;/p&gt;
+&lt;p&gt;Small, Kenneth, and Kurt Van Dender. 2005. “The Effect of Improved Fuel Economy on Vehicle Miles Traveled : Estimating the Rebound Effect Using U.S. State Data, 1966-2001”. Berkeley, CA. http://www.ucei.berkeley.edu/PDF/EPE_014.pdf.&lt;/p&gt;
+&lt;p&gt;Stein, Clarence, and Henry Wright. 1951. &lt;i&gt;Toward New Towns for America&lt;/i&gt;.
+Liverpool: University Press of Liverpool.&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Back to the Future</title>
+      <link>https://gregmacfarlane.github.io/post/back-to-the-future/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/post/back-to-the-future/</guid>
+      <description>&lt;p&gt;In the classic Robert Zemeckis movie &lt;em&gt;Back to the Future&lt;/em&gt;, Marty
+McFly explains to Doc Brown that the Delorean/time machine he (Doc) invented is
+nuclear-powered,&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and that the only
+obstacle to sending Marty back to the future (1985) is obtaining some plutonium.
+I love Doc&amp;rsquo;s response:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m sure that in 1985, plutonium is available in every corner drugstore, but
+in 1955, it&amp;rsquo;s a little hard to come by.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The irony in this statement of course being that in spite of sweeping changes to
+fashions, music, politics – and Marty&amp;rsquo;s own mother – plutonium is still
+mercifully difficult to obtain, and the future Doc Brown had to contract with
+Libyan terrorists to get some. Sometimes the future doesn&amp;rsquo;t come as fast as we
+think it might.&lt;/p&gt;
+&lt;p&gt;At the end of the movie, Doc returns from 2015 having outfitted the Delorean
+with turbofan VTOL tires and a &amp;ldquo;Mr. Trash&amp;rdquo; appliance that generates 1.21
+Gigawatts from household food scraps. I haven&amp;rsquo;t made up my mind as to whether
+this epilogue continues the irony of the plutonium comment or whether Zemeckis
+falls into the same trap that he set for Doc Brown, imagining an impossibly
+technological future. Certainly science moves quickly. The line between tech
+journalism and science fiction can seem very thin, particularly when we live in
+a world of &lt;a href=&#34;http://www.economist.com/blogs/babbage/2013/08/praise-artificial-meat&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;synthetic hamburgers&lt;/a&gt;
+and &lt;a href=&#34;http://www.autoblog.com/2013/08/13/2015-audi-a3-augmented-reality-app-owners-manual-video/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;augmented
+reality&lt;/a&gt;
+Almost none of my friends had cell phones in high school, and now most middle
+schoolers seem to. On the other hand, 2015 is sixteen months away, and I don&amp;rsquo;t
+see any flying cars or household nuclear reactors.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://ite.ce.gatech.edu/wp-content/uploads/2013/08/musk-hyperloop-sketches.jpg&#34;&gt;&lt;img
+src=&#34;http://ite.ce.gatech.edu/wp-content/uploads/2013/08/musk-hyperloop-sketches.jpg&#34;
+width=&#34;575&#34; height=&#34;430&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So what are we as transportation professionals to make of Elon Musk&amp;rsquo;s &lt;a
+href=&#34;http://www.spacex.com/hyperloop&#34; target=&#34;_blank&#34;&gt;Hyperloop&lt;/a&gt;? Is this
+the transport mode of the future, or a literal pipe dream? My first reaction is
+that Musk seems to have put considerably more thought into the physics of this
+system than similar proposals, like &lt;a href=&#34;http://www.et3.com/&#34;&gt;ET3&lt;/a&gt;.
+Indeed, I think enclosed-tube transportation systems solve lots of the obvious
+safety issues involved with high speed objects traveling near ground level. If I
+were to dream up a new mode of transportation, it would probably look a lot like
+this.&lt;/p&gt;
+&lt;p&gt;I am an engineer in the loosest sense, and I&amp;rsquo;m not a physicist at all, so I
+can&amp;rsquo;t really comment on the feasibility of the mechanisms. But I can look at the
+volume calculations. Based on Musk&amp;rsquo;s design abstract,  the maximum passenger
+limit of the Hyperloop is 3360 passengers per hour.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Certainly in operation
+the efficiency will be lower as passengers board and alight. If you discount it
+by 30%, the total volume of the system is roughly that of a freeway lane[4. With
+an average occupancy just north of 1.1], but considerably lower than an
+intercity rail line. Scaling the system for higher volume routes such as the
+northeast corridor would only be possible with multiple tubes. This is of course
+not prohibitive, but it wasn&amp;rsquo;t mentioned.  In all, I think we can pass him on
+this metric.&lt;/p&gt;
+&lt;p&gt;More worrying is the discussion of energy use. The &amp;ldquo;energy per passenger
+journey&amp;rdquo; presumably doesn&amp;rsquo;t include the amortized production energy from the
+vehicles and the infrastructure.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;  With each pod
+carrying a large battery made of rare or heavy metals and running on a tube made
+from high-performance steel, it will seem a little less attractive from an
+energy standpoint. More importantly, I really don&amp;rsquo;t buy the argument that the
+steel in the tube and the concrete in the pylons is going to be any less
+voluminous than the steel rails and concrete ties they are supposed to replace.
+Musk really needs to run through these numbers again.&lt;/p&gt;
+&lt;p&gt;Perhaps counter-intuitively, the discussion of  unsolved problems is where he
+really goes off the rails. Certainly
+there are problems to be worked out, and Musk acknowledges this. The &lt;a
+href=&#34;http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf&#34;&gt;white
+paper&lt;/a&gt; lists the following unresolved challenges (last page):&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;More expansion on the control mechanism for Hyperloop capsules, including
+attitude thruster or control moment gyros.&lt;/li&gt;
+	&lt;li&gt;Detailed station designs with loading and unloading of both passenger and
+passenger plus vehicle versions of the Hyperloop capsules.&lt;/li&gt;
+	&lt;li&gt;Trades comparing the costs and benefits of Hyperloop with
+more conventional magnetic levitation systems.&lt;/li&gt;
+	&lt;li&gt;Sub-scale testing based on a further optimized design to demonstrate the
+physics of Hyperloop.&lt;/li&gt;
+&lt;/ol&gt;
+These issues are minutely specific, whereas some of the most fundamental ones
+have not been addressed. He treats the problem of you know, consumer demand for
+such a system, as given. Of course people want to take the fastest, cheapest
+option! But human choices are more complicated than that. Intercity mode choice
+is a function of cost and time to be sure, but people will also pay for comfort,
+familiarity, convenience, and other attributes. An enormous part of the best
+econometric models of transportation choice is the appropriate treatment of
+residual random error.
+&lt;p&gt;That Musk hasn&amp;rsquo;t fully processed the demand equation is evident on the home
+page, where he says that his system is most appropriate for trips shorter than
+about 1500 miles, because &amp;ldquo;Around that inflection point, I suspect that
+supersonic air travel ends up being faster and cheaper.&amp;rdquo; Well, London had
+supersonic commercial air service before it had Lady Thatcher, and there wasn&amp;rsquo;t
+enough demand for it to justify updating the Concorde. Musk may blame this on
+international regulations against overland sonic booms, but there are are plenty
+of transoceanic routes that should have worked&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; except the Concorde&amp;rsquo;s speed
+limited its range and passenger volume. Its unique attribute is precisely what
+made it economically infeasible, and Musk&amp;rsquo;s inability to recognize this makes me
+doubt his seriousness.&lt;/p&gt;
+&lt;p&gt;Besides, why sell himself short? If you count airport-to-city center trips in
+the time calculation, Hyperloop could beat the Concorde to LA from Atlanta.&lt;/p&gt;
+&lt;p&gt;But the single thing that shows me this project is not going to be running
+anytime soon? The thing that shows Musk is a Silicon Valley entrepreneur who
+mistakenly thinks the world around him is waiting for him to solve its problems,
+and that if he applies his superior mind to them, they will be? He thinks it
+will be &lt;a
+href=&#34;http://www.businessinsider.com/elon-musk-takes-questions-on-the-hyperloop-2013-8&#34;&gt;running
+in ten years&lt;/a&gt;. &lt;i&gt;Great Scot! &lt;/i&gt;Good luck getting the EIS approved in ten
+years, Elon.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Next time: &lt;a title=&#34;Zombies&#34; href=&#34;http://ite.ce.gatech.edu/?p=1080&#34;&gt;the
+zombie that is personal rapid transit&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;No, no, it&amp;rsquo;s electrical, but I need&amp;hellip;&amp;rdquo; blah, blah&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;28 people per pod, 30 second headways&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;By the way, Elon, figures for the Tesla Model S needs to start including this energy cost as well.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Sydney to Hong Kong, Tokyo to San Francisco, Singapore to Dubai, etc.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

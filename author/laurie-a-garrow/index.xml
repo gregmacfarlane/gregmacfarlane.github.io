@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laurie A Garrow | Greg Macfarlane</title>
+    <link>https://gregmacfarlane.github.io/author/laurie-a-garrow/</link>
+      <atom:link href="https://gregmacfarlane.github.io/author/laurie-a-garrow/index.xml" rel="self" type="application/rss+xml" />
+    <description>Laurie A Garrow</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Greg Macfarlane</copyright><lastBuildDate>Sat, 01 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gregmacfarlane.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Laurie A Garrow</title>
+      <link>https://gregmacfarlane.github.io/author/laurie-a-garrow/</link>
+    </image>
+    
+    <item>
+      <title>Do Atlanta residents value MARTA? Selecting an autoregressive model to recover willingness to pay</title>
+      <link>https://gregmacfarlane.github.io/publication/homeprices/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/publication/homeprices/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The influences of past and present residential locations on vehicle ownership decisions</title>
+      <link>https://gregmacfarlane.github.io/publication/learnedpreferences/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/publication/learnedpreferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data</title>
+      <link>https://gregmacfarlane.github.io/publication/emissions/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://gregmacfarlane.github.io/publication/emissions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

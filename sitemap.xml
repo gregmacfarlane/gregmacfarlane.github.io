@@ -1,430 +1,187 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    <url>
-    
-      <loc>/publication/community_resources/</loc>
-      <lastmod>2021-11-01T00:00:00-06:00</lastmod>
-    </url>
-    
   
-    
-    <url>
-    
-      <loc>/publication/uvx_headways/</loc>
-      <lastmod>2021-06-08T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/2021-06-04-java/</loc>
-      <lastmod>2021-06-04T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/via-capstone/</loc>
-      <lastmod>2021-05-13T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/2021-04-16-winter-2021-projects/</loc>
-      <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/covid-highways/covid-highway-operations/</loc>
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/park_access/</loc>
-      <lastmod>2020-11-23T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/escooter-survey/</loc>
-      <lastmod>2020-08-31T15:21:31-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/sustainable_utahco/</loc>
-      <lastmod>2020-08-16T13:42:54-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/safety/transit-safety/</loc>
-      <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/park_choice/</loc>
-      <lastmod>2019-10-15T09:18:05-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tutorial/</loc>
-      <lastmod>2018-09-09T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/nhts2017/</loc>
-      <lastmod>2018-08-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/passiveavs/</loc>
-      <lastmod>2017-06-17T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/talk/example/</loc>
-      <lastmod>2017-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/</loc>
-      <lastmod>2017-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/ashevilleav/</loc>
-      <lastmod>2016-06-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/external-project/</loc>
-      <lastmod>2016-04-27T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/internal-project/</loc>
-      <lastmod>2016-04-27T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/homeprices/</loc>
-      <lastmod>2015-08-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/realtime/</loc>
-      <lastmod>2015-04-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/learnedpreferences/</loc>
-      <lastmod>2015-04-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/resiliency/</loc>
-      <lastmod>2015-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/urbanchurch/urban-temples/</loc>
-      <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/decentralization/</loc>
-      <lastmod>2014-01-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/emissions/</loc>
-      <lastmod>2014-01-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/back-to-the-future/</loc>
-      <lastmod>2013-08-14T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/1/</loc>
-      <lastmod>2021-11-01T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/2/</loc>
-      <lastmod>2021-06-08T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/3/</loc>
-      <lastmod>2021-11-01T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/accessibility/</loc>
-      <lastmod>2021-06-08T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/covid/</loc>
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/parks/</loc>
-      <lastmod>2021-06-08T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2021-11-01T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/slides/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/slides/example-slides/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/sprawl/</loc>
-      <lastmod>2020-08-16T13:42:54-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/sustainability/</loc>
-      <lastmod>2020-08-16T13:42:54-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2021-06-08T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/blog/</loc>
-      <lastmod>2017-06-17T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/church/</loc>
-      <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/student-work/</loc>
-      <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/student-work/</loc>
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tech/</loc>
-      <lastmod>2017-06-17T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-</urlset>
+  <url>
+    <loc>https://gregmacfarlane.github.io/courses/example/python/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/courses/example/visualization/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/courses/example/stats/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/</loc><lastmod>2022-01-09T13:00:00-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/event/</loc><lastmod>2022-01-09T13:00:00-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/talk/using-big-data-to-evaluate-equitable-access-to-community-resources./</loc><lastmod>2022-01-09T13:00:00-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication-type/1/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication-type/3/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/authors/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/emma-stucki/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/gregory-s-macfarlane/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/michael-copley/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication_types/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/community_resources/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication-type/2/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/accessibility/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/grant-g.-schultz/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/gregory-s.-macfarlane/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/logan-s.-bennet/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/michael-h.-sheffield/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/parks/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tags/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/uvx_headways/</loc><lastmod>2021-06-08T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/2021-06-04-java/</loc><lastmod>2021-06-04T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/</loc><lastmod>2021-06-04T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/austin-martinez/</loc><lastmod>2021-05-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/christian-hunter/</loc><lastmod>2021-05-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/elizabeth-smith/</loc><lastmod>2021-05-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/via-capstone/</loc><lastmod>2021-05-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/2021-04-16-winter-2021-projects/</loc><lastmod>2021-04-16T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/student-work/</loc><lastmod>2021-04-16T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/andrew-rodriguez/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/covid/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/covid-highways/covid-highway-operations/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/david-shill/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/sarah-jaen-mcclellan/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/stephanie-brunson/</loc><lastmod>2021-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/courses/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/courses/example/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/john-e.-taylor/</loc><lastmod>2020-11-23T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/kari-e.-watkins/</loc><lastmod>2020-11-23T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/park_access/</loc><lastmod>2020-11-23T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/nico-boyd/</loc><lastmod>2020-11-23T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/austin-taylor/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/escooter-survey/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/jaymie-pressley/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/jeffrey-glenn/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/madeline-bluth/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/mannon-christianson/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/robert-a.-chaney/</loc><lastmod>2020-08-31T15:21:31-07:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/sustainable_utahco/</loc><lastmod>2020-08-16T13:42:54-06:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/sprawl/</loc><lastmod>2020-08-16T13:42:54-06:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/sustainability/</loc><lastmod>2020-08-16T13:42:54-06:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/safety/transit-safety/</loc><lastmod>2020-06-02T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/park_choice/</loc><lastmod>2019-10-15T09:18:05-06:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/teresa-tapia/</loc><lastmod>2019-10-15T09:18:05-06:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/nhts2017/</loc><lastmod>2018-08-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/josie-kressner/</loc><lastmod>2018-08-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/category/blog/</loc><lastmod>2017-06-17T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/categories/</loc><lastmod>2017-06-17T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/passiveavs/</loc><lastmod>2017-06-17T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/tech/</loc><lastmod>2017-06-17T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/leta-f-huntsinger/</loc><lastmod>2016-06-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/rick-donnelly/</loc><lastmod>2016-06-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/ashevilleav/</loc><lastmod>2016-06-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/deep-learning/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/demo/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/project/external-project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/project/internal-project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/homeprices/</loc><lastmod>2015-08-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/juan-moreno-cruz/</loc><lastmod>2015-08-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/laurie-a-garrow/</loc><lastmod>2015-08-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/candace-brakewood/</loc><lastmod>2015-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/kari-watkins/</loc><lastmod>2015-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/patricia-l-mokhtarian/</loc><lastmod>2015-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/realtime/</loc><lastmod>2015-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/learnedpreferences/</loc><lastmod>2015-04-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/resiliency/</loc><lastmod>2015-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/tag/church/</loc><lastmod>2014-02-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/urbanchurch/urban-temples/</loc><lastmod>2014-02-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/decentralization/</loc><lastmod>2014-01-23T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/publication/emissions/</loc><lastmod>2014-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/michel-bierlaire/</loc><lastmod>2014-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/stefan-binder/</loc><lastmod>2014-01-01T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/post/back-to-the-future/</loc><lastmod>2013-08-14T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/admin/</loc></url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/author/greg-macfarlane/</loc></url></urlset>
