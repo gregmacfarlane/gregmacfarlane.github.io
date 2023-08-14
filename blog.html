@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Greg Macfarlane</title>
+<title>Greg Macfarlane - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -58,12 +61,43 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -89,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Lab Manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -100,74 +134,259 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Blog</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="blog">blog <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/portrait.png" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Greg Macfarlane</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://twitter.com/greg_macfarlane" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-  <a href="https://github.com/gregmacfarlane" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=MEztOCoAAAAJ&amp;hl=en" class="about-link" rel="" target="">
-    <i class="bi bi-{{ai google-scholar}}"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>I am an assistant professor of Civil Engineering at Brigham Young University. My research involves the development and application of travel demand forecasting models, including the implementation of emerging third-party datasets as well as modeling practice.</p>
-<p>I teach courses on sustainability, transportation engineering, transport modeling, and traffic simulation.</p>
-<p><a href="static/cv.pdf">Download my CV here</a></p>
-<section id="roles" class="level2">
-<h2 data-anchor-id="roles">Roles</h2>
-<p><strong>Brigham Young University</strong> | Provo, Utah</p>
-<ul>
-<li>Assistant Professor 2018 —</li>
-</ul>
-<p><strong>Transport Foundry</strong> | Raleigh, North Carolina</p>
-<ul>
-<li>Transport Engineer 2017 — 2018</li>
-</ul>
-<p><strong>WSP | Parsons Brinckerhoff</strong> | Raleigh, North Carolina</p>
-<ul>
-<li>Technical Principal 2016 - 2017</li>
-<li>Engineer 2014 - 2016</li>
-</ul>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>Georgia Institute of Technology</strong> | Atlanta, Georgia</p>
-<ul>
-<li>PhD in Civil Engineering | 2014</li>
-<li>MS in Economics | 2014</li>
-</ul>
-<p><strong>Brigham Young University</strong> | Provo, Utah</p>
-<ul>
-<li>BS with University Honors in Civil Engineering | 2009</li>
-</ul>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
-</section>
-</main></div>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
- <!-- /main -->
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="" data-listing-date-sort="1622764800000" data-listing-file-modified-sort="1692050588173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="./posts/2021-06-04-java/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2021-06-04-java/index.html">
+<h3 class="no-anchor listing-title">
+Java systems and OpenTripPlanner for R
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+
+</div>
+<a href="./posts/2021-06-04-java/index.html">
+<div class="listing-description">
+I am using the <code>opentripplanner</code> package, which…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2021-06-04-java/index.html">
+<div class="listing-date">
+Jun 4, 2021
+</div>
+<div class="listing-author">
+Gregory Macfarlane
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1618531200000" data-listing-file-modified-sort="1692050588173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/2021-04-16-winter-2021-projects/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2021-04-16-winter-2021-projects/index.html">
+<h3 class="no-anchor listing-title">
+Covid and Transportation: Student Projects
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+
+</div>
+<a href="./posts/2021-04-16-winter-2021-projects/index.html">
+<div class="listing-description">
+For their term projects this semester, the students in my Intro to Transportation class…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2021-04-16-winter-2021-projects/index.html">
+<div class="listing-date">
+Apr 16, 2021
+</div>
+<div class="listing-author">
+Gregory Macfarlane
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1692050588173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="thumbnail">
+<p><a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html"> <p class="card-img-top"><img src="https://imgur.com/ULIbVNZ.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
+<h3 class="no-anchor listing-title">
+Covid and Highway Operations
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+
+</div>
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
+<div class="listing-description">
+This is a post written by the listed student authors as part of their term project for <em>Introduction to Transportation Engineering</em> in Winter 2020.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
+<div class="listing-date">
+Apr 1, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1597536000000" data-listing-file-modified-sort="1692050588189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/sustainable_utahco/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/sustainable_utahco/index.html">
+<h3 class="no-anchor listing-title">
+Can Utah County Choose to Grow Sustainably?
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Last week the Deseret News ran a contributed opinion piece by Andrew Skabelund<sup>1</sup> in which he argued that the rapid development of Silicon Slopes in north Utah County comes at the cost of Utah County’s value as…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/sustainable_utahco/index.html">
+<div class="listing-date">
+Aug 16, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="" data-listing-date-sort="1591056000000" data-listing-file-modified-sort="1692050588173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="thumbnail">
+<p><a href="./posts/safety/2020-06-02-transit-safety.html"> <p class="card-img-top"><img src="https://i.imgur.com/7txj1aA.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./posts/safety/2020-06-02-transit-safety.html">
+<h3 class="no-anchor listing-title">
+Transit Safety
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+
+</div>
+<a href="./posts/safety/2020-06-02-transit-safety.html">
+<div class="listing-description">
+I came across this graphic from an APTA Factbook(p.&nbsp;20) which shows transit with an enormous safety…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/safety/2020-06-02-transit-safety.html">
+<div class="listing-date">
+Jun 2, 2020
+</div>
+<div class="listing-author">
+Gregory Macfarlane
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="blog" data-listing-date-sort="1392249600000" data-listing-file-modified-sort="1692050588189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="./posts/urbanchurch/2018-12-03-the-urban-church.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
+<h3 class="no-anchor listing-title">
+The Urban Church
+</h3>
+<div class="listing-subtitle">
+Mormons should be paying more attention to downtown cores.
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('blog'); return false;">
+blog
+</div>
+</div>
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
+<div class="listing-description">
+Last night I read the surprising announcement that the Church of Jesus Christ of Latter-day Saints is financing the development and construction of a 32 floor residential and commercial building in the…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
+<div class="listing-date">
+Feb 13, 2014
+</div>
+<div class="listing-author">
+Greg Macfarlane
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -188,6 +407,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

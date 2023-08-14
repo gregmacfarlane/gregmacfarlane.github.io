@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2021-04-01">
+
+<title>Greg Macfarlane - Covid and Highway Operations</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Greg Macfarlane</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://gregmacfarlane.github.io/lab" rel="" target="">
+ <span class="menu-text">Lab Manual</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Covid and Highway Operations</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>David Shill </p>
+               <p>Sarah Jaen McClellan </p>
+               <p>Stephanie Brunson </p>
+               <p>Andrew Rodriguez </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 1, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#fewer-but-faster" id="toc-fewer-but-faster" class="nav-link active" data-scroll-target="#fewer-but-faster">Fewer but Faster</a></li>
+  <li><a href="#construction-challenges-and-opportunities" id="toc-construction-challenges-and-opportunities" class="nav-link" data-scroll-target="#construction-challenges-and-opportunities">Construction Challenges and Opportunities</a></li>
+  <li><a href="#financial-shortcomings" id="toc-financial-shortcomings" class="nav-link" data-scroll-target="#financial-shortcomings">Financial Shortcomings</a></li>
+  <li><a href="#looking-forward" id="toc-looking-forward" class="nav-link" data-scroll-target="#looking-forward">Looking Forward</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<blockquote class="blockquote">
+<p>This is a post written by the listed student authors as part of their term project for <em>Introduction to Transportation Engineering</em> in Winter 2020.</p>
+</blockquote>
+<p>As he entered the office on the morning of Friday March 13th, 2020, Brian Cromar, a Civil Engineer Technician for the Colorado Department of Transportation, was immediately sent home. Speaking of that morning, Cromar recalled his boss’s greeting: “Good morning, nice to see you, Brian. Go home. Go home now, leave the office, take whatever you need to start working from home. I don’t know when I’ll see you again.” While Cromar’s sudden departure from the workplace was more urgent due to an immunosuppressed family member, it was one among many necessary but costly disruptions. The sudden advent of COVID-19 sent shockwaves through every aspect of interstate highway operations, construction, and funding across the United States.</p>
+<section id="fewer-but-faster" class="level2">
+<h2 class="anchored" data-anchor-id="fewer-but-faster">Fewer but Faster</h2>
+<p>While Cromar began to work from home, other CDOT engineers and technicians were issued essential worker papers to present to officers enforcing the Stay-At-Home order at traffic stops enroute to project sites, a practice adopted in many communities across the country. As various state governments issued these Stay-At-Home orders in early 2020, traffic volumes on highways decreased by 50% to 65% in many states, with some cities, like San Francisco, dipping as much as 85%, according to a study done by the <a href="https://ascelibrary.org/doi/pdf/10.1061/JTEPBS.0000528?casa_token=KPgANQiBwFoAAAAA:oM_eryTeMV8KizWfG10MKvsK0X0j_ok59COGKkXuA6GeDY1QhtAb8d-RnnLBcejFCMIMequYWyQ">American Society of Civil Engineers.</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgur.com/ULIbVNZ.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Brian Cromar and his team pre-pandemic</figcaption>
+</figure>
+</div>
+<p>In the early days of the shutdown, the decreased volumes on the roads brought with them a decrease in crashes and fatalities. Unfortunately, this didn’t last. As the weeks wore on, those who continued to drive after the shut down grew comfortable with the empty roads and began driving more recklessly, reaching extremes of 40 miles-per-hour over the speed limit. Brian Cromar confirmed this in his interview: “About three weeks to a month after the pandemic hit is when we started noticing that the drivers who never stopped going to work everyday started enjoying the lack of traffic on the roadways” he remembers. “Where everyone in the 75 mph zone was often going 80-85 mph pre-pandemic, they were [now] going 90-95 mph routinely.”</p>
+<p>Usually, the high traffic volume on highways is one of the key factors that keep the speed of traffic flow close to the speed limit and within safe parameters for the roadway design and sight distance. When the roads emptied, drivers suddenly seemed to feel safe at unsafe speeds, leading to an uncanny increase in car crashes. <a href="https://www.ncsl.org/blog/2020/05/04/driving-down-but-speeding-up-during-covid-19-crisis.aspx">The National Conference of State Legislatures</a> found that the higher speeds at these low traffic volumes led to a sharp increase in crash rates and a higher rate of fatalities. It was also at about three weeks in that Brian Cromar’s team began noticing “upticks in crashes that were completely avoidable due to the speeds.”</p>
+<p>While the high speeds brought unexpected danger to largely empty roads, the relationship between low volumes and dangerous speeds has been consistent in the months following the lock down as different pandemic related restrictions began to ease. Because of that, the volumes on highways are once again on the rise, bringing crash statistics to more familiar levels as well. The recovery rate has not been very fast but by May of 2020, the volumes had already returned to 30% of what they had been pre-pandemic. Of course, speeding remains a very real issue, but it is only as much as it had been before COVID-19 struck.</p>
+</section>
+<section id="construction-challenges-and-opportunities" class="level2">
+<h2 class="anchored" data-anchor-id="construction-challenges-and-opportunities">Construction Challenges and Opportunities</h2>
+<p>Dangerous speeds were not the only unexpected change the pandemic brought to everyday highway operations. Because Brian Cromar oversees material testing across highway improvement project timelines, he became very familiar with both the opportunities and pitfalls the pandemic presented to the highway improvement programs. Because of <a href="https://ascelibrary.org/doi/pdf/10.1061/JTEPBS.0000528?casa_token=KPgANQiBwFoAAAAA%3AoM_eryTeMV8KizWfG10MKvsK0X0j_ok59COGKkXuA6GeDY1QhtAb8d-RnnLBcejFCMIMequYWyQ&amp;">decreased volumes,</a> he reported that some construction projects progressed much faster than was typical. Customarily, construction on highways in the region of Colorado in which he operates must take place in the middle of the night, when there are the fewest cars on the road and needed lane closures are safest. However, with the advent of the pandemic, construction contractors were able to safely close down more of the highway at a time and accelerate construction on select highway improvement projects. Cromar cited one project that had been completed in a fraction of the expected timeline due to the ability to close an entire intersection without creating unsafe traffic congestion. The reconstruction was completed in a matter of weeks, whereas the original plan would have taken several months to safely close and reroute traffic section by section.</p>
+<p>While these accelerated projects presented positive effects of the pandemic, they were the exception rather than the norm. Larger projects saw significant delays due to the local and global supply chain failures characteristic of 2020, Cromar reported. The expense of these delays were borne by the state rather than the contractors, who were not at fault. While many projects nationwide saw delays, many more were cancelled altogether. A large share of projects in nearly every state were defunded in a push to comply with COVID protocols (<a href="#tbl-costs">Table&nbsp;1</a>, Source: <a href="https://www.artba.org/wp-content/uploads/2020/08/2020.07.28_ARTBA_COVID19RevImpact_v18_Public.pdf">ARTBA</a>). The American Road and Transportation Builders Association specifies that an estimated $9.6 billion in transportation projects have been delayed or canceled entirely due to the COVID-19 pandemic and economic downturn. $132.8 billion of funding initiatives have failed, and $33.2 billion have been lost due to diverted funding or budget cuts as a result of the pandemic. (See <a href="#tbl-costs">Table&nbsp;1</a>)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="st">'Type of Delay'</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Projects delayed or canceled"</span>, <span class="st">"Funding initiative delayed, canceled, or vetoed"</span>, <span class="st">"Revenue declines, budget cuts, and diverted funds"</span>),</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Total Value"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"$9.6 Billion"</span>, <span class="st">"$132.8 Billion"</span>, <span class="st">"$33.26 Billion"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-costs" class="anchored">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Table&nbsp;1: Covid-19 Project Costs</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Type of Delay</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Total Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Projects delayed or canceled</td>
+<td style="text-align: left;">$9.6 Billion</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Funding initiative delayed, canceled, or vetoed</td>
+<td style="text-align: left;">$132.8 Billion</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Revenue declines, budget cuts, and diverted funds</td>
+<td style="text-align: left;">$33.26 Billion</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+</section>
+<section id="financial-shortcomings" class="level2">
+<h2 class="anchored" data-anchor-id="financial-shortcomings">Financial Shortcomings</h2>
+<p>In the economic downturn we see now, state and local governments still appear hesitant to impose new taxes to fund these projects. Public funds have been directed instead towards saving small businesses, reducing substantial pandemic-related deficits, and other programs intended to help their constituents in more immediate ways. Many state and local governments see infrastructure projects as non-essential or not pressing, and therefore we have seen a trend of <a href="https://www.artba.org/wp-content/uploads/2020/08/2020.07.28_ARTBA_COVID19RevImpact_v18_Public.pdf">prioritizing immediate economic relief.</a> With all these reductions in financial support for infrastructure projects in recent months, construction jobs are also on the decline. ARTBA estimates that up to 2.3 million jobs could be lost, which would only contribute to the downturn of United States Highway quality.</p>
+<p>For Brian Cromar, failures in transportation funding have thrown off several projects across the State of Colorado. For example, due to the shifting nature of the pandemic, Cromar saw a contractor walk away from a contract in the middle of a project because of internal financial difficulties. Another kind of stress came when a project to reconstruct one side of a major stretch of highway was expanded to repair, but not replace, the opposite side as well. This may seem like an upgrade, but the alteration was due to a dismal calculation that the funds required to complete, meaning the full project could not be secured for another 35-40 years.</p>
+<p>Unfortunately, shortages in financial support for United States highway systems are not unique to the pandemic era. Funding for these necessary improvement projects typically stem from three sources: fuel tax, sales tax, and tolls. With the decreased traffic volumes mentioned earlier, all three of sources saw significant declines against the backdrop of a system already overdue for reform. For the past 5 years, the Fixing America’s Surface Transportation (FAST) Act has provided financial stability and security for the 50 Departments of Transportations around the country, providing much of the financial support necessary to maintain and replenish America’s highway networks. The FAST Act will expire in October of 2021, <a href="https://www.roadsbridges.com/us-senate-approves-1-year-fast-act-extension">after receiving a one-year</a> extension by congress in response to the pandemic, at which point the policies and allocation of highway improvement funds will once again come under legislative review.</p>
+<p>In fact, the extension of the FAST Act was in response to an urgent plea for aid. The American Association of State Highway and Transportation Organizations (AASHTO) – the organization that represents all 50 Departments of Transportation – <a href="https://policy.transportation.org/wp-content/uploads/sites/59/2020/04/2020-04-06-AASHTO-Letter-to-Congress-on-COVID-19-Phase-4-FINAL.pdf">sent a report</a> to the United States Congress early April of 2020 detailing America’s urgent infrastructure situation in light of the ongoing pandemic. In their report, AASHTO estimated 30% in state transportation revenues would be lost due to the COVID-19 pandemic and throughout the next 18 months. Because of the loss of these funds and the expiring FAST Act, AASHTO urged congress to address infrastructure issues in their next Coronavirus Relief Bill. Their response, as mentioned previously was to extend the FAST Act by a year and include additional funds in several of their relief measures. But much like the extended highway reconstruction project Cromar oversaw, Congress’s action has patched up, but not replaced a system that will need reconstruction soon.</p>
+</section>
+<section id="looking-forward" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward">Looking Forward</h2>
+<p>Fortunately, as the United States approaches the tail end of this pandemic, the future of infrastructure may not be as bleak as it appears. On March 31, 2021, the Biden administration released a massive infrastructure improvement proposal; the very first point on the <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2021/03/31/fact-sheet-the-american-jobs-plan/">fact sheet released by the White House</a> reads, “President Biden’s plan will: Fix highways, rebuild bridges, upgrade ports, airports and transit systems.” The plan invests millions in repairing 20,000 miles of highways and other main roads, in turn creating countless “good-paying, union jobs.” The funds included in this proposal would not be drawn from gas tax and sales tax, but from an increase in corporate taxes. Should this plan receive the support of Congress and be implemented, many of the losses projected by ARTBA from the COVID-19 pandemic would be eased and averted, minimalizing the long-term effects the pandemic has had on the progress of highway transportation.</p>
+<p>As the nation continues to recover and move towards more familiar patterns, some trends - and deficits - have become more obvious than ever before. From the impact of empty roads on fatal crash rates, to the spasmodic disruptions of highway construction, to the precarious financial mechanisms behind the great American highway system, the COVID-19 Pandemic brought with it serious consequences and valuable lessons. What the nation does with these new insights and exposed weaknesses will determine the future of our highway infrastructure.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
