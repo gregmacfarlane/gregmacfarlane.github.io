@@ -8,7 +8,7 @@ about:
   links:
     - icon: twitter
       text: twitter
-      href: https://twitter.com/gregory_macfarlane
+      href: https://twitter.com/greg_macfarlane
     - icon: github
       text: Github
       href: https://github.com/gregmacfarlane
