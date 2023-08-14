@@ -1,0 +1,55 @@
+---
+title: "Greg Macfarlane"
+toc: false
+about:
+  template: trestles
+  image: images/portrait.png
+  image-shape: round
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/gregory_macfarlane
+    - icon: github
+      text: Github
+      href: https://github.com/gregmacfarlane
+    - icon: '{{ai google-scholar}}'
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=MEztOCoAAAAJ&hl=en
+---
+
+I am an assistant professor of Civil Engineering at Brigham Young University. My
+research involves the development and application of travel demand forecasting 
+models, including the implementation of emerging third-party datasets as well as 
+modeling practice.
+
+I teach courses on sustainability, transportation engineering, transport modeling,
+and traffic simulation.
+
+[Download my CV here](static/cv.pdf)
+
+## Roles
+
+**Brigham Young University** | Provo, Utah
+
+  - Assistant Professor 2018 ---
+  
+**Transport Foundry** | Raleigh, North Carolina
+
+  - Transport Engineer 2017 --- 2018
+  
+**WSP | Parsons Brinckerhoff** | Raleigh, North Carolina
+
+  - Technical Principal 2016 - 2017
+  - Engineer 2014 - 2016
+
+## Education
+
+**Georgia Institute of Technology** | Atlanta, Georgia
+
+  - PhD in Civil Engineering | 2014
+  - MS in Economics | 2014
+
+**Brigham Young University** | Provo, Utah
+
+  - BS with University Honors in Civil Engineering | 2009
+

@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Greg Macfarlane"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: https://gregmacfarlane.github.io/lab
+        text: Lab Manual
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
