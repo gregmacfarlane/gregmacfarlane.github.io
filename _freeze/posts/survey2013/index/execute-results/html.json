@@ -1,0 +1,14 @@
+{
+  "hash": "83c408bd2616afc238b53b8d8b9563d1",
+  "result": {
+    "markdown": "---\ntitle: \"CE 2023\"\ndescription: \"A summary of the exit survey for our students in Winter 2023\"\nauthor: \"Greg Macfarlane\"\ndate: \"5/22/2021\"\ndraft: true\n---\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 16 × 2\n# Groups:   faculty [4]\n   name                 faculty   \n   <chr>                <chr>     \n 1 Nathan Tyler Sprague Ames      \n 2 Camden Greenhalgh    Ames      \n 3 Kailey Mohamed       Ames      \n 4 Robert Mickelson     Ames      \n 5 Eva-Marie Hamill     Macfarlane\n 6 Jonah Dundas         Macfarlane\n 7 Braxton Porter       Macfarlane\n 8 Rebecca Rasmussen    Macfarlane\n 9 Sarah Fox            Shepherd  \n10 Cody Lee Valdivia    Shepherd  \n11 Andrew Favro         Shepherd  \n12 Alex Winward         Shepherd  \n13 Timothy Maughan      Sowby     \n14 Jacob McClure        Sowby     \n15 Ian P MacGregor      Sowby     \n16 Taylor Porter        Sowby     \n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

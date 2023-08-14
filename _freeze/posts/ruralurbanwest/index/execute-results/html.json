@@ -1,0 +1,14 @@
+{
+  "hash": "a15c06d797c29d37f5865a415490df15",
+  "result": {
+    "markdown": "---\ntitle: \"The urban and rural West\"\ndescription: \"How urbanized are western states?\"\nauthor: \"Greg Macfarlane\"\ndate: \"6/30/2023\"\ndraft: true\n---\n\n\n\nMany western states are known for their rural expanses and long drives through mountains, deserts, and plains. But I encountered an interesting thought last week, which is that Utah might be among the most urbanized states in the nation, based on the percent of people live in heavily urbanized regions.\n\nSo, I want to count two things in this post: what percent of people western states live in urban areas, and what percent of highway miles are in these areas.\n\n## Defining urbanized areas\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n:::\n\n```{.r .cell-code}\nlibrary(tigris)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nTo enable caching of data, set `options(tigris_use_cache = TRUE)`\nin your R script or .Rprofile.\n```\n:::\n:::\n\n\nThe US Census Bureau is using a [new measure of urbanized areas](https://www.census.gov/newsroom/blogs/random-samplings/2022/12/redefining-urban-areas-following-2020-census.html) that includes housing units in its definition. We can get a \n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

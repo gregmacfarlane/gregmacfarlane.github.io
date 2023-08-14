@@ -1,0 +1,64 @@
+---
+title: "CE 2023"
+description: "A summary of the exit survey for our students in Winter 2023"
+author: "Greg Macfarlane"
+date: "5/22/2021"
+draft: true
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(haven)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r clean}
+# read dataset (from external file that I cannot share)
+data <- read_spss("/Users/gregmacfarlane/Library/CloudStorage/Box-Box/Civil Engineering Survey/CE+Undergraduate+Exit+Survey+2022-2023_April+7%2C+2023_13.26.sav") |> 
+# clean fields
+  transmute(
+    name = Q2_1,
+    phone = Q2_7,
+    married = Q3,
+    children = Q4_2,
+    plans = Q5,
+    plans_other = Q5_3_TEXT,
+    work = Q6,
+    work_other = Q6_1_TEXT,
+    finance_scholarship = Q8_1,
+    finance_work        = Q8_2,
+    finance_grants      = Q8_3, 
+    finance_loans       = Q8_4, 
+    finance_family      = Q8_5,
+    finance_other       = Q8_6,
+    mission = Q9,
+    mission_other = Q10,
+    mission_lang = Q11,
+    mission_language = Q12,
+    mission_language_other = Q12_13_TEXT,
+    years_byu = Q13_1,
+    years_all = Q13_2,
+    gpa = Q13_3,
+    switch = Q14,
+    switch_from = Q15,
+    why_civil = Q16,
+    satisfied = Q17
+  )
+
+```
+
+
+
+```{r}
+# allocate names to other faculty
+set.seed(42)
+data |> 
+  filter(name != "") |> 
+  mutate(faculty = sample(c("Shepherd", "Sowby", "Ames", "Macfarlane"), n(), replace = TRUE)) |> 
+  select(name, faculty) |> 
+  group_by(faculty) |> 
+  sample_n(4) 
+```
+

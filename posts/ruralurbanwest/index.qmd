@@ -1,0 +1,29 @@
+---
+title: "The urban and rural West"
+description: "How urbanized are western states?"
+author: "Greg Macfarlane"
+date: "6/30/2023"
+draft: true
+---
+
+
+Many western states are known for their rural expanses and long drives through mountains, deserts, and plains. But I encountered an interesting thought last week, which is that Utah might be among the most urbanized states in the nation, based on the percent of people live in heavily urbanized regions.
+
+So, I want to count two things in this post: what percent of people western states live in urban areas, and what percent of highway miles are in these areas.
+
+## Defining urbanized areas
+
+```{r }
+library(tidyverse)
+library(tigris)
+
+
+```
+
+The US Census Bureau is using a [new measure of urbanized areas](https://www.census.gov/newsroom/blogs/random-samplings/2022/12/redefining-urban-areas-following-2020-census.html) that includes housing units in its definition. We can get a 
+
+
+```{r}
+
+```
+

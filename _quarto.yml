@@ -12,6 +12,8 @@ website:
         text: Home
       - href: https://gregmacfarlane.github.io/lab
         text: Lab Manual
+      - href: blog.qmd
+        text: Blog
 
 format:
   html:
