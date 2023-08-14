@@ -1,0 +1,25 @@
+---
+title: "City parks and slow streets: a utility-based access and equity analysis."
+description: "Journal of Transport and Land Use"
+image: https://images.unsplash.com/photo-1583146200984-f2dfc3d1e27c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80
+author: 
+  - Greg Macfarlane
+  - Carole Voulgaris 
+  - Teresa Tapia"
+date: "2022-01-01"
+categories:
+  - accessibility
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G., Turley Voulgaris, C., & Tapia, T. (2022). City parks and slow streets: A utility-based access and equity analysis. Journal of Transport and Land Use, 15(1), 587–612. <https://doi.org/10.5198/jtlu.2022.2009>
+
+:::
+
+During the spring and summer of 2020, cities across the world responded to the global COVID-19 pandemic by converting roadway facilities into open pedestrian spaces. These conversions improved access to public open space, but measuring the variation in that improvement among different populations requires clear definitions of access and methods for measuring it. In this study, we evaluate the change in a utility-based park accessibility measure resulting from street conversions in Alameda County, California. Our utility-based accessibility measure is constructed from a park activity location choice model we estimate using mobile device data – supplied by StreetLight Data, Inc. – representing trips to parks in that county. The estimated model reveals heterogeneity in inferred affinity for park attributes among different sociodemographic groups. We find, for example, that neighborhoods with more lower-income residents and those with more residents of color show a greater preference for park proximty while neighborhods with higher incomes and those with more white residents show a greater preference for park size and amenities. We then apply this model to examine the accessibility benefits resulting from COVID-19 street conversions to create a set of small park-like open spaces; we find that this has been a pro-social policy in that Black, Hispanic, and low-income households receive a disproportionate share of the policy benefits, relative to the population distribution.
+
+> Photo by Dollar Gill on [Unsplash](https://unsplash.com/photos/PWZRdZuiQEA)

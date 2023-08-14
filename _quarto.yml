@@ -10,6 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: pubs.qmd
+        text: Publications
       - href: https://gregmacfarlane.github.io/lab
         text: Lab Manual
       - href: blog.qmd
