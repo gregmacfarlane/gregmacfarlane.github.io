@@ -12,7 +12,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/gregmacfarlane
-    - icon: '{{ai google-scholar}}'
+    - icon: '{{< ai google-scholar>}}'
       text: Google Scholar
       href: https://scholar.google.com/citations?user=MEztOCoAAAAJ&hl=en
 ---
@@ -25,7 +25,7 @@ modeling practice.
 I teach courses on sustainability, transportation engineering, transport modeling,
 and traffic simulation.
 
-[Download my CV here](static/cv.pdf)
+{{< downloadthis static/cv.pdf dname=macfarlane_nycparks.pdf label="Download My CV" icon=file-earmark type=primary >}}
 
 ## Roles
 
