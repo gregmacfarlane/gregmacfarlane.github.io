@@ -25,7 +25,7 @@ am particularly interested in improving the methods of modeling and how the tool
 I teach courses on sustainability, transportation engineering, transport modeling,
 and traffic simulation.
 
-{{< downloadthis static/cv.pdf dname=macfarlane_nycparks.pdf label="Download My CV" icon=file-earmark type=primary >}}
+{{< downloadthis static/cv.pdf dname=macfarlane_cv.pdf label="Download My CV" icon=file-earmark type=primary >}}
 
 ## Roles
 
