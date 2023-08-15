@@ -1,0 +1,26 @@
+---
+title: "The effect of transit signal priority on bus rapid transit headway adherence."
+description: "*Findings*"
+# image: 
+author: 
+  - Greg Macfarlane
+  - Michael Sheffield
+  - Logan Bennet
+  - Grant Schultz
+date: "2021-06-01"
+draft: true
+categories:
+  - public transit
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, Gregory S., Michael H. Sheffield, Logan S. Bennett, and Grant G. Schultz. 2021. “The Effect of Transit Signal Priority on Bus Rapid Transit Headway Adherence.” *Findings*, June. <https://doi.org/10.32866/001c.24499>.
+
+:::
+
+We report the results of an experiment to evaluate the impact of transit signal priority (TSP) on headway adherence for a bus rapid transit (BRT) system in Provo / Orem, Utah. The bus requests TSP based on its unpublished schedule, but users perceive only a headway. Quantile regression models estimated on raw timepoint data from the BRT system reveal that TSP significantly improves headway adherence, after controlling for peak times, direction, and cumulative trip dwell time. We also find that requiring the bus to be 2 minutes late before requesting TSP improves headway adherence more than allowing all buses to request TSP. 
+
+> Photo by  on [Unsplash](https://unsplash.com/photos/WzkU86kMl6k)

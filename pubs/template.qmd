@@ -1,0 +1,24 @@
+---
+title: ""
+description: "*  *"
+# image: 
+author: 
+  - Greg Macfarlane
+date: "2022-07-21"
+draft: true
+categories:
+  - traffic performance
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+citation
+
+:::
+
+abstract 
+
+> Photo by  on [Unsplash](https://unsplash.com/photos/WzkU86kMl6k)

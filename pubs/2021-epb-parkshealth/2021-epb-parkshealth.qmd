@@ -1,0 +1,26 @@
+---
+title: "Modeling the impacts of park access on health outcomes: A utility-based accessibility approach."
+description: "*Environment and Planning B: Urban Analytics and City Science*"
+image: https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80 
+author: 
+  - Greg Macfarlane
+  - Nico Boyd
+  - John E. Taylor
+  - Kari Watkins
+date: "2021-10-01"
+categories:
+  - accessibility
+  - spatial econometrics
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G. S., Boyd, N., Taylor, J. E., & Watkins, K. (2021). Modeling the impacts of park access on health outcomes: A utility-based accessibility approach. *Environment and Planning B: Urban Analytics and City Science*, 48(8), 2289–2306. <https://doi.org/10.1177/2399808320974027>
+
+:::
+
+Recent research has underscored the potential for public green spaces to influence individual and societal health outcomes, but empirical measurements of such influences have yielded mixed results to date, with particular disagreement surrounding how access to parks ought to be defined while controlling for alternate explanations. In this paper, we apply a comprehensive measure of park accessibility drawn from random utility choice theory, which avoids arbitrary assertions of proximity while incorporating potentially numerous amenities and attributes of both the parks and the population. We apply this utility-based accessibility measure to correlate Census tract-level obesity and physical activity rate estimates from the Centers for Disease Control and Prevention’s 500 Cities project with tract-level American Community Survey socioeconomic data in New York City, paired with geographic open space data from New York City. Controlling for the socioeconomic variables and spatially correlated error terms, we show a positive and significant relationship between park access and physical activity rates. The data also suggest a negative relationship between park access and obesity rates, beyond what is expected through physical activity and socioeconomics. In doing so, this research contributes a more comprehensive modeling approach for measuring the impact of park access on health, and may improve our understanding of the role parks and access to them can serve in furthering public health objectives. 
+
+> Photo by Arek Adeoye on [Unsplash](https://unsplash.com/photos/ljoCgjs63SM)

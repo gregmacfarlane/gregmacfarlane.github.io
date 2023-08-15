@@ -1,0 +1,24 @@
+---
+title: "How Far Are We From Transportation Equity? Measuring the Effect of Wheelchair Use on Daily Activity Patterns"
+description: "*Lecture Notes in Mobility*"
+image: https://images.unsplash.com/photo-1605246700246-e73792957578?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80
+author: 
+  - Greg Macfarlane
+  - Nate Lant 
+date: "2023-02-20"
+categories:
+  - microtransit
+  - travel behavior
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G.S., Lant, N. (2023). How Far Are We From Transportation Equity? Measuring the Effect of Wheelchair Use on Daily Activity Patterns. In: Antoniou, C., Busch, F., Rau, A., Hariharan, M. (eds) Proceedings of the 12th International Scientific Conference on Mobility and Transport. *Lecture Notes in Mobility.* Springer, Singapore. <https://doi.org/10.1007/978-981-19-8361-0_10>
+
+:::
+
+The mobility needs of individuals with travel-limiting disabilities has been a transportation policy priority in the United States for more than thirty years, but efforts to model the behavioral implications of disability on travel have been limited. In this research, we present a daily activity pattern choice model for multiple person type segments including an individual’s wheelchair use as an explanatory variable. The model results show a strong negative impact of wheelchair use on out-of-home travel, exceeding the impact of other variables commonly considered in such models. We then apply the estimated model within an activity-based model for the Wasatch Front region in Utah; the results suggest a shift in tour making of sufficient scale—among both wheelchair users and those in their households—to warrant further scrutiny and analysis.
+
+> Photo by Lisanto on [Unsplash](https://unsplash.com/photos/8ISzaVX0Djs)

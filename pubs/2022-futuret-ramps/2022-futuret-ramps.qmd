@@ -1,0 +1,26 @@
+---
+title: "Evaluating real time ramp meter queue length estimation."
+description: "*Future Transportation*"
+image: https://images.unsplash.com/photo-1543997385-22fe0f397eeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1318&q=80 
+author: 
+  - Tanner Daines
+  - Grant Schultz
+  - Greg Macfarlane
+  - Cory Ward
+date: "2022-10-01"
+categories:
+  - traffic performance
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+citation
+
+:::
+
+Models to predict ramp meter queue length from traffic detector data are potentially useful tools in improving traffic operations and safety. Existing research, however, has been based on microscopic simulation or relied on extensive calibration of Kalman filter and related models to produce reliable queue length estimates. This research seeks to develop methodologies for improving and simplifying the calibration process of existing queue length models by applying loop detector data including volume, occupancy, and the metering rate data for ramp meters along I-15 in Utah. A conservation model and several variations of a Kalman filter model generated estimated queues that were compared to observed queue lengths in 60 s bins. A modified Kalman filter model and a new heuristic model derived from cluster analysis—the models that yielded the best results—provided queue length estimates that were generally within approximately eight vehicles of the observed queue length. Using the ramp metering rate, the queue length estimates were converted into wait times that were generally within approximately 30 s of the actual wait time, producing a viable method to predict wait time from up-to-the-minute traffic detection information with relatively little required calibration. The implementation of the ramp meter queue length and wait time estimation algorithms presented in this research will allow departments of transportation to better assess freeway and ramp conditions, which can then aid in reducing congestion throughout the freeway network.
+
+> Photo by Denys Novozhai on [Unsplash](https://unsplash.com/photos/k5w21D7PgMk)

@@ -1,0 +1,27 @@
+---
+title: "Evaluating Signal Systems Using Automated Traffic Signal Performance Measures"
+description: "*Future Transportation*"
+image: https://images.unsplash.com/photo-1540621371720-5182776e9ca5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80
+author: 
+  - Bruce Wang
+  - Grant Schultz
+  - Greg Macfarlane
+  - Sabrina McCuen
+
+date: "2022-07-21"
+categories:
+  - traffic performance
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Wang, B.; Schultz, G.G.; Macfarlane, G.S.; McCuen, S. Evaluating Signal Systems Using Automated Traffic Signal Performance Measures. *Future Transportation* 2022, 2, 659-674. <https://doi.org/10.3390/futuretransp2030036>
+
+:::
+
+Automated traffic signal performance measures (ATSPMs) are used to collect data concerning the current and historical performance of signalized intersections. However, transportation agencies are not using ATSPM data to the full extent of this “big data” resource, because the volume of information can overwhelm traditional identification and prioritization techniques. This paper presents a method that summarizes multiple dimensions of intersection- and corridor-level performance using ATSPM data and returns information that can be used for prioritization of intersections and corridors for further analysis. The method was developed and applied to analyze three signalized corridors in Utah, consisting of 20 total intersections. Four performance measures were used to develop threshold values for evaluation: platoon ratio, split failures, arrivals on green, and red-light violations. The performance measures were scaled and classified using $k$-means cluster analysis and expert input. The results of this analysis produced a score for each intersection and corridor determined from the average of the four measures, weighted by expert input. The methodology is presented as a prototype that can be developed with more performance measures and more extensive corridors for future studies.
+
+> Photo by Alex Eckermann on [Unsplash](https://unsplash.com/photos/WzkU86kMl6k)

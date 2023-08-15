@@ -1,0 +1,25 @@
+---
+title: "Rider perceptions of an on-demand microtransit service in Salt Lake County, Utah"
+description: "*Smart Cities*"
+image: https://images.unsplash.com/photo-1600320254374-ce2d293c324e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+author: 
+  - Greg Macfarlane
+  - Christian Hunter
+  - Austin Martinez
+  - Elizabeth Smith
+date: "2021-05-14"
+categories:
+  - microtransit
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G.S.; Hunter, C.; Martinez, A.; Smith, E. (2021) Rider Perceptions of an On-Demand Microtransit Service in Salt Lake County, Utah. *Smart Cities* 4, 717-727. <https://doi.org/10.3390/smartcities4020036>
+
+:::
+
+On-demand microtransit services are frequently seen as an important tool in supporting first and last mile operations surrounding fixed route high frequency transit facilities, but questions remain surrounding who will use these novel services and for what purposes. In November 2019, the Utah Transit Authority launched an on-demand microtransit service in south Salt Lake County in partnership with a private mobility operator. This paper reports the results of an expressed preferences survey of 130 transit riders in the microtransit service area that was collected before and immediately after the service launched. There is not a clear relationship between current transit access mode and expressed willingness to use microtransit, although some responses from new riders indicate the novel service competes most directly with commercial transportation network company operations. The survey responses also reveal younger passengers express a more than expected willingness to use microtransit, middle-aged passengers a less than expected willingness, and older passengers neutral or no expressed opinion. The results suggest additional relationships between household size and transit use frequency, but further research is necessary. The effect of other user characteristics, including income and automobile availability, is less statistically clear and requires further research.
+
+> Photo by Paul Hanaoka on [Unsplash](https://unsplash.com/photos/D-qq7W751vs)
