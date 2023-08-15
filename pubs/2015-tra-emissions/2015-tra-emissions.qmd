@@ -1,0 +1,28 @@
+---
+title: "Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data"
+description: "*Transportation Research Part A*"
+image: https://images.unsplash.com/photo-1579519772836-2732b96a6306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+author: 
+  - Stefan Binder
+  - Greg Macfarlane
+  - Laurie Garrow
+  - Michel Bierlaire
+date: "2022-07-21"
+categories:
+  - emissions
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Binder, S., Macfarlane, G. S., Garrow, L. A., & Bierlaire, M. (2014). Associations among household characteristics, vehicle characteristics and emissions failures: An application of targeted marketing data. *Transportation Research Part A: Policy and Practice*, 59, 122-133. <https://doi.org/10.1016/j.tra.2013.11.005>
+
+:::
+
+{{< downloadthis Emissions.pdf dname=binder_tra_emissions label="Download Preprint" icon=file-earmark-pdf type=primary >}}
+
+Many U.S. cities use vehicle emissions testing programs to improve air quality by identifying gross polluting vehicles and requiring their owners to make emissions-related repairs. All vehicles that meet certain criteria must pass an emissions test as part of the vehicle registration process. States use different criteria to determine which vehicles must be tested; however, the equity impacts associated with various screening criteria are unknown. This is due to difficulties researchers have faced in linking vehicle and household characteristics. We investigate the relative influence of vehicle and household characteristics on emissions failures in Atlanta, Georgia, by linking its emissions testing database to a targeted marketing database; the latter contains information about vehicle owners. We use count and hurdle models to predict vehicle emissions failures. Our model finds a relationship between sociodemographic characteristics and emissions failures after controlling for vehicle characteristics; that is, given two identical vehicles, the one owned by a low-income or minority household is more likely to fail emissions. We use our model to investigate the impacts of different emissions testing policies by income and ethnic groups. 
+
+> Photo by Jacek Dylag on [Unsplash](https://unsplash.com/photos/mmar_Xs8_mk)

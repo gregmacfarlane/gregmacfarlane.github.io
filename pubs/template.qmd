@@ -19,6 +19,8 @@ citation
 
 :::
 
+<!-- {{< downloadthis Emissions.pdf dname=binder_tra_emissions.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} -->
+
 abstract 
 
 > Photo by  on [Unsplash](https://unsplash.com/photos/WzkU86kMl6k)

@@ -1,0 +1,25 @@
+---
+title: "Do Atlanta residents value MARTA? Selecting an autoregressive model to recover willingness to pay"
+description: "*Transportation Research Part A*"
+image: https://images.unsplash.com/photo-1572293834521-aba6afec927e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1289&q=80
+author: 
+  - Greg Macfarlane
+date: "2015-06-10"
+categories:
+  - spatial econometrics
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G.S., Garrow, L.A., & Moreno-Cruz, J. (2015). Do Atlanta residents value MARTA? Selecting an autoregressive model to recover willingness to pay. *Transportation Research Part A: Policy and Practice*, 78, 214–230. <https://doi.org/10.1016/j.tra.2015.05.010>
+
+:::
+
+{{< downloadthis CSHomePrices.pdf dname=macfarlane_tra_wtp label="Download Preprint" icon=file-earmark-pdf type=primary >}}
+
+Understanding homeowners’ marginal willingness-to-pay (MWTP) for proximity to public transportation infrastructure is important for planning and policy. Naïve estimates of MWTP, however, may be biased as a result of spatial dependence, spatial correlation, and/or spatially endogenous variables. In this paper we discuss a class of spatial autoregressive models that control for these spatial effects, and apply them to sample data collected for the Atlanta, Georgia housing market. We provide evidence that a general-to-specific model selection methodology that relies on the generality of the spatial Durbin model (SDM) should be preferred to the classical specific-to-general methodology that begins with an assumption of no spatial effects. We show that applying the SDM raises the estimate of MWTP for transit proximity in Atlanta but also widens its confidence interval, relative to ordinary linear regression. This finding may have implications for risk estimations in land value capture forecasts and transportation policy decisions.
+
+> Photo by zekkotek on [Unsplash](https://unsplash.com/photos/UPEw-79TeH0)

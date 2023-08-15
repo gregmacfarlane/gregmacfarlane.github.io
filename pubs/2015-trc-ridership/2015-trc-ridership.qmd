@@ -1,0 +1,25 @@
+---
+title: "The impact of real-time information on bus ridership in New York City"
+description: "*Transportation Research Part C*"
+image: https://images.unsplash.com/photo-1641201996950-e2c48693c5fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80
+author: 
+  - Candace Brakewood
+  - Greg Macfarlane
+  - Kari Watkins
+date: "2022-07-21"
+categories:
+  - public transit
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Brakewood, C., Macfarlane, G.S., & Watkins, K.E. (2015). The impact of real-time informa- tion on bus ridership in New York City. *Transportation Research Part C: Emerging Technologies*, 53, 59–75. <https://doi.org/10.1016/j.trc.2015.01.021>
+
+:::
+
+
+In the past few years, numerous mobile applications have made it possible for public transit passengers to find routes and/or learn about the expected arrival time of their transit vehicles. Though these services are widely used, their impact on overall transit ridership remains unclear. The objective of this research is to assess the effect of real-time information provided via web-enabled and mobile devices on public transit ridership. An empirical evaluation is conducted for New York City, which is the setting of a natural experiment in which a real-time bus tracking system was gradually launched on a borough-by-borough basis beginning in 2011. Panel regression techniques are used to evaluate bus ridership over a three year period, while controlling for changes in transit service, fares, local socioeconomic conditions, weather, and other factors. A fixed effects model of average weekday unlinked bus trips per month reveals an increase of approximately 118 trips per route per weekday (median increase of 1.7% of weekday route-level ridership) attributable to providing real-time information. Further refinement of the fixed effects model suggests that this ridership increase may only be occurring on larger routes; specifically, the largest quartile of routes defined by revenue miles of service realized approximately 340 additional trips per route per weekday (median increase of 2.3% per route). Although the increase in weekday route-level ridership may appear modest, on aggregate these increases exert a substantial positive effect on farebox revenue. The implications of this research are critical to decision-makers at the country’s transit operators who face pressure to increase ridership under limited budgets, particularly as they seek to prioritize investments in infrastructure, service offerings, and new technologies.
+
+> Photo by Andra C Taylor Jr on [Unsplash](https://unsplash.com/photos/6HCKP76U2LA)

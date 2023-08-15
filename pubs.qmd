@@ -10,3 +10,7 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+These are journal articles and book chapters that I have written. If the article is 
+available in an open-access journal, please download it there. If the article is in a
+closed journal, you can download the preprint from the article's page where I have it.

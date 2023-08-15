@@ -1,0 +1,28 @@
+---
+title: "Considering the Potential Health Impacts of Electric Scooters: An Analysis of User Reported Behaviors in Provo, Utah"
+description: "*International Journal of Environmental Research and Public Health*"
+image: https://images.unsplash.com/photo-1625156841498-ab9b4a0ca424?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1356&q=80
+author: 
+  - Jeff Glenn
+  - Madeline Bluth
+  - Mannon Christianson
+  - Jaymie Pressley
+  - Austin Taylor
+  - Greg Macfarlane
+  - Robbie Chaney
+date: "2020-08-31"
+categories:
+  - scooters
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Glenn, J.; Bluth, M.; Christianson, M.; Pressley, J.; Taylor, A.; Macfarlane, G.S.; Chaney, R.A. (2020) Considering the Potential Health Impacts of Electric Scooters: An Analysis of User Reported Behaviors in Provo, Utah. *Int. J. Environ. Res. Public Health*, 17, 6344. <https://doi.org/10.3390/ijerph17176344>
+
+:::
+
+Electric scooters (e-scooters) are an increasingly popular form of transportation in urban areas. While research on this topic has focused primarily on injuries, there are multiple mechanisms by which e-scooter share programs may impact health. The aim of this study is to explore the health-related behaviors of e-scooter users and to discuss their implications for public health. Data were collected using an online survey emailed to registered e-scooter users. A total of 1070 users completed the survey. Descriptive variable statistics and chi-squared analysis were performed to determine variable dependent relationships and equality of proportions. The most common destinations reported were “just riding around for fun”, home, and dining/shopping. The two most common modes of transportation that would have been used if e-scooters were not available were walking (43.5%) and using a personal vehicle (28.5%). Riding behavior was equally mixed between on the street, on the sidewalk, and equal amounts of both. e-Scooters in Provo are likely having both positive (e.g., air pollution) and negative impacts on health (e.g., injuries, physical inactivity). Future research should further explore patterns of e-scooter use and explicitly examine the linkages between e-scooters and areas of health beyond just injuries. 
+
+> Photo by Gotrax on [Unsplash](https://unsplash.com/photos/LKa4D7eysCU)
