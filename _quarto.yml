@@ -6,6 +6,7 @@ execute:
 
 website:
   title: "Greg Macfarlane"
+  favicon: logo.png 
   navbar:
     left:
       - href: index.qmd
@@ -19,7 +20,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - yeti
+      - custom.scss
     css: styles.css
     toc: true
 
