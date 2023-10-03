@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1583146200984-f2dfc3d1e27c?ixlib=rb-4.0
 author: 
   - Greg Macfarlane
   - Carole Voulgaris 
-  - Teresa Tapia"
+  - Teresa Tapia
 date: "2022-01-01"
 categories:
   - accessibility

@@ -1,0 +1,46 @@
+---
+title: "A methodology to detect traffic data anomalies in automated traffic signal performance measures"
+description: "*Future Transportation*"
+image: https://images.unsplash.com/photo-1569150134468-2d68f44f4083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+author: 
+  - Bruce Wang
+  - Grant Schultz
+  - Dennis Eggett
+  - Matthew Davis
+  - Greg Macfarlane
+date: "2023-10-01"
+categories:
+  - traffic performance
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Wang, B., Schultz, G. G., Macfarlane, G. S., Eggett, D. L., & Davis, M. C. (2023). A Methodology to Detect Traffic Data Anomalies in Automated Traffic Signal Performance Measures. *Future Transportation*, 3(4), 1175–1194. <https://doi.org/10.3390/futuretransp3040064>
+
+:::
+
+
+Automated traffic signal performance measures (ATSPMs) have garnered significant
+attention for their ability to collect and evaluate real-time and historical
+data at signalized intersections. ATSPM data are widely utilized by traffic
+engineers, planners, and researchers in various application scenarios. In
+working with ATSPM data in Utah, it was discovered that five types of ATSPM data
+anomalies (data switching, data shifting, data missing under 6 months, data
+missing over 6 months, and irregular curves) were present in the data. To
+address the data issues, this paper presents a method that enables
+transportation agencies to automatically detect data anomalies in their ATSPM
+datasets. The proposed method utilizes the moving average and standard deviation
+of a moving window to calculate the z-score for traffic volume data points at
+each timestamp. Anomalies are flagged when the z-score exceeds 2, which is based
+on the data falling within two standard deviations of the mean. The results
+demonstrate that this method effectively identifies anomalies within ATSPM
+systems, thereby enhancing the usability of data for engineers, planners, and
+all ATSPM users. By employing this method, transportation agencies can improve
+the efficiency of their ATSPM systems, leading to more accurate and reliable
+data for analysis.
+
+> Photo by <a href="https://unsplash.com/@moritz_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Moritz Kindler</a> on <a href="https://unsplash.com/photos/7TeeZqR52Yk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
