@@ -3,7 +3,10 @@ project:
 
 execute:
   freeze: auto
+resources:
+  - "static/cv.pdf"
 
+  
 website:
   title: "Greg Macfarlane"
   favicon: logo.png 
