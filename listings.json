@@ -1,23 +1,5 @@
 [
   {
-    "listing": "/pubs.html",
-    "items": [
-      "/pubs/2023-lnm-wheelchairs/2023-lnm-wheelchairs.html",
-      "/pubs/2022-futuret-ramps/2022-futuret-ramps.html",
-      "/pubs/2022-ijerph-proximity/2022-ijerph-proximity.html",
-      "/pubs/2015-tra-emissions/2015-tra-emissions.html",
-      "/pubs/2022-futuret-atspm/2022-futuret-atspm.html",
-      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
-      "/pubs/2022-jtlu-slowstreets/2022-jtlu-slowstreets.html",
-      "/pubs/2021-epb-parkshealth/2021-epb-parkshealth.html",
-      "/pubs/2021-findings-uvx/2021-findings-uvx.html",
-      "/pubs/2021-smartcities-via/2021-smartcities-via.html",
-      "/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html",
-      "/pubs/2015-tra-marta/2015-tra-marta.html",
-      "/pubs/2015-tra-learned/2015-tra-learned.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/2021-06-04-java/index.html",
@@ -26,6 +8,24 @@
       "/posts/sustainable_utahco/index.html",
       "/posts/safety/2020-06-02-transit-safety.html",
       "/posts/urbanchurch/2018-12-03-the-urban-church.html"
+    ]
+  },
+  {
+    "listing": "/pubs.html",
+    "items": [
+      "/pubs/2023-lnm-wheelchairs/2023-lnm-wheelchairs.html",
+      "/pubs/2022-futuret-ramps/2022-futuret-ramps.html",
+      "/pubs/2022-ijerph-proximity/2022-ijerph-proximity.html",
+      "/pubs/2022-futuret-atspm/2022-futuret-atspm.html",
+      "/pubs/2015-tra-emissions/2015-tra-emissions.html",
+      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
+      "/pubs/2022-jtlu-slowstreets/2022-jtlu-slowstreets.html",
+      "/pubs/2021-epb-parkshealth/2021-epb-parkshealth.html",
+      "/pubs/2021-findings-uvx/2021-findings-uvx.html",
+      "/pubs/2021-smartcities-via/2021-smartcities-via.html",
+      "/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html",
+      "/pubs/2015-tra-marta/2015-tra-marta.html",
+      "/pubs/2015-tra-learned/2015-tra-learned.html"
     ]
   }
 ]
