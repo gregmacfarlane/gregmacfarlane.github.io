@@ -1,0 +1,30 @@
+---
+title: "A utility-based approach to modeling systemic resilience of highway networks with an application in Utah "
+description: "*Working paper*"
+image: https://images.unsplash.com/photo-1565975346632-0d613d5a629b?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 
+author: 
+  - Greg Macfarlane
+  - Max Barnes
+  - Natalie Gray
+date: "2024-01-01"
+draft: true
+categories:
+  - resilience
+  - accessibility
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G.S., Barnes, M., \& Gray, N.M.(2024). 
+  A utility-based approach to modeling systemic resilience of highway networks with an application in Utah.
+  In *Transportation Research Board Annual Meeting*. Poster presentation. Washington, D.C.
+
+:::
+
+{{< downloadthis resiliency.pdf dname=macfarlane_trr_resiliency.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} 
+
+The resilience of transportation networks is an important consideration in management and planning, but practical techniques to identify systemically critical links are limited. Further, current practical techniques ignore that when transportation networks are damaged or degraded, people potentially change destinations and modes as well as travel routes. In this research, we develop a model to examine network highway resilience based on changes to mode and destination choice logsums, and apply this model to 41 scenarios representing the loss of links on the statewide highway network in Utah. The results of the analysis suggest a fundamentally different prioritization scheme than would be identified solely through a methodology based on increased travel times. 
+
+> Photo by Ethan Dow on [Unsplash](https://images.unsplash.com/photo-1565975346632-0d613d5a629b)
