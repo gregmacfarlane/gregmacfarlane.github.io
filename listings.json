@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/ped-crossings/2024-04-17-ped-crossings.html",
       "/posts/2021-06-04-java/index.html",
       "/posts/2021-04-16-winter-2021-projects/index.html",
       "/posts/covid-highways/2021-04-01-covid-highway-operations.html",
@@ -24,8 +25,8 @@
       "/pubs/2021-findings-uvx/2021-findings-uvx.html",
       "/pubs/2021-smartcities-via/2021-smartcities-via.html",
       "/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html",
-      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
       "/pubs/2015-tra-emissions/2015-tra-emissions.html",
+      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
       "/pubs/2015-tra-marta/2015-tra-marta.html",
       "/pubs/2015-tra-learned/2015-tra-learned.html"
     ]

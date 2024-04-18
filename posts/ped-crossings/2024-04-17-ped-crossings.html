@@ -6,10 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Gregory Macfarlane">
-<meta name="dcterms.date" content="2021-06-04">
+<meta name="author" content="Haidee Armstrong">
+<meta name="author" content="Daniel Carr">
+<meta name="author" content="Maleah Moore">
+<meta name="author" content="Mark Payne">
+<meta name="dcterms.date" content="2024-04-17">
 
-<title>Greg Macfarlane - Java systems and OpenTripPlanner for R</title>
+<title>Greg Macfarlane - Improving Crosswalk Safety in Provo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +24,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -152,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Java systems and OpenTripPlanner for R</h1>
+      <h1 class="title">Improving Crosswalk Safety in Provo</h1>
                       </div>
   </div>
     
@@ -160,16 +129,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="quarto-title-meta">
 
       <div>
-      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-heading">Authors</div>
       <div class="quarto-title-meta-contents">
-               <p>Gregory Macfarlane </p>
+               <p>Haidee Armstrong </p>
+               <p>Daniel Carr </p>
+               <p>Maleah Moore </p>
+               <p>Mark Payne </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 4, 2021</p>
+        <p class="date">April 17, 2024</p>
       </div>
     </div>
     
@@ -190,44 +162,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>I am using the <code>opentripplanner</code> package, which requires a specific version of Java (1.8, to be precise). This is an older version of Java, and so I have more than one JDK on my system (MacOS 11.2.3)</p>
-<p>I have been able to wrangle my java versions using the <code>jenv</code> command line tool. But Rstudio seems to ignore both the global and locally-defined java versions that I have specified. If I open a standard terminal pointed at my project folder, I get the same version of java with both the terminal and with R inside of that terminal.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">~/p/C$</span> java <span class="at">-version</span>                                                                                                                                     <span class="er">(</span><span class="ex">base</span><span class="kw">)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> version <span class="st">"1.8.0_192"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Java</span><span class="er">(</span><span class="ex">TM</span><span class="kw">)</span> <span class="ex">SE</span> Runtime Environment <span class="er">(</span><span class="ex">build</span> 1.8.0_192-b12<span class="kw">)</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Java</span> HotSpot<span class="er">(</span><span class="ex">TM</span><span class="kw">)</span> <span class="ex">64-Bit</span> Server VM <span class="er">(</span><span class="ex">build</span> 25.192-b12, mixed mode<span class="kw">)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">~/p/Community_Resources_2021</span> <span class="er">(</span><span class="ex">main↑1</span><span class="kw">|</span><span class="ex">✚3…</span><span class="kw">)</span> <span class="ex">$</span> R                                                                                                                                                 <span class="er">(</span><span class="ex">base</span><span class="kw">)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> version 4.0.5 <span class="er">(</span><span class="ex">2021-03-31</span><span class="kw">)</span> <span class="ex">--</span> <span class="st">"Shake and Throw"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Copyright</span> <span class="er">(</span><span class="ex">C</span><span class="kw">)</span> <span class="ex">2021</span> The R Foundation for Statistical Computing</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Platform:</span> x86_64-apple-darwin17.0 <span class="er">(</span><span class="ex">64-bit</span><span class="kw">)</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> is free software and comes with ABSOLUTELY NO WARRANTY.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">You</span> are welcome to redistribute it under certain conditions.</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">'license()'</span> or <span class="st">'licence()'</span> for distribution details.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Natural</span> language support but running in an English locale</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> is a collaborative project with many contributors.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">'contributors()'</span> for more information and</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">'citation()'</span> on how to cite R or R packages in publications.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">'demo()'</span> for some demos, <span class="st">'help()'</span> for on-line help, or</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">'help.start()'</span> for an HTML browser interface to help.</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">'q()'</span> to quit R.</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> system2<span class="kw">(</span><span class="st">"java"</span><span class="ex">,</span> <span class="st">"-version"</span><span class="kw">)</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> version <span class="st">"1.8.0_192"</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ex">Java</span><span class="er">(</span><span class="ex">TM</span><span class="kw">)</span> <span class="ex">SE</span> Runtime Environment <span class="er">(</span><span class="ex">build</span> 1.8.0_192-b12<span class="kw">)</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ex">Java</span> HotSpot<span class="er">(</span><span class="ex">TM</span><span class="kw">)</span> <span class="ex">64-Bit</span> Server VM <span class="er">(</span><span class="ex">build</span> 25.192-b12, mixed mode<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If I open a terminal in Rstudio, I also get the correct version of Java. But in the Rstudio R console, I get the most recent version of Java no matter what I have set.</p>
-<pre><code>system2("java", "-version")
-# openjdk version "15.0.1" 2020-10-20
-# OpenJDK Runtime Environment (build 15.0.1+9)
-# OpenJDK 64-Bit Server VM (build 15.0.1+9, mixed mode, sharing)</code></pre>
-<p>Turns out the issue is that Rstudio will use the <code>JAVA_HOME</code> variable regardless of what is set to run in the shell. This might not be ideal! But it is certainly not alone. I tried to follow the instructions to export this variable using <code>jenv</code> that I could piece together from <a href="https://github.com/jenv/jenv/issues/44">this issue</a>, but I was not entirely successful.</p>
-<p>I was able to fix the issue by creating a project-level <code>.Renviron</code> file setting the <code>JAVA_HOME</code> variable explicitly.</p>
-<pre><code>JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home"</code></pre>
+<p>Recently we have encountered some <a href="https://risk.byu.edu/risk-tip/crosswalk-safety">encouragement</a> from BYU Risk Management &amp; Safety to cross safely. Now, this indicates a few things. First, BYU considers crosswalks dangerous enough that students should be warned. Second, that there are safety steps pedestrians should be taking. Lastly, warnings about crosswalks are given to pedestrians, but it takes two to tango.</p>
+<p>There isn’t anything inherently wrong with warning pedestrians about crossing safely, but drivers are the ones providing most of the danger here. BYU may feel that they have more control over the student body and believe that most of us are pedestrians, but in another <a href="https://risk.byu.edu/risk-tip/pedestrian-safety#:~:text=Cross%20the%20street%20at%20a,flashlight%20and%20wearing%20reflective%20clothing">advice post</a>from BYU Risk Management, they use almost 450 words to give ideas about how to cross the street more carefully. The only advice they give to drivers is, “Please devote all of your skills and attention to driving your vehicle, especially when around pedestrians. Never use electronic devices while driving. Pull over if the call is urgent. And wear your seatbelt.” Surely if crossing the street requires a full page of advice on what clothes to wear and where to cross, then drivers can be told to do more than the bare minimum. All of the advice they give to drivers are already legal requirements.</p>
+<p>More directions should be given to drivers about how to interact with pedestrians, and more infrastructure should be built up to help drivers recognize pedestrian crossings and keep pedestrians safe.</p>
+<p>There are three main pieces of infrastructure that would make a big difference, and Provo already uses all three. Raised crosswalks, pedestrian refuges and bulb curbs make crossing safer for pedestrians and encourage drivers to slow down. The following is a brief examination of all three.</p>
+<p>Raised crosswalks: We see these on Center Street and on Campus Drive. The crosswalks are built to be level with the sidewalks, forcing the cars to go up and over a speed table. This increases the elevation of the pedestrians, which makes them easier to see. Because pedestrians don’t have to walk down into the road, and cars have to move up, it promotes a psychological idea that pedestrians have the right of way. And the speed table forces the cars to slow down. The federal Department of Transportation <a href="https://safety.fhwa.dot.gov/ped_bike/step/docs/techSheet_RaisedCW2018.pdf">reports</a> that raised sidewalks can reduce crashes by 45%.</p>
+<p>Pedestrian refuge: Right outside the Rec Center on 500 North there is a pedestrian refuge. In the median of the road, a little concrete pad is built with posts around it so pedestrians can wait there safely. This lets the pedestrian only consider one direction of traffic at once, which cuts in half the distance they have to travel. The Department of Transportation <a href="https://safety.fhwa.dot.gov/ped_bike/step/docs/techSheet_PedRefugeIsland2018.pdf">reports</a> that pedestrian refuges can reduce crashes by 32%.</p>
+<p>Curb bulbs, also known as curb extensions, serve a double purpose of calming traffic and making it easier for pedestrians to cross. We see examples of these on 200 East. At street intersections, the curb bulges out. This makes the distance that pedestrians cross shorter, and it also constricts the road which encourages drivers to slow down. Due to the bulge, pedestrian visibility increases because cars parked on the side of the street are no longer blocking their view.</p>
+<p>A prime example of a crosswalk that should have been designed better is on 900 E connecting the VASA parking lot to the gas station across the street. This crosswalk has the best intentions; it comes fully equipped with neon orange flags and constantly flashing lights. While this may appear helpful on paper, it truly isn’t. The flashing lights don’t turn off, leading to the drivers becoming accustomed to the seeming annoyance. The typical student/pedestrian doesn’t know what the flags are to be used for or are too embarrassed to carry them proudly across the street. Thus, pedestrians are forced to scurry across the road when there are no cars rather than drivers being alert to the pedestrians’ needs. Even then it’s hard to find a gap long enough to cross during and I often find myself running toward the second half of crossing because cars refuse to slow down even though that is the law. A traffic signal may be nice here, but if not, we suggest putting in rectangular rapid flashing beacons (RRFB). These lights are brighter than the lights currently found there and are triggered by a push button, making drivers aware of a present pedestrian instead of ignoring the never-ending flashing light. A pedestrian refuge median would also help pedestrians feel safer. More in depth research would be needed for this since taking out that middle lane would be harder for turning vehicles, but ultimately safety is more important. At the very least, the city should put in street lights at this intersection. Currently, there are no street lights on 900 E, or at least none that are bright enough, for someone to feel safe in the dark. This increases the risk for pedestrian harm; drivers already won’t stop if they see you and will definitely not stop if they can’t see you.</p>
+<p>The crosswalk between Cougar Dental and Southend Market on 700 E immediately south of campus is another example of a crosswalk that needs additional safety measures. There are three main factors that make this intersection unsafe: First, it is used frequently by pedestrians. The grocery store is immediately adjacent and produces a lot of foot traffic. Second, it is extremely close to the bend in the road that turns into 900 N. This creates a blind corner for the rapidly moving southbound traffic. Finally, there is another intersection just a few hundred feet south, where 800 N connects to 700 E. Many cars make the northbound turn, and it is difficult for pedestrians to properly gauge the speed of cars as they make the turn.</p>
+<p>Unfortunately, traffic calming measures would be difficult to implement at this location. The road is narrow and doesn’t need a refuge. The left turn needs to be preserved for cars coming out of 800 N and cars coming out of Campus Drive, so a median or curb extension isn’t feasible. A raised crosswalk seems promising, but the UVX line uses this portion of 700 E, and it is important to keep the bus moving as quickly as possible, not to mention that a speed table would be uncomfortable for the riders. The only options remaining are signage, flashing lights, and perhaps a different colored crosswalk, which are better than nothing. So again, we recommend putting in RRFB lights so that cars will be aware of pedestrians crossing the road. The US Federal Highway Administration <a href="https://highways.dot.gov/safety/proven-safety-countermeasures/rectangular-rapid-flashing-beacons-rrfb">reports</a> that flashing lights can increase motor vehicle yielding by 98% and reduces pedestrians involved by 47%.</p>
+<p>In conclusion, while pedestrians should take caution while crossing the road, we recommend that better infrastructure be built to help cars be more aware of pedestrians so they feel safer. At the crosswalk on 900 E, if a normal traffic light isn’t found necessary or is too costly, a pedestrian refuge would be appreciated to separate crossing each side of the road due to the wider road and a street lamp should be installed on both sides for added visibility. For both that crosswalk and the crosswalk near Cougar Dental, we recommend putting in RRFB lights. It should not take an accident for us to take action. We need to be proactive in the safety of our pedestrians today. Provo and Orem areas should know better since in 2018, a 15-year-old boy was hit and killed and in 2022, a 21-year-old woman was hit and killed. As cited <a href="https://kslnewsradio.com/2060176/utah-groups-advocate-for-safer-roads-honor-pedestrians-hit-and-killed/">in this article</a>, the father of the girl who died said this, “As we work to improve our infrastructure, these things can be prevented.” Provo, the time is now to improve road infrastructure to improve pedestrian safety. Even the installation of rectangular rapid flashing beacons and extra street lamps can go a long way. Let’s help pedestrians feel safe to cross by improving our infrastructure to increase visibility and help alert drivers when pedestrians are near.</p>
 
 
 

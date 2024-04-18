@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -95,16 +102,43 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Greg Macfarlane</span>
     </a>
@@ -116,25 +150,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pubs.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./pubs.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://gregmacfarlane.github.io/lab" rel="" target="">
- <span class="menu-text">Lab Manual</span></a>
+    <a class="nav-link" href="https://gregmacfarlane.github.io/lab"> 
+<span class="menu-text">Lab Manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -147,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -160,9 +194,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="blog">blog <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="blog">blog <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
 
 
 
@@ -198,30 +233,56 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="" data-listing-date-sort="1622764800000" data-listing-file-modified-sort="1706047541808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1713333600000" data-listing-file-modified-sort="1713456308677" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1335">
 <div class="thumbnail">
-<p><a href="./posts/2021-06-04-java/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external"></a></p><a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021-06-04-java/index.html">
 <h3 class="no-anchor listing-title">
-Java systems and OpenTripPlanner for R
+<a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external">Improving Crosswalk Safety in Provo</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external">Recently we have encountered some encouragement from BYU Risk Management &amp; Safety to cross safely. Now, this indicates a few things. First, BYU considers crosswalks…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/ped-crossings/2024-04-17-ped-crossings.html" class="no-external">
+<div class="listing-date">
+Apr 17, 2024
+</div>
+<div class="listing-author">
+Haidee Armstrong, Daniel Carr, Maleah Moore, Mark Payne
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1622786400000" data-listing-file-modified-sort="1674770678504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="652">
+<div class="thumbnail">
+<p><a href="./posts/2021-06-04-java/index.html" class="no-external"></a></p><a href="./posts/2021-06-04-java/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-06-04-java/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-06-04-java/index.html" class="no-external">Java systems and OpenTripPlanner for R</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-06-04-java/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 </div>
-<a href="./posts/2021-06-04-java/index.html">
 <div class="listing-description">
-I am using the <code>opentripplanner</code> package, which…
+<a href="./posts/2021-06-04-java/index.html" class="no-external">I am using the <code>opentripplanner</code> package, which requires a specific version of Java (1.8, to be precise). This is an older version of Java, and so I have more than one JDK on…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021-06-04-java/index.html">
+<a href="./posts/2021-06-04-java/index.html" class="no-external">
 <div class="listing-date">
 Jun 4, 2021
 </div>
@@ -231,30 +292,28 @@ Gregory Macfarlane
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1618531200000" data-listing-file-modified-sort="1706047541808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="" data-listing-date-sort="1618552800000" data-listing-file-modified-sort="1674770678504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
 <div class="thumbnail">
-<p><a href="./posts/2021-04-16-winter-2021-projects/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external"></a></p><a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021-04-16-winter-2021-projects/index.html">
 <h3 class="no-anchor listing-title">
-Covid and Transportation: Student Projects
+<a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external">Covid and Transportation: Student Projects</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 
 </div>
-<a href="./posts/2021-04-16-winter-2021-projects/index.html">
 <div class="listing-description">
-For their term projects this semester, the students in my Intro to Transportation class…
+<a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external">For their term projects this semester, the students in my Intro to Transportation class wrote blog posts summarizing the effects of COVID on various dimensions of…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021-04-16-winter-2021-projects/index.html">
+<a href="./posts/2021-04-16-winter-2021-projects/index.html" class="no-external">
 <div class="listing-date">
 Apr 16, 2021
 </div>
@@ -264,85 +323,81 @@ Gregory Macfarlane
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1706047541808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="quarto-post image-right" data-index="3" data-categories="" data-listing-date-sort="1617256800000" data-listing-file-modified-sort="1674770678504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1707">
 <div class="thumbnail">
-<p><a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html"> <p class="card-img-top"><img src="https://imgur.com/ULIbVNZ.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external"></a></p><a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
 <h3 class="no-anchor listing-title">
-Covid and Highway Operations
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external">Covid and Highway Operations</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 
 </div>
-<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
 <div class="listing-description">
-This is a post written by the listed student authors as part of their term project for <em>Introduction to Transportation Engineering</em> in Winter 2020.
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external">This is a post written by the listed student authors as part of their term project for <em>Introduction to Transportation Engineering</em> in Winter 2020.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html">
+<a href="./posts/covid-highways/2021-04-01-covid-highway-operations.html" class="no-external">
 <div class="listing-date">
 Apr 1, 2021
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1597536000000" data-listing-file-modified-sort="1706047541824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1597557600000" data-listing-file-modified-sort="1674770678520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <div class="thumbnail">
-<p><a href="./posts/sustainable_utahco/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/sustainable_utahco/index.html" class="no-external"></a></p><a href="./posts/sustainable_utahco/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/sustainable_utahco/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/sustainable_utahco/index.html">
 <h3 class="no-anchor listing-title">
-Can Utah County Choose to Grow Sustainably?
+<a href="./posts/sustainable_utahco/index.html" class="no-external">Can Utah County Choose to Grow Sustainably?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/sustainable_utahco/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-Last week the Deseret News ran a contributed opinion piece by Andrew Skabelund<sup>1</sup> in which he argued that the rapid development of Silicon Slopes in north Utah County comes at the cost of Utah County’s value as…
+<a href="./posts/sustainable_utahco/index.html" class="no-external">Last week the Deseret News ran a contributed opinion piece by Andrew Skabelund<sup>1</sup> in which he argued that the rapid development of Silicon Slopes in north Utah County comes at…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/sustainable_utahco/index.html">
+<a href="./posts/sustainable_utahco/index.html" class="no-external">
 <div class="listing-date">
 Aug 16, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="" data-listing-date-sort="1591056000000" data-listing-file-modified-sort="1706047541808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="5" data-categories="" data-listing-date-sort="1591077600000" data-listing-file-modified-sort="1692050011056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1325">
 <div class="thumbnail">
-<p><a href="./posts/safety/2020-06-02-transit-safety.html"> <p class="card-img-top"><img src="https://i.imgur.com/7txj1aA.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external"></a></p><a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/safety/2020-06-02-transit-safety.html">
 <h3 class="no-anchor listing-title">
-Transit Safety
+<a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external">Transit Safety</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 
 </div>
-<a href="./posts/safety/2020-06-02-transit-safety.html">
 <div class="listing-description">
-I came across this graphic from an APTA Factbook(p.&nbsp;20) which shows transit with an enormous safety…
+<a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external">I came across this graphic from an APTA Factbook(p.&nbsp;20) which shows transit with an enormous safety advantage over automobiles. I was curious if I could update the data…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/safety/2020-06-02-transit-safety.html">
+<a href="./posts/safety/2020-06-02-transit-safety.html" class="no-external">
 <div class="listing-date">
 Jun 2, 2020
 </div>
@@ -352,32 +407,30 @@ Gregory Macfarlane
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="blog" data-listing-date-sort="1392249600000" data-listing-file-modified-sort="1706047541824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="6" data-categories="blog" data-listing-date-sort="1392274800000" data-listing-file-modified-sort="1674770678520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="870">
 <div class="thumbnail">
-<p><a href="./posts/urbanchurch/2018-12-03-the-urban-church.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external"></a></p><a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
 <h3 class="no-anchor listing-title">
-The Urban Church
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external">The Urban Church</a>
 </h3>
 <div class="listing-subtitle">
-Mormons should be paying more attention to downtown cores.
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external">Mormons should be paying more attention to downtown cores.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('blog'); return false;">
 blog
 </div>
 </div>
-<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
 <div class="listing-description">
-Last night I read the surprising announcement that the Church of Jesus Christ of Latter-day Saints is financing the development and construction of a 32 floor residential and commercial building in the…
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external">Last night I read the surprising announcement that the Church of Jesus Christ of Latter-day Saints is financing the development and construction of a 32 floor residential…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html">
+<a href="./posts/urbanchurch/2018-12-03-the-urban-church.html" class="no-external">
 <div class="listing-date">
 Feb 13, 2014
 </div>
@@ -471,10 +524,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -484,8 +536,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -498,6 +559,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -541,6 +721,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -566,6 +747,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -626,6 +833,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
