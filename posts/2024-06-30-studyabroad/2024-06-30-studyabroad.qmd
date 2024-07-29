@@ -152,12 +152,13 @@ between interesting places on public transit; it was very rewarding to listen to
 the students during the rest of our time in Singapore talk about how they revisited
 the neighborhoods they saw on the scavenger hunt for meals or souvenirs.
 
-::: {#fig-scavenger layout-ncol=2}
+::: {#fig-scavenger layout="[[1,1], [1]]"}
 
 ![Sultan Mosque](https://byu.box.com/shared/static/7ufbawse5oibnto2y60wdqk9uz5x9o7c.jpg){#fig-scav1}
 
-![Merlion](https://byu.box.com/shared/static/oku5z2dj0smrn3w18u9bg4hbqu8u38s5.jpg){#fig-merlion}
 ![Little India](https://byu.box.com/shared/static/hj4cqdjuqoy53ue9cver0120wkyqoh9u.jpg){#fig-tooth}
+
+![Merlion](https://byu.box.com/shared/static/oku5z2dj0smrn3w18u9bg4hbqu8u38s5.jpg){#fig-merlion}
 
 Scavenger hunt selfies
 :::
