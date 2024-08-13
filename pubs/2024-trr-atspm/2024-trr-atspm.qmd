@@ -1,0 +1,31 @@
+---
+title: "Predicting directional traffic volume at intersections with automated traffic signal performance measures data using machine learning algorithms."
+description: "*Transportation Research Record*"
+image: https://images.unsplash.com/photo-1558270503-0afaece02b1b?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+author: 
+  - Bruce Wang
+  - Nancy Fulda
+  - Zhengyang Huang
+  - Grant Schultz
+  - Greg Macfarlane
+  - Joseph Arnesen
+  - Adnan Khayyat
+date: "2024-06-19"
+draft: false
+categories:
+  - traffic performance
+  - machine learning
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Wang, B., Fulda, N., Huang, Z., Schultz, G. G., Macfarlane, G. S., Arnesen, J., & Khayyat, A. (2024). Predicting Directional Traffic Volume at Intersections with Automated Traffic Signal Performance Measures Data Using Machine Learning Algorithms. Transportation Research Record. <https://doi.org/10.1177/03611981241252829>
+:::
+
+<!-- {{< downloadthis Emissions.pdf dname=binder_tra_emissions.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} -->
+
+Automated traffic signal performance measures (ATSPM) have become widely adopted and utilized by state and local agencies in the U.S. for collecting real-time traffic data 24 h a day, 7 days a week. These agencies have developed new performance measures and applications to address their local transportation planning needs. However, recent research has identified data quality issues in the collected data from ATSPM systems. Specifically, the traffic volumes collected through ATSPM exhibit data anomalies that do not accurately reflect the actual traffic patterns at intersections. As such, there is a need to address the data quality issues found in ATSPM datasets. The purpose of this paper is to evaluate the use of machine learning algorithms and statistical methods to predict traffic volume at intersections. Existing traffic volume data, along with additional metrics such as timestamps, weather conditions, crash data, and holidays, are evaluated to predict traffic volume and address the data anomalies present in ATSPM datasets. Two statistical methods and four machine learning algorithms are evaluated to determine their ability to predict traffic volumes. By comparing the root mean square error (RMSE) and the mean absolute percentage error (MAPE) between each model, the results demonstrate that the long short-term memory (LSTM) model exhibits the lowest error in predicting traffic volume compared with the other models. The LSTM model achieves an RMSE as low as 9.4 vehicles and an MAPE as low as 35%. By leveraging the LSTM model, traffic agencies can enhance the quality of their ATSPM data, enabling better decision-making for traffic operations by their engineers and planners.
+
+> Photo by James Day on [Unsplash](https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-emJb5Vvdjx8)
