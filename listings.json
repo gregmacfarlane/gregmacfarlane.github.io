@@ -16,6 +16,7 @@
     "listing": "/pubs.html",
     "items": [
       "/pubs/2024-resiliency/2024-resiliency.html",
+      "/pubs/2024-abm-imtsim/2024-abm-imtsim.html",
       "/pubs/2024-trr-atspm/2024-trr-atspm.html",
       "/pubs/2024-japa-vmt/2024-japa-vmt.html",
       "/pubs/2023-futuret-missing/2023-futuret-missing.html",
@@ -28,8 +29,8 @@
       "/pubs/2021-findings-uvx/2021-findings-uvx.html",
       "/pubs/2021-smartcities-via/2021-smartcities-via.html",
       "/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html",
-      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
       "/pubs/2015-tra-emissions/2015-tra-emissions.html",
+      "/pubs/2015-trc-ridership/2015-trc-ridership.html",
       "/pubs/2015-tra-marta/2015-tra-marta.html",
       "/pubs/2015-tra-learned/2015-tra-learned.html"
     ]
