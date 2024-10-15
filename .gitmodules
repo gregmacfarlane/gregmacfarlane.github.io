@@ -1,0 +1,3 @@
+[submodule "presentations/udot-gittraining"]
+	path = presentations/udot-gittraining
+	url = git@github.com:gregmacfarlane/udot-gittraining.git
