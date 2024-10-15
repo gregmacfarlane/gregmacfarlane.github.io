@@ -1,0 +1,50 @@
+---
+title: "GitHub Training at UDOT"
+author: 
+  - Greg Macfarlane
+date: "10/15/2024"
+---
+
+I ran a training teaching UDOT staff and members of related agencies to use GitHub.
+
+::: {.callout-tip}
+[The presentation slides are here.](/presentations/udot-gittraining/presentation.html)
+:::
+
+## Description
+A two-hour introduction to software version control for transportation analysts. This training is aimed at those who have heard of Git, but have never used it, or who have used it but didn’t really know what they were doing.
+
+## Materials
+Participants will need to bring a computer on which they have permissions to install software, or have previously installed
+  - Git (https://git-scm.com/downloads)
+  - GitHub Desktop (https://desktop.github.com/)   
+  - Visual Studio Code (https://code.visualstudio.com/)
+Additionally, participants should create a free account at <github.com> if they have not done so already.
+
+## Learning Outcomes
+Participants who complete this course will:
+  - Understand and describe the purpose of version control in transportation analysis projects.
+  - Create a git repository and commit changes to text files using the command line as well as third-party graphical git clients.
+  - Use GitHub to collaborate with others on a shared project.
+
+## Agenda
+1. Introduction
+  * 15-minute discussion on the purpose of version control.
+  * Review Questions
+    - What problem does version control solve?
+    - Is there a document you have worked on that might benefit from version control?
+2. The Git Workflow
+  * 30-minute interactive tutorial
+  * Review Questions
+    - What is the difference between staging changes and committing changes?
+    - How often should you commit changes?
+3. Collaborating in Git with GitHub
+  * 30-minute interactive tutorial
+  * Review Questions
+    - What is the difference between committing changes and pushing changes?
+    - Draw a diagram of what happens when changes from two users are merged together.
+4. Next Steps
+  * 15-minute discussion on transportation analysis projects that are managed in GitHub, and where to learn more.
+  * Review Questions
+    - Is there a project that you want to move into git for version control?
+    - Is there a project that you want to move into GitHub for collaboration?
