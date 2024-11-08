@@ -17,13 +17,13 @@ categories:
 
 ## Citation
 
-Macfarlane, G.S., Barnes, M., \& Gray, N.M.(2024). 
+Macfarlane, G.S., Barnes, M., \& Gray, N.M. (2024). 
   A utility-based approach to modeling systemic resilience of highway networks with an application in Utah.
-  *Journal of Transportation Engineering, Part A: Systems*, forthcoming.
+  *Journal of Transportation Engineering, Part A: Systems*, 151(1). <https://ascelibrary.org/doi/10.1061/JTEPBS.TEENG-8534>
 
 :::
 
-{{< downloadthis resiliency.pdf dnameForthcoming in =macfarlane_trr_resiliency.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} 
+{{< downloadthis resiliency.pdf dname=macfarlane_trr_resiliency.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} 
 
 The resilience of transportation networks is an important consideration in policy, management and planning, but practical techniques to identify systemically critical links are limited. Further, current practical techniques ignore that when transportation networks are damaged or degraded, people potentially change destinations and modes as well as travel routes. In this research, we develop a model to examine network highway resilience based on changes to mode and destination choice logsums, and apply this model to 41 scenarios representing the loss of links on the statewide highway network in Utah. The results of the analysis suggest a fundamentally different prioritization scheme than would be identified solely through a methodology based on increased travel times. Beyond this, the comparable user costs of the logsum method are generally lower than those considering only the value of increased travel times.
 
