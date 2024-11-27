@@ -1,0 +1,33 @@
+---
+title: "Classifying Location Points as Daily Activities using Simultaneously Optimized DBSCAN-TE Parameters."
+description: "*Findings*"
+image: https://images.unsplash.com/photo-1495592822108-9e6261896da8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+author: 
+  - Greg Macfarlane
+  - Gillian Riches
+  - Emily Youngs
+  - Jared Nielsen
+date: "2024-04-05"
+draft: false
+categories:
+  - machine learning
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Macfarlane, G.S., Riches, G., Youngs, E.K.,
+  Nielsen, J.A. (2024). Classifying location points as daily activities using
+  simultaneously optimized DBSCAN-TE parameters.  \textit{Findings}.
+  <https://doi.org/10.32866/001c.116197>
+
+:::
+
+{{< downloadthis paper.pdf dname=binder_tra_emissions.pdf label="Download Open-Access" icon=file-earmark-pdf type=primary >}}
+
+Location-based services data collected from mobile phones represent a potentially powerful source of travel behavior data, but transforming the location points into semantic activities – where and when activities occurred – is non-trivial. Existing algorithms to label activities require multiple parameters calibrated to a particular dataset. In this research, we apply a simulated annealing optimization procedure to identify the values of four parameters used in a density-based spatial clustering with additional noise and time entropy (DBSCAN-TE) algorithm. We develop a spatial accuracy scoring function to use in the calibration methodology and identify paths for future research.
+
+> Photo by <a href="https://unsplash.com/@pietrozj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pietro Jeng</a> on <a href="https://unsplash.com/photos/green-and-red-light-wallpaper-n6B49lTx7NM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
