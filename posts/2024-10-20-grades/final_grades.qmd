@@ -1,0 +1,165 @@
+---
+title: "CCE 102 Grades Analysis"
+author: "Macfarlane"
+---
+
+After midterm 1, I promised to evaluate at the end of the course how students
+performed on that exam in comparison against their other work in the class. And
+if the midterm 1 grade was uniquely unrepresentative of the student's other
+work, I would take that into account in a final grade. This is that analysis.
+
+First, I have an export directly from Learning Suite of all the grades
+in the course.
+```{r setup, include = FALSE}
+library(tidyverse)
+ggplot2::theme_set(theme_bw())
+
+# all of the grades for the entire course as in Learning Suite
+all <- read_csv("~/Downloads/CCE 102 - Sustainable Infrastructure (2024-12-19).csv")
+```
+
+
+## Exams
+
+First, I extract the exams and compute their weighted contribution to the
+exams grades as defined in Learning Suite.
+
+```{r exams}
+# Grades on midterms and final
+exams <- all |> 
+  transmute(
+    surname = `Last Name`, 
+    id = `Net ID`, 
+    midterm1 = `Infrastructure and Society Midterm (%)`/100,
+    midterm2 = (`Midterm 2` + `Midterm 2 - Instructor Graded`)/45,
+    final = `Sustainable Infrastructure Final Exam`/82, 
+    exams_total = (midterm1 * 10 + midterm2 * 10 + final * 15) / 35
+  )
+```
+
+The graphic below shows the grade distribution of students in the class. While
+the mean is lower than I might like in general, it's not **really** low. But we'll
+move forward regardless.
+```{r exam1, message = FALSE}
+ggplot(exams |> filter(midterm1 > 0), 
+       aes(x = midterm1)) + geom_histogram()
+```
+
+
+First, is there a big difference between student's scores on midterm 1 and 
+their scores on other weighted exams? Yes, but there are lots of students
+who did *better* on midterm 1 than on their other exams. It is interesting that
+the students with high overall exam scores seemed to underperform on Midterm 1
+more than students with lower overall scores. The red line in the plot below shows
+where the points would be if the midterm 1 score matched the overall exam score.
+
+```{r all_exams}
+ggplot(exams |> filter(midterm1 > 0), aes(y = midterm1, x = exams_total)) + 
+  geom_abline(slope = 1, intercept = 0, color = "red") +
+  geom_point() + stat_smooth(method = "lm")
+```
+
+
+## Homework and other assignments.
+
+Of course, there are other assignments in the class. Let's get some of these 
+in here as well. I'm not going to get all of the homework, but rather create a set
+of the most impactful assignments.
+
+```{r homework}
+homework <- all |> 
+  transmute(
+    surname = `Last Name`, 
+    id = `Net ID`, 
+    sdg = `Sustainable Development Goals Essay`/15,
+    hwann = `HW: Annuities and Gradients`/25,
+    hwnpv = `HW: Equivalence`/25,
+    hwirr = `HW: Internal Rate of Return`/25,
+    interview  = `Culture Interview` / 20,
+    book = `Book Review`/10,
+    packback = `Packback`/100,
+  ) |> 
+  mutate(
+    homework_total = (sdg*3 + hwann*3 + hwnpv*3 + hwirr*2 + interview*3 + book*3 + packback * 8)/(25)
+  )
+
+data <- left_join(exams, homework, by = c("surname", "id"))
+```
+
+The graph below shows midterm 1 against all of the other (non-exam homework). 
+It's basically the same trend as the last plot.
+```{r homework_asses, message = FALSE}
+ggplot(data |> filter(midterm1 > 0), aes(y = midterm1, x = homework_total)) + 
+  geom_abline(slope = 1, intercept = 0, color = "red") +
+  geom_point() + stat_smooth(method = "lm")
+```
+
+
+## Prep
+
+Let's see what share of the prep assignments the students did.
+
+```{r prep}
+prep <- all |> 
+  select( surname = `Last Name`,  id = `Net ID`,  contains("Pre-class" ) ) |> 
+  select( surname, id,  contains("%" ) ) |> 
+  pivot_longer(!surname:id, names_to = "assignment", values_to = "value") |> 
+  group_by(id) |> 
+  mutate(complete = value > 50) |> 
+  summarise(completed = sum(complete) / 24)
+
+data <- left_join(data, prep, by = "id")
+```
+
+There is a very slight correlation between this.
+```{r prep2, message = FALSE}
+ggplot(data |> filter(midterm1 > 0), aes(y = midterm1, x = completed)) + 
+  geom_abline(slope = 1, intercept = 0, color = "red") +
+  geom_jitter() + stat_smooth(method = "lm")
+```
+
+
+## Model
+
+Let's build a logistic model predicting the midterm 1 score as a function of 
+the student's other work. This is a quasi-binomial model. It would be interesting
+to explore some [Bayesian modeling techniques for this problem](https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/#b-beta-regression-bayesian-style), but I'm time constrained.
+
+```{r model}
+model <- glm(midterm1 ~ midterm2 + final + sdg + hwann + hwnpv + hwirr + 
+               interview + book + packback + completed, data = data, 
+             family = quasibinomial())
+```
+
+
+```{r modelsummary}
+library(modelsummary)
+modelsummary(model, stars = TRUE, estimate = "{estimate} [{conf.low}, {conf.high}]",
+             statistic = NULL)
+```
+
+These are interesting model results. Basically the only element (here) that affects
+the midterm 1 score is the grade on the NPV homework. Gettign a better score on the 
+interview and book review has a small negative relationship, but isn't very predictive.
+
+
+What if we do random forest regression instead? This gets us similar results. 
+Unsurprisingly, the total exam score is the most important element. 
+
+```{r randomforest}
+library(randomForest)
+set.seed(42)
+midterm1.rf <- randomForest(midterm1 ~ ., data = data |> select(-surname, -id), 
+                            mtry=3, importance = TRUE, na.action = na.omit)
+## Show "importance" of variables: higher value mean more important:
+round(importance(midterm1.rf), 2)
+```
+
+Let's throw the predicted value on the dataset and plot how it does. Overall,
+this is a pretty good fit and shows that midterm 1 is not necessarily out of line with the other assessments students have done. Midterm 1 did seem to benefit students who have somewhat underperformed on their other work, while penalizing students who have been generally better prepared overall. Some adjustment to the class curve is probably warranted, mostly at the upper end of the grade distribution. 
+```{r rfpredict}
+data$predict_m1 <- predict(midterm1.rf)
+ggplot(data |> filter(midterm1 > 0), aes(x = midterm1, y = predict_m1)) + 
+  geom_abline(slope = 1, intercept = 0, color = "red") +
+  geom_point() + stat_smooth(method = "lm")
+```
