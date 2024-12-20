@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2024-10-20-grades/final_grades.html",
       "/posts/2024-10-15-github/2024-10-15-github.html",
       "/posts/2024-06-30-studyabroad/2024-06-30-studyabroad.html",
       "/posts/ped-crossings/2024-04-17-ped-crossings.html",
@@ -32,9 +33,9 @@
       "/pubs/2021-smartcities-via/2021-smartcities-via.html",
       "/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html",
       "/pubs/2015-trc-ridership/2015-trc-ridership.html",
-      "/pubs/2015-tra-emissions/2015-tra-emissions.html",
       "/pubs/2015-tra-marta/2015-tra-marta.html",
-      "/pubs/2015-tra-learned/2015-tra-learned.html"
+      "/pubs/2015-tra-learned/2015-tra-learned.html",
+      "/pubs/2015-tra-emissions/2015-tra-emissions.html"
     ]
   }
 ]
