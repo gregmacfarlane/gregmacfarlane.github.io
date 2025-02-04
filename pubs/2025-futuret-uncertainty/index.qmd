@@ -1,0 +1,27 @@
+---
+title: "Evaluating the impacts of parameter uncertainty in a practical transportation demand model"
+description: "*Future Transportation*"
+image: https://images.unsplash.com/photo-1480843669328-3f7e37d196ae?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 
+author: 
+  - Natalie Gibbons
+  - Greg Macfarlane
+date: "2025-02-04"
+draft: false
+categories:
+  - travel modeling
+  - uncertainty
+---
+
+::: {.callout-note title="Citation" appearance="simple"}
+Gibbons, N. & Macfarlane, G.S. (2025). 
+  Evaluating the impacts of parameter uncertainty in a practical transportation
+  demand model. \textit{Future Transportation}, 5 (1). \url{https://doi.org/10.3390/futuretransp5010015}
+:::
+
+[Project repository](https://github.com/byu-transpolab/parameter_uncertainty){.btn .btn-outline-primary .btn role="button" icon=fa-brands-github} 
+{{< downloadthis futuretransp-05-00015.pdf dname=gibbons_uncertainty.pdf label="Download Open Access" icon=file-earmark-pdf type=primary >}}
+
+The inherent uncertainty in travel forecasting models—arising from potential and unknown errors in input data, parameter estimation, or model formulation—is receiving increasing attention from both the scholarly and practicing communities. In this research, we investigate the variance in forecasted traffic volumes resulting from varying the mode and destination choice parameters in an advanced trip-based travel demand model. Using Latin hypercube sampling to construct several hundred combinations of parameters across the plausible parameter space, we introduce substantial changes to implied travel impedances and modal utilities, on the order of a 10 percent variation. However, the aggregate effects of these changes on forecasted traffic volumes are small, with a variation of approximately 1 percent on high-volume facilities. It is likely that in this example—and perhaps in others—the network assignment places constraints on the possible volume solutions and limits the practical impacts of parameter uncertainty. Nevertheless, parameter uncertainty may not be the largest contributor to error in practical travel forecasts. Further research should examine the robustness of this finding across other less constrained networks and within activity-based travel model frameworks.
+
+> Photo by <a href="https://unsplash.com/@dekubaum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dennis Kummer</a> on <a href="https://unsplash.com/photos/aerial-photography-of-city-52gEprMkp7M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
