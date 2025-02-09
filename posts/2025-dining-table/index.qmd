@@ -96,7 +96,7 @@ with dimensions that would work for our space. I joined the boards with
 glue and biscuits into two separate pieces, and then went back to BYU and
 had Ben help me plane the two pieces into something smooth and nice.
 The final glue up required a small amount of extra clamping to compensate for bends in 
-the boards (see the back of @fig-fig-glueup).
+the boards (see the back of @fig-glueup).
 
 ::: {#fig-top layout-ncol=2}
 ![Layout](https://imgur.com/ThN1HBH){#fig-layout height=400}
