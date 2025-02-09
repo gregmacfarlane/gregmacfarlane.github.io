@@ -1,0 +1,145 @@
+---
+title: "My new dining table"
+author: "Greg Macfarlane"
+date: "2025-02-09"
+categories: [Personal, DIY]
+---
+
+# Introduction
+
+In the 1990's, my family sold the cherry orchard in Weber County that had
+belonged to my great grandfather Hubert Adams Macfarlane. My dad and his brother
+collaborated to haul away and rough mill a fair amount of the wood from the
+trees in that orchard. This wood sat in my parent's garage for about 30 years,
+too valuable to discard but without a lot of attention paid to what might happen
+to it. I took some at one point and made a butcher block cutting board for
+my parents, and my uncle made a mantle for his fireplace, but that was about it.
+
+![Rough milled cherry wood](https://imgur.com/zbVGpG1)
+
+A few years ago I was depressed for a number of reasons and started watching
+woodworking videos on YouTube; I found the videos of people with saws and chisels and
+routers and planes making beautiful things soothing.
+I was interested in woodworking (cf. the butcher block) but lacked the skill or
+tools or workshop to really get started on it, but the idea came to my mind to
+eventually make a dining table out of grandpa Bert's wood. And if there was
+enough wood, maybe a bench for the table as well.
+
+# Table base
+In Fall 2022 I had finalized my divorce and decided that this task would help me
+get ready for whatever happened in my life next. I signed up to take a welding
+class through UVU continuing adult education, and got access to the Provo High
+School metals shop. The project I chose for this class was the base for my
+dining table.
+
+I invited Jenny Ostraff --- a good friend from high school --- to take the
+welding class with me. I think we had a great time. 
+
+![In the metals shop.](https://imgur.com/mK9VR0b){#fig-welders}
+
+The design wasn't going to be terribly complex, but I hoped it would be modern
+and distinctive. I dusted off my old drafting skills and downloaded Fusion 360
+through my academic license. The design (shown in @fig-design) would be a solid
+slab of wood supported by two trapezoidal steel frames welded at the corners. 
+
+![Table and bench design in Autodesk Fusion 360.](https://imgur.com/ILuScXy){#fig-design}
+
+On the pillars of these frames, I used the shop's plasma cutter to cut a pattern
+into the steel (see @fig-pattern). Jenny is an artist and helped select and
+transform a good one.  A little organic, but very modern. I am a professional
+civil engineer and I took a class in structural steel design, which helped me 
+know that I needed to potentially worry about how much material I was taking out
+of the steel. At the same time, I know I'm not the right kind of engineer to
+know enough about this to do it myself. I talked to my colleague Johnn Judd, 
+who helped me determine that the critical buckling load of my table legs is about 
+1200 lbs, which I think provides enough of a safety factor over even the most
+robust feast.
+
+I finished the table base in Spring 2023, and it spent the next couple of years in 
+my parent's garage while I:  
+
+  1. Moved into an apartment without a workspace or enough space for a dining table
+  1. Got married to Jenny
+  1. Bought a house with a garage and a dining area
+
+Once we had the house, I took the bases to a local metal fabricator who
+powdercoated it. I was pretty happy with how it all turned out, as seen in @fig-coated.
+
+
+::: {#fig-bases layout-ncol=2}
+![Pattern cut into legs.](https://imgur.com/WGJGsp8){#fig-pattern height=400}
+
+![Finished with powdercoating.](https://imgur.com/q3JH4PA){#fig-coated height=400}
+
+Table and bench bases.
+:::
+
+# Table Top
+
+Having purchased a house that Jenny and I intend to stay in for a while, we had the 
+necessary space and parameters to finish our table.
+I worked with my good friend Ben Ward at the BYU carpentry shop to mill the rough
+boards into something that would be more suitable to work with.
+
+![Milling the boards.](https://imgur.com/bhTLuhw){#fig-milling}
+
+But I didn't want the table to be my first serious project, given the 
+sentimental (and financial) value of the wood I was going to use. But
+I needed open shelving for my newly remodeled kitchen, and so I bought 
+a bit of cherry wood to give me a warmup.
+
+![Shelving](https://imgur.com/zfV9NSN){#fig-shelving}
+
+Doing this little shelving project was actually useful, because the leftover
+wood from that project is exactly what I needed to finish the layout for the table
+with dimensions that would work for our space. I joined the boards with 
+glue and biscuits into two separate pieces, and then went back to BYU and
+had Ben help me plane the two pieces into something smooth and nice.
+The final glue up required a small amount of extra clamping to compensate for bends in 
+the boards (see the back of @fig-fig-glueup).
+
+::: {#fig-top layout-ncol=2}
+![Layout](https://imgur.com/ThN1HBH){#fig-layout height=400}
+
+![Glue up](https://imgur.com/7BKWOwy){#fig-glueup height=400}
+
+Gluing the table.
+:::
+
+I mounted the table to the base with 1/4 20 carriage bolts, using holes I had
+drilled into the tops of the bases and threaded brass inserts embedded
+underneath the table. The bottom of the bases uses leveling feet secured with 
+nuts and finished with acorn nuts. I finished the surface with three coats of
+oil-based polyurethane to really make the grain of the heritage cherry wood
+shine.
+
+![With fresh polyurethane](https://imgur.com/SHaIpJa){#fig-coating}
+
+## Wobble
+
+I noticed some vibration in the steel frames as I moved them around the shop,
+but figured the weight of the table would dampen the vibration. Instead,
+it turned the table into a pendulum: bumping the top would cause the whole table
+to shake for several seconds. So I went back to Johnn to talk about how I didn't
+understand structural vibrations either. He gave me some ideas, and
+I decided to use high-strength tensioning cable and turnbuckles to cross-brace
+the frame. I was prepared to do a full $X$-shape, but one diagonal in each 
+frame seems to sufficiently increase the stiffness. Orienting them in the same
+direction keeps rotational forces from starting vibrations as well. 
+
+![Cross-bracing](https://imgur.com/NwJK8BI){#fig-bracing}
+
+The cable makes it hard to store chairs at the heads of the table, and
+it interferes modestly with the person sitting there, but it's not terrible.
+And it's better than wobbling.
+
+# Conclusion
+
+![Installed in the kitchen.](https://imgur.com/gkOpdmq){#fig-final}
+
+I think it looks good. The bench means we can seat either two adults or a battery of nieces.
+
+It was fun to do this project with Jenny who started her involvement as a friend
+I was talking to about this wild idea I had, and who has seen it to completion as the
+partner who is thrilled to have it in her dining room forever. 
+
