@@ -48,10 +48,10 @@ On the pillars of these frames, I used the shop's plasma cutter to cut a pattern
 into the steel (see @fig-pattern). Jenny is an artist and helped select and
 transform a good one.  A little organic, but very modern. I am a professional
 civil engineer and I took a class in structural steel design, which helped me 
-know that I needed to potentially worry about how much material I was taking out
-of the steel. At the same time, I know I'm not the right kind of engineer to
-know enough about this to do it myself. I talked to my colleague Johnn Judd, 
-who helped me determine that the critical buckling load of my table legs is about 
+know that I needed to potentially worry about how much material I took out
+of the steel. At the same time, I'm not the right kind of engineer to do this
+myself. I talked to my colleague Johnn Judd, 
+who helped me determine that the critical buckling load of my table legs is at least
 1200 lbs, which I think provides enough of a safety factor over even the most
 robust feast.
 
@@ -81,17 +81,17 @@ necessary space and parameters to finish our table.
 I worked with my good friend Ben Ward at the BYU carpentry shop to mill the rough
 boards into something that would be more suitable to work with.
 
-![Milling the boards.](https://imgur.com/bhTLuhw){#fig-milling}
+![Milling the boards](https://imgur.com/bhTLuhw){#fig-milling}
 
 But I didn't want the table to be my first serious project, given the 
-sentimental (and financial) value of the wood I was going to use. But
+sentimental (and financial) value of the wood I was going to use. 
 I needed open shelving for my newly remodeled kitchen, and so I bought 
-a bit of cherry wood to give me a warmup.
+a bit of cherry wood to use as a warmup.
 
 ![Shelving](https://imgur.com/zfV9NSN){#fig-shelving}
 
-Doing this little shelving project was actually useful, because the leftover
-wood from that project is exactly what I needed to finish the layout for the table
+Doing this little shelving project was also useful in that the leftover
+wood from that project was what I needed to finish the layout for the table
 with dimensions that would work for our space. I joined the boards with 
 glue and biscuits into two separate pieces, and then went back to BYU and
 had Ben help me plane the two pieces into something smooth and nice.
@@ -103,7 +103,7 @@ the boards (see the back of @fig-glueup).
 
 ![Glue up](https://imgur.com/7BKWOwy){#fig-glueup height=400}
 
-Gluing the table.
+Gluing the table
 :::
 
 I mounted the table to the base with 1/4 20 carriage bolts, using holes I had
@@ -135,7 +135,7 @@ And it's better than wobbling.
 
 # Conclusion
 
-![Installed in the kitchen.](https://imgur.com/gkOpdmq){#fig-final}
+![Installed in the kitchen](https://imgur.com/gkOpdmq){#fig-final}
 
 I think it looks good. The bench means we can seat either two adults or a battery of nieces.
 
