@@ -17,13 +17,12 @@ about:
       href: https://scholar.google.com/citations?user=MEztOCoAAAAJ&hl=en
 ---
 
-I am an assistant professor of Civil Engineering at BYU. I am interested in
-transportation forecasting models, including activity-based models of travel 
-behavior and applications of emerging datasets and spatial econometrics. I
-am particularly interested in improving the methods of modeling and how the tools of transport modeling might also be applied in other fields.
+<!-- written by chatGPT with some corrections --> 
+Gregory S. Macfarlane is an accomplished transportation researcher and educator specializing in travel demand modeling, data-driven transportation planning, and urban mobility analysis. He is currently an Assistant Professor in the Department of Civil and Construction Engineering at Brigham Young University. His research integrates advanced statistical and econometric methods to enhance transportation system efficiency, with a focus on multimodal networks, accessibility, and emerging mobility technologies.
 
-I teach courses on sustainability, transportation engineering, transport modeling,
-and traffic simulation.
+Dr. Macfarlane holds a Ph.D. in Civil Engineering from the Georgia Institute of Technology, where he specialized in travel behavior and transportation data analytics. He has contributed to numerous federally and locally funded research projects and has authored multiple peer-reviewed publications in top transportation journals. His expertise extends to developing innovative methods for travel demand forecasting and transportation system performance evaluation.
+
+In addition to his research, Dr. Macfarlane is an experienced educator, teaching courses in transportation planning, urban analytics, and geographic information systems. He is passionate about mentoring students and building interdisciplinary collaboration to address modern urban mobility challenges.
 
 {{< downloadthis static/cv.pdf dname=macfarlane_cv label="Download My CV" icon=file-earmark type=primary >}}
 
