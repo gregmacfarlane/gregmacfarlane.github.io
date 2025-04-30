@@ -1,6 +1,8 @@
 ---
 title: "CCE 102 Grades Analysis"
 author: "Macfarlane"
+date: "2024-12-29"
+categories: [Teaching]
 ---
 
 After midterm 1, I promised to evaluate at the end of the course how students
