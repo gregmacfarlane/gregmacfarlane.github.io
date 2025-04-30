@@ -108,9 +108,10 @@ students earning B- and C grades to make me happy.
 #| fig-cap: "Final Grades awarded by major, all semesters."
 data |>
     mutate(final_grd = factor(final_grd, levels = c("A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E", "W"))) |>
-ggplot(aes(x = final_grd, fill = major)) +
-    geom_bar(, position = "dodge") + 
-    xlab("Final Grade") + ylab("Number of Students")
+    ggplot(aes(x = final_grd, fill = major)) +
+    geom_bar(, position = "dodge") +
+    xlab("Final Grade") + ylab("Number of Students") +
+    scale_fill_manual("Major", values = pal) +
     theme_bw()
 ```
 
