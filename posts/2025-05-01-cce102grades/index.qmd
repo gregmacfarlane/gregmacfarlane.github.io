@@ -139,3 +139,35 @@ data |>
     kbl(col.names = c("Semester", "N Complete", "D/E", "W", "DEW [%]"), digits = 2)  |>
     kable_styling()
 ```
+
+
+## Assessment Information 
+
+For the CE program, this class is used to assess Student Outcome 4. 
+
+```{r abet}
+abet <- read_csv(file.path(folder, "2025-winter-abet.csv"))
+
+assessment <- left_join(enrollment, abet, by = "netid") |>
+  filter(semester == "Winter 2025") |> 
+  filter(major == "Civil Engineering") |> 
+  mutate(final_levels = case_when(
+    final == 10 ~ "Exceeds expectations",
+    final %in% c(7, 8, 9) ~ "Meets expectations",
+    final == 6 ~ "Developing",
+    final < 6 ~ "Unsatisfactory",
+    TRUE ~ "Unsatisfactory",
+  ),
+  final_levels = factor(final_levels, levels = c("Unsatisfactory", "Developing", "Meets expectations", 
+    "Exceeds expectations"))
+  ) 
+
+assessment |>
+  group_by(final_levels) |>
+  summarise(n = n())
+
+
+
+ggplot(assessment, aes(x = final_levels) ) +
+  geom_bar()
+```
