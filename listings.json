@@ -1,5 +1,22 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2025-05-01-cce102grades/index.html",
+      "/posts/2025-dining-table/index.html",
+      "/posts/2024-10-20-grades/final_grades.html",
+      "/posts/2024-10-15-github/2024-10-15-github.html",
+      "/posts/2024-06-30-studyabroad/2024-06-30-studyabroad.html",
+      "/posts/ped-crossings/2024-04-17-ped-crossings.html",
+      "/posts/2021-06-04-java/index.html",
+      "/posts/2021-04-16-winter-2021-projects/index.html",
+      "/posts/covid-highways/2021-04-01-covid-highway-operations.html",
+      "/posts/sustainable_utahco/index.html",
+      "/posts/safety/2020-06-02-transit-safety.html",
+      "/posts/urbanchurch/2018-12-03-the-urban-church.html"
+    ]
+  },
+  {
     "listing": "/pubs.html",
     "items": [
       "/pubs/2025-futuret-uncertainty/index.html",
@@ -22,23 +39,6 @@
       "/pubs/2015-tra-marta/2015-tra-marta.html",
       "/pubs/2015-tra-learned/2015-tra-learned.html",
       "/pubs/2015-tra-emissions/2015-tra-emissions.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/2025-05-01-cce102grades/index.html",
-      "/posts/2025-dining-table/index.html",
-      "/posts/2024-10-20-grades/final_grades.html",
-      "/posts/2024-10-15-github/2024-10-15-github.html",
-      "/posts/2024-06-30-studyabroad/2024-06-30-studyabroad.html",
-      "/posts/ped-crossings/2024-04-17-ped-crossings.html",
-      "/posts/2021-06-04-java/index.html",
-      "/posts/2021-04-16-winter-2021-projects/index.html",
-      "/posts/covid-highways/2021-04-01-covid-highway-operations.html",
-      "/posts/sustainable_utahco/index.html",
-      "/posts/safety/2020-06-02-transit-safety.html",
-      "/posts/urbanchurch/2018-12-03-the-urban-church.html"
     ]
   }
 ]
