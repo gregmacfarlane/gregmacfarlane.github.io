@@ -1,0 +1,194 @@
+---
+title: "CCE 102 Waitlist"
+author: "Greg Macfarlane"
+date: "2025-07-07"
+categories: [Teaching]
+---
+
+```{r libs, include = FALSE}
+library(tidyverse)
+library(kableExtra)
+library(wesanderson)
+library(readxl)
+pal <- wes_palette("AsteroidCity1")
+theme_set(theme_bw())
+
+clean_major <- function(x) {
+  x <- trimws(x)
+  case_when(
+    x == "Civil Engineering" ~ "Civil Engineering",
+    x == "Construction Management" ~ "Construction Management",
+    x == "Facility and Property Management" ~ "Facilities Management",
+    str_detect(x, "Engineering") ~ "Other Engineering",
+    TRUE ~ "Other"
+  )
+}
+
+clean_class <- function(x) {
+  x <- gsub("\u00a0", "", x)
+  x <- trimws(x)
+  factor(trimws(x), levels = c("Senior", "Junior", "Sophomore", "Freshman"))
+}
+```
+
+# Background
+Beginning with the 2024-2025 academic year, CCE 102 replaces a two different 200-level classes. This creates 
+a logjam where two years of students need to be enrolled at the same time. CFM, CE, and FM graduate together about 
+150 students per year, meaning that sets the long-run capacity for the class. Our plan is to offer four sections 
+of 60 students per year, with a total capacity of 240 students. This should provide ample space for students who 
+take the class and then switch majors, as well as provide a context for students in other majors who take the class 
+as a GE or a minor elective. 
+
+During the 2024-2025 academic year, we offered six sections of CCE 102 --- in addition to a Spring study abroad 
+section --- with a total capacity of 380 students. This should have been sufficient to clear the backlog of students for 
+two class years. However, the waitlist for the 2025-2026 academic year remains large. 
+
+This post serves as an analysis of the waitlist for Fall 2025, with an eye to understanding who 
+is yet to enroll in the course.
+
+```{r folder, include = FALSE}
+folder <- c("/Users/gregmacfarlane/Library/CloudStorage/Box-Box/Macfarlane/2 Areas/cce102/waitlist-summer25")
+files <- dir(folder)
+```
+
+## An estimate of the backlog
+I asked Emily Platt to run a report with the university registrar, returning a list of students who are declared
+CE, CFM, or FM majors but who have not yet completed CCE 102 or its predecessor course CCE 201. 
+
+```{r backlog}
+backlog <- read_xlsx(file.path(folder, "selected_unenrolled.xlsx")) |>
+  mutate(
+    # simplify major categories
+    major = clean_major(Major),
+    # mark new students
+    new = ifelse(`BYU Total Credits` < 12, TRUE, FALSE),
+  )
+```
+
+The total number of students who are in the majors but who have not yet enrolled is `r nrow(backlog)`.
+@tbl-backlog shows the number of students who have not yet enrolled in CCE 102 by major.
+About 1/3 of the backlog  (`r nrow(backlog |> filter(new))` students) are recently enrolled students, meaning that they have completed fewer than
+12 BYU credit hours. These students could be new to BYU as freshmen, or they
+could have transferred from another school. 
+ 
+
+```{r}
+#| label: tbl-backlog
+#| tbl-cap: Students without CCE 102
+backlog |>
+  group_by(major, new) |>
+  summarise(n = n()) |>
+  pivot_wider(names_from = new, values_from = n, values_fill = 0) |>
+  kbl(col.names = c("Major", "More than 12 credit hours", "Less than 12 credit hours")) |> 
+  kable_styling()
+```
+
+@fig-backlog shows the distribution of students who have not yet enrolled in CCE 102 by number of credits,
+excluding students with fewer than 12 credit hours. The most common number of hours is less than 50,  but there are some older
+students particularly in CM.
+
+```{r }
+#| label: fig-backlog
+#| fig-cap: Distribution of not new students who have not yet enrolled in CCE 102 by number of credits.
+ggplot(backlog |> filter(!new), aes(x = `BYU Total Credits`, fill = major)) +
+  geom_histogram(binwidth = 12)  + scale_fill_manual("Major", values = pal[c(1, 3, 4)]) 
+```
+
+## Current enrollment trends
+Of course, the question remains about how many of these students are currently registered for the course.
+I obtained the waitlist and enrollment information for my own classes, and asked Darrell Sonntag to send me his.
+
+```{r enrollment, include = FALSE}
+mac_enrollment <- read_csv(file.path(folder, "macfarlane_roll.csv")) |>
+  transmute(id = str_remove_all(id, "-"), major = clean_major(major),
+            instructor = "Macfarlane", status = "enrolled", class = clean_class(class))
+mac_waitlist <- read_delim(file.path(folder, "macfarlane_waitlist.tsv"), delim = "\t") |>
+  transmute(id = str_remove_all(`BYU ID`, "[:space:]|-"), major = clean_major(`Major/Emphasis`),
+            instructor = "Macfarlane", status = "waitlist", class = clean_class(`Standing`))
+  
+sonntag_enrollment <- read_xlsx(file.path(folder, "sonntag_roll.xlsx")) |>
+  transmute(id = str_remove_all(`BYU ID`, "-"), major = clean_major(Emphasis),
+            instructor = "Sonntag", status = "enrolled", class = clean_class(Standing))
+sonntag_waitlist <- read_xlsx(file.path(folder, "sonntag_waitlist.xlsx")) |>
+  transmute(id = str_remove_all(`BYU ID`, "[:space:]|-"), major = clean_major(`Major/Emphasis`),
+            instructor = "Sonntag", status = "waitlist", class = clean_class(Standing))
+
+enrollment <- bind_rows(mac_enrollment, mac_waitlist, sonntag_enrollment, sonntag_waitlist) 
+```
+
+First off, let's get a list of unique students, because some students may be waitlisted for one section while enrolled
+in another. Looks like there are 5 students who are on the waitlist for Macfarlane who are enrolled in Sonntag's class.
+
+```{r}
+# list of students who appear more than once
+double_e <- enrollment |> group_by(id) |> mutate(n = row_number()) |> filter(n > 1) |> pull(id)
+enrollment |> filter(id %in% double_e) |> arrange(id)
+```
+
+```{r }
+#| label: tbl-unique
+#| tbl-cap: Students Enrolled and Waitlisted for Fall 2025
+unique <- enrollment |> group_by(id) |> summarise(n = n()) |> filter(n == 1) |> pull(id)
+u_enrollment <- enrollment |> filter(id %in% unique)
+
+u_enrollment |> group_by(major, class, status) |>
+  summarise(n = n()) |>
+  pivot_wider(names_from = major, values_from = n, values_fill = 0)  |>
+  arrange(status, class) |>
+  select(-status) |>
+  kbl(col.names = c("Class", "CE", "CM", "FM", "Other", "Other Engineering"))  |>
+  kable_styling() |>
+  group_rows("Enrolled", 1, 4) |>
+  group_rows("Waitlisted", 5, 8)
+```
+
+This means that there are currently `r nrow(u_enrollment)` unique students enrolled and waitlisted in CCE 102, with both
+sections at the capacity of 60 students each.
+
+## Overlap with Backlog
+It remains to be seen how many of the students on the enrollment list are also on the backlog.
+
+```{r }
+#| label: tbl-remaining
+#| tbl-cap: Remaining Backlog by Major
+remaining_backlog  <- backlog |>
+  left_join(u_enrollment |> select(id, status), by = c(`BYU ID` = "id")) |>
+  mutate(status = ifelse(is.na(status), "not enrolled", status))
+
+remaining_backlog |>
+  group_by(major, status) |>
+  summarise(n = n())  |>
+  pivot_wider(names_from = status, values_from = n, values_fill = 0)  |>
+  kbl(col.names = c("Major", "Not Enrolled", "Waitlisted"))  |>
+  kable_styling()
+```
+
+Ugh. It seems like only students who are not enrolled in CCE 102 are on the backlog. Let's look again at our distribution
+of credit hours by backlog status, which I show in @fig-remaining. I can't show the hour distribution for the enrolled 
+students, because the information on number of credit hours came from Emily Platt's report and not the enrollment data.
+
+```{r }
+#| label: fig-remaining
+#| fig-cap: Distribution of not new students who have not yet enrolled in CCE 102 by number of credits.
+ggplot(remaining_backlog |> filter(!new), aes(x = `BYU Total Credits`, fill = major)) +
+  geom_histogram(binwidth = 12)  + scale_fill_manual("Major", values = pal[c(1, 3, 4)])  + 
+  facet_wrap(~ status)
+```
+
+## Recommendation
+This is the first time we have ever run a report like this, so we don't know if this
+is how all classes look, or if it just this one. Some of the students on the backlog may be 
+waiting to declare a different major or withdraw from the university, and therefore show
+up on report but are not actively engaged with the major. It is confusing to me that
+so few of the incoming new students are enrolled or waitlisted, and also that
+there are so many students on the backlog including those who have to have been
+here for years.
+
+My recommendation is that we modestly increase the capacity of the class for Fall 2025. 
+I can accommodate 72 students in my section, because I can increase the size of each team.
+I cannot increase the number of teams, because all teams have to make a presentation in 
+class.
+
+If the overenrollment continues in Winter 2025, we may have to add an additional section. 
+But the added capacity from 2024-2025 should have been sufficient to clear the backlog 
+of students who are actively engaged in the major.
