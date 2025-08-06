@@ -1,147 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gregmacfarlane.github.io/blog.html</loc>
-    <lastmod>2025-07-08T00:43:26.077Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs.html</loc>
-    <lastmod>2025-07-08T00:43:26.095Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/covid-highways/2021-04-01-covid-highway-operations.html</loc>
-    <lastmod>2025-07-08T00:43:26.080Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2024-10-15-github/2024-10-15-github.html</loc>
-    <lastmod>2025-07-08T00:43:26.079Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/urbanchurch/2018-12-03-the-urban-church.html</loc>
-    <lastmod>2025-07-08T00:43:26.095Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2025-07-07-cce102waitlist/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.079Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2025-dining-table/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.080Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2021-06-04-java/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.078Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2024-abm-imtsim/2024-abm-imtsim.html</loc>
-    <lastmod>2025-07-08T00:43:26.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2025-futuret-uncertainty/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2022-ijerph-proximity/2022-ijerph-proximity.html</loc>
-    <lastmod>2025-07-08T00:43:26.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2023-lnm-wheelchairs/2023-lnm-wheelchairs.html</loc>
-    <lastmod>2025-07-08T00:43:26.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2015-trc-ridership/2015-trc-ridership.html</loc>
-    <lastmod>2025-07-08T00:43:26.107Z</lastmod>
+    <loc>https://gregmacfarlane.github.io/pubs/2015-tra-marta/2015-tra-marta.html</loc>
+    <lastmod>2025-08-06T18:54:56.228Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/pubs/2024-resiliency/2024-resiliency.html</loc>
-    <lastmod>2025-07-08T00:43:26.127Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.252Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2015-trc-ridership/2015-trc-ridership.html</loc>
+    <lastmod>2025-08-06T18:54:56.232Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/pubs/2024-findings-dbscan/2024-findings-dbscan.html</loc>
-    <lastmod>2025-07-08T00:43:26.111Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2021-findings-uvx/2021-findings-uvx.html</loc>
-    <lastmod>2025-07-08T00:43:26.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2021-epb-parkshealth/2021-epb-parkshealth.html</loc>
-    <lastmod>2025-07-08T00:43:26.107Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2015-tra-marta/2015-tra-marta.html</loc>
-    <lastmod>2025-07-08T00:43:26.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2021-smartcities-via/2021-smartcities-via.html</loc>
-    <lastmod>2025-07-08T00:43:26.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2023-futuret-missing/2023-futuret-missing.html</loc>
-    <lastmod>2025-07-08T00:43:26.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html</loc>
-    <lastmod>2025-07-08T00:43:26.107Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2022-futuret-ramps/2022-futuret-ramps.html</loc>
-    <lastmod>2025-07-08T00:43:26.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2022-jtlu-slowstreets/2022-jtlu-slowstreets.html</loc>
-    <lastmod>2025-07-08T00:43:26.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2022-futuret-atspm/2022-futuret-atspm.html</loc>
-    <lastmod>2025-07-08T00:43:26.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2015-tra-emissions/2015-tra-emissions.html</loc>
-    <lastmod>2025-07-08T00:43:26.095Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.236Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/pubs/2024-japa-vmt/2024-japa-vmt.html</loc>
-    <lastmod>2025-07-08T00:43:26.117Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.242Z</lastmod>
   </url>
   <url>
-    <loc>https://gregmacfarlane.github.io/pubs/2024-trr-atspm/2024-trr-atspm.html</loc>
-    <lastmod>2025-07-08T00:43:26.130Z</lastmod>
+    <loc>https://gregmacfarlane.github.io/pubs/2015-tra-emissions/2015-tra-emissions.html</loc>
+    <lastmod>2025-08-06T18:54:56.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2025-futuret-uncertainty/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2021-findings-uvx/2021-findings-uvx.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/pubs/2015-tra-learned/2015-tra-learned.html</loc>
-    <lastmod>2025-07-08T00:43:26.097Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.222Z</lastmod>
   </url>
   <url>
-    <loc>https://gregmacfarlane.github.io/posts/safety/2020-06-02-transit-safety.html</loc>
-    <lastmod>2025-07-08T00:43:26.081Z</lastmod>
+    <loc>https://gregmacfarlane.github.io/pubs/2024-abm-imtsim/2024-abm-imtsim.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2023-lnm-wheelchairs/2023-lnm-wheelchairs.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/posts/ped-crossings/2024-04-17-ped-crossings.html</loc>
-    <lastmod>2025-07-08T00:43:26.080Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/sustainable_utahco/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.095Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2024-10-20-grades/final_grades.html</loc>
-    <lastmod>2025-07-08T00:43:26.079Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2025-05-01-cce102grades/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.079Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gregmacfarlane.github.io/posts/2021-04-16-winter-2021-projects/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.078Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/posts/2024-06-30-studyabroad/2024-06-30-studyabroad.html</loc>
-    <lastmod>2025-07-08T00:43:26.078Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2024-10-20-grades/final_grades.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/urbanchurch/2018-12-03-the-urban-church.html</loc>
+    <lastmod>2025-08-06T18:54:56.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2025-07-07-cce102waitlist/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
   </url>
   <url>
     <loc>https://gregmacfarlane.github.io/index.html</loc>
-    <lastmod>2025-07-08T00:43:26.078Z</lastmod>
+    <lastmod>2025-08-06T18:54:56.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/blog.html</loc>
+    <lastmod>2025-08-06T18:54:56.206Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs.html</loc>
+    <lastmod>2025-08-06T18:54:56.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2024-10-15-github/2024-10-15-github.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/safety/2020-06-02-transit-safety.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2021-06-04-java/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/sustainable_utahco/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/covid-highways/2021-04-01-covid-highway-operations.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2021-04-16-winter-2021-projects/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2025-05-01-cce102grades/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/posts/2025-dining-table/index.html</loc>
+    <lastmod>2025-08-06T18:54:56.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2020-ijerph-scooters/2020-ijerph-scooters.html</loc>
+    <lastmod>2025-08-06T18:54:56.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2022-futuret-ramps/2022-futuret-ramps.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2021-epb-parkshealth/2021-epb-parkshealth.html</loc>
+    <lastmod>2025-08-06T18:54:56.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2022-futuret-atspm/2022-futuret-atspm.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2022-jtlu-slowstreets/2022-jtlu-slowstreets.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2021-smartcities-via/2021-smartcities-via.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2022-ijerph-proximity/2022-ijerph-proximity.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2023-futuret-missing/2023-futuret-missing.html</loc>
+    <lastmod>2025-08-06T18:54:56.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gregmacfarlane.github.io/pubs/2024-trr-atspm/2024-trr-atspm.html</loc>
+    <lastmod>2025-08-06T18:54:56.255Z</lastmod>
   </url>
 </urlset>
