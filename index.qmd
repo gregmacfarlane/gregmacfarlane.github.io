@@ -22,7 +22,7 @@ Gregory S. Macfarlane is an accomplished transportation researcher and educator 
 
 Dr. Macfarlane holds a Ph.D. in Civil Engineering from the Georgia Institute of Technology, where he specialized in travel behavior and transportation data analytics. He has contributed to numerous federally and locally funded research projects and has authored multiple peer-reviewed publications in top transportation journals. His expertise extends to developing innovative methods for travel demand forecasting and transportation system performance evaluation.
 
-In addition to his research, Dr. Macfarlane is an experienced educator, teaching courses in transportation planning, urban analytics, and geographic information systems. He is passionate about mentoring students and building interdisciplinary collaboration to address modern urban mobility challenges.
+In addition to his research, Dr. Macfarlane is an experienced educator, teaching courses in transportation engineering, urban analytics, and sustainability. He is passionate about mentoring students and building interdisciplinary collaboration to address modern urban mobility challenges.
 
 {{< downloadthis static/cv.pdf dname=macfarlane_cv label="Download My CV" icon=file-earmark type=primary >}}
 
