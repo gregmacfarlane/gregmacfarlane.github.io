@@ -1,0 +1,42 @@
+---
+title: "You’ll Never Walk Alone: Parental active escorting as an alternative to car travel to school"
+description: "*Journal of Transport & Health*"
+image: https://images.unsplash.com/flagged/photo-1576934848835-f72df622a04b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+author: 
+  - Carole Turley Voulgaris
+  - Anders Fjendbo-Jensen
+  - Greg Macfarlane
+date: "2025-08-14"
+categories:
+  - travel behavior
+  - choice modeling
+  - open science
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+Voulgaris, C.T., Fjendbo-Jensen, A.,  Macfarlane, G.S.
+  (2025). You'll Never Walk Alone: Parental active escorting as an alternative
+  to car travel to school. *Journal of Transport & Health*, 44, 102147. <https://doi.org/10.1016/j.jth.2025.102147>
+
+:::
+
+{{< downloadthis children.pdf dname=voulgaris-jth-children.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} 
+
+## Introduction:
+Active travel can contribute to children meeting recommended levels of physical activity. Independent travel may also increase children’s mental and emotional health by increasing feelings of autonomy. The purpose of this study is to determine (1) what predicts households’ joint choice of mode and parental escorting for the journey to school, and (2) how the structure of this joint choice is best described.
+
+## Methods:
+Using data from the 2009 and 2017 National Household Travel Surveys in the United States, we estimated several discrete choice models jointly predicting the choice of mode and escorting. We tested alternative model structures representing mode-escorting combinations as independent alternatives, nested alternatives, or cross-nested alternatives.
+
+## Results:
+The cross-nested model structure best fits the data. The cross-nested model is consistent with the conception of escorted active travel as a compromise between motorized travel and unescorted active travel. Lower vehicle access, a later survey year, and the presence of a nonworking mother in the household are associated with lower utility of both motorized travel and unescorted active travel, relative to escorted active travel.
+
+## Conclusions:
+While the physical activity benefits of active travel are available regardless of parental escorting, additional mental and emotional health benefits may come when travel is both active and independent. Since there is less substitution from motorized travel to unescorted active travel than to escorted active travel, we conclude with a call for strategies that not only facilitate active travel to school, but also enable children to safely travel independently of their parents.
+
+> Photo by <a href="https://unsplash.com/@markstos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mark Stosberg</a> on <a href="https://unsplash.com/photos/2-men-riding-on-bicycle-during-daytime-379kd7YDRWU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+      
