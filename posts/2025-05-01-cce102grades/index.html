@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,6 +11,9 @@
 
 <title>CCE 102 Grade Analysis – Greg Macfarlane</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -74,10 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ff92c87233c8cf4d9c40192549bf0d70.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3228da059cc3d722346808f9cefd8b94.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -199,17 +202,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>I taught four sections of CCE 102 this year. This post serves to document and record how the students performed in each section and by major. Across the four sections, 238 students completed the course. The average GPA by section has not been consistent across all four sections, however.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(semester, section) <span class="sc">|&gt;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>(), <span class="st">`</span><span class="at">gpa</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">mean</span>(final_gpa)) <span class="sc">|&gt;</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">digits =</span> <span class="dv">2</span>, <span class="at">col.names =</span> (<span class="fu">c</span>(<span class="st">"Semester"</span>, <span class="st">"Section"</span>, <span class="st">"Count"</span>, <span class="st">"Average GPA"</span>))) <span class="sc">|&gt;</span> </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'semester'. You can override using the
 `.groups` argument.</code></pre>
 </div>
 <div class="cell-output-display">
-<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table caption-top table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Semester</th>
@@ -250,10 +253,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>As a note, I am only including the courses where I was the primary instructor. Darrell Sonntag taught an additional section each semester, but he and I had slightly different assignments and grading policies to the point where I don’t think it would be productive to compare them.</p>
 <p>Let’s look at the distribution of grades by section (see <a href="#fig-gradedist" class="quarto-xref">Figure&nbsp;1</a>). These percentile grades do not include any final curve adjustments. Each section reached its GPA in different ways. Fall 2024 section 003 had a number of students earning low but passing C grades, while Winter 2025 001 had a few students perform poorly and earn E grades.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> current_pct, <span class="at">color =</span> <span class="fu">str_c</span>(semester, section, <span class="at">sep =</span> <span class="st">" "</span>))) <span class="sc">+</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> current_pct, <span class="at">color =</span> <span class="fu">str_c</span>(semester, section, <span class="at">sep =</span> <span class="st">" "</span>))) <span class="sc">+</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="st">"Section"</span>, <span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Un-curved Final Grade"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Un-curved Final Grade"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Density"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="fig-gradedist" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -270,10 +273,10 @@ Figure&nbsp;1: Grade distribution by section.
 <p>Winter 2025 felt much better in terms of student attitude and workload. At the same time, the average grades were a little bit lower. I’m curious how the student evaluations shake out.</p>
 <p>Now let’s consider the breakdown across majors, which I show in <a href="#fig-grademaj" class="quarto-xref">Figure&nbsp;2</a>. Note that this is a GE class, with 10 different majors enrolled. However, 92% of students are enrolled in either Civil Engineering (CE) or in Construction and Facilities Management (CFM), where this class is required. CE students do better in the class, with the mode being about an A-. CFM majors have a wide distribution, but the mode is in the B range. Other majors — including a few environmental science students and multiple open majors — perform more like CE students, with a few poor performing exceptions.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> current_pct, <span class="at">color =</span> major)) <span class="sc">+</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> current_pct, <span class="at">color =</span> major)) <span class="sc">+</span> </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="st">"Major"</span>, <span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Un-curved Final Grade"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Un-curved Final Grade"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Density"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="fig-grademaj" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -289,13 +292,13 @@ Figure&nbsp;2: Grade distribution by section.
 </div>
 <p>The final grades awarded by all semesters (including with a curve applied) are shown in <a href="#fig-final" class="quarto-xref">Figure&nbsp;3</a>. The most common grade awarded to all students in all majors is an A, particularly when combined with the A- grades. But there are probably too many CFM students earning B- and C grades to make me happy.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">final_grd =</span> <span class="fu">factor</span>(final_grd, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"A+"</span>, <span class="st">"A"</span>, <span class="st">"A-"</span>, <span class="st">"B+"</span>, <span class="st">"B"</span>, <span class="st">"B-"</span>, <span class="st">"C+"</span>, <span class="st">"C"</span>, <span class="st">"C-"</span>, <span class="st">"D+"</span>, <span class="st">"D"</span>, <span class="st">"D-"</span>, <span class="st">"E"</span>, <span class="st">"W"</span>))) <span class="sc">|&gt;</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> final_grd, <span class="at">fill =</span> major)) <span class="sc">+</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(, <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xlab</span>(<span class="st">"Final Grade"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Number of Students"</span>) <span class="sc">+</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="st">"Major"</span>, <span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="fig-final" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -311,7 +314,7 @@ Figure&nbsp;3: Final Grades awarded by major, all semesters.
 </div>
 <p>The chart above does not contain withdrawals, as students who withdraw do not remain on my rolls. I cannot therefore track what major the withdrawn students are enrolled in. But I can compute the overall DEW rate for both semesters, shown in <a href="#tbl-dew" class="quarto-xref">Table&nbsp;1</a>. This rate has come down, but it would be nice to get it below 5%.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># withdrawals</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># withdrawals</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>withdrawals <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">semester =</span> <span class="fu">c</span>(<span class="st">"Winter 2025"</span>, <span class="st">"Fall 2024"</span>), <span class="at">w =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
@@ -325,7 +328,7 @@ Figure&nbsp;3: Final Grades awarded by major, all semesters.
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(withdrawals, <span class="at">by =</span> <span class="st">"semester"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">dew =</span> (de <span class="sc">+</span> w) <span class="sc">/</span> (n <span class="sc">+</span> w) <span class="sc">*</span> <span class="dv">100</span>)  <span class="sc">|&gt;</span></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kbl</span>(<span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Semester"</span>, <span class="st">"N Complete"</span>, <span class="st">"D/E"</span>, <span class="st">"W"</span>, <span class="st">"DEW [%]"</span>), <span class="at">digits =</span> <span class="dv">2</span>)  <span class="sc">|&gt;</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="tbl-dew" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dew-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -333,7 +336,7 @@ Table&nbsp;1: DEW Rate by Semester
 </figcaption>
 <div aria-describedby="tbl-dew-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<table class="table do-not-create-environment cell caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table cell caption-top table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Semester</th>
@@ -420,13 +423,14 @@ Table&nbsp;1: DEW Rate by Semester
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
