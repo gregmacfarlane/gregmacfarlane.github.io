@@ -6,3 +6,5 @@
 /.quarto/
 /_site/
 /.luarc.json
+
+**/*.quarto_ipynb
