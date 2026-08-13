@@ -1,0 +1,34 @@
+/* Let interactive maps occupy all space below the slide title and text. */
+.reveal .slides section.map-slide.present {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.reveal .slides section.map-slide > h2,
+.reveal .slides section.map-slide > p,
+.reveal .slides section.map-slide > .math {
+  flex: 0 0 auto;
+}
+
+.reveal .slides section.map-slide > .cell {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal .slides section.map-slide > .cell > .cell-output-display,
+.reveal .slides section.map-slide > .cell > .cell-output,
+.reveal .slides section.map-slide .html-widget,
+.reveal .slides section.map-slide .leaflet {
+  flex: 1 1 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0;
+}
+
+.reveal .slides section.map-slide > .cell > .cell-output-display {
+  overflow: hidden;
+}
