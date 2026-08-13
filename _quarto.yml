@@ -5,6 +5,7 @@ execute:
   freeze: auto
 resources:
   - "static/cv.pdf"
+  - "presentations/provo-city-accessibility/**"
 
   
 website:
@@ -28,6 +29,5 @@ format:
       - custom.scss
     css: styles.css
     toc: true
-
 
 

@@ -1,0 +1,201 @@
+---
+title: "Provo City Accessibility"
+description: "An analysis conducted for Provo City in summer 2026."
+author: "Greg Macfarlane"
+date: "2026-08-13"
+categories: [Transportation, Provo]
+draft: false
+---
+
+<!--
+Draft framework. Replace bracketed prompts and remove these comments as the
+post develops.
+-->
+
+## Overview
+
+This year, the Provo Transportation Mobility Advisory Commission (TMAC) is considering
+obstacles to East-West travel in the city. I requested that this discussion be informed by 
+actual data and analysis rather than feelings or opinions. The city engineer started us off well by
+looking at existing and future LOS on several East-West corridors. I volunteered to make a
+presentation to TMAC as well.
+
+## Project materials
+
+[View the interactive presentation](/presentations/provo-city-accessibility/){.btn .btn-primary target="_blank"}
+[View the analysis and data](https://github.com/byu-transpolab/ProvoCity){.btn .btn-outline-primary target="_blank"}
+
+## The question
+
+LOS is a measure of mobility – how quickly can people (really vehicles) travel along a segment? 
+This measure by itself is not very useful, as people who travel for two hours at LOS A probably have a worse trip
+experience than people who travel for 5 minutes at LOS D, at least for repeated or frequent trips.
+
+What would an access to opportunity analysis look like for Provo City? How would
+improvements to East-West LOS actually affect people in getting to destinations
+at the end of the road?
+
+## Data and approach
+
+To answer this question, I combined Point-of-Interest (POI) data for Utah County pulled from OpenStreetMap with
+congested streets data from the WFRC / MAG travel demand model. I also used a
+synthetic population for Provo City with households assigned at the parcel
+level. I measured how many destinations of various kinds people could reach within a certain number of minutes from their home. I then measured how this number changed as we made three roads faster or slower:
+
+ - Center Street between Geneva Road and 900 East
+ - 800 North / 700 North between Geneva Road and 900 East
+ - 2200 North between University Parkway and Timpview Drive
+
+The slow scenario had vehicles traveling at V/C ratio of 1.1, far exceeding
+their current LOS. The fast scenario had vehicles traveling at V/C ratio of 0,
+or free-flow speed. For the Center Street scenario, the fast scenario set a 35
+mile per hour free flow speed.
+
+I also tried a scenario where I left the roads alone but added three grocery
+stores in places with low grocery access.
+
+## What I found
+
+The interactive presentation linked above has maps with the specific
+accessibility results. As expected, scenarios where roads get faster improve
+access, and scenarios with roads that get slower decrease access. 
+
+The summary of all the scenarios is below. 
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+library(tidyverse)
+access_summary <- structure(list(scenario = c("2200 North - fast", "2200 North - fast", 
+"2200 North - fast", "2200 North - fast", "2200 North - fast", 
+"2200 North - fast", "2200 North - slow", "2200 North - slow", 
+"2200 North - slow", "2200 North - slow", "2200 North - slow", 
+"2200 North - slow", "800 North - fast", "800 North - fast", 
+"800 North - fast", "800 North - fast", "800 North - fast", "800 North - fast", 
+"800 North - slow", "800 North - slow", "800 North - slow", "800 North - slow", 
+"800 North - slow", "800 North - slow", "Center Street - fast", 
+"Center Street - fast", "Center Street - fast", "Center Street - fast", 
+"Center Street - fast", "Center Street - fast", "Center Street - slow", 
+"Center Street - slow", "Center Street - slow", "Center Street - slow", 
+"Center Street - slow", "Center Street - slow", "New groceries", 
+"New groceries", "New groceries", "New groceries", "New groceries", 
+"New groceries"), category = c("grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite", "grocery", "park", "transportation", 
+"school", "retail", "composite"), pct_changed = c(0.022391692357618, 
+0.102812855671779, 0.00181188814971064, 0.0149707920119549, 0.121585807777597, 
+0.19581913570231, 0.0387257288117259, 0.257059237981681, 0.0458921520904321, 
+0.0700991713082462, 0.176726702363568, 0.329790686354048, 0.0460544107307047, 
+0.256517261937022, 0.010087078803613, 0.0593941040619481, 0.354886689382876, 
+0.484477256747255, 0.0635513007734329, 0.285025201886077, 0.00843744929417491, 
+0.0878141556853688, 0.27570447292985, 0.390718805776408, 0.0657958786305371, 
+0.279415749823858, 0.109281194223592, 0.0623556581986143, 0.464600573313862, 
+0.614797987992861, 0.0829412082860079, 0.236057666251152, 0.146492509059441, 
+0.0542317619888602, 0.400616582833036, 0.515685001893017, 0.995375628752231, 
+0, 0, 0, 0, 0.995375628752231), mean_change = c(0.00144746218361532, 
+0.00638618413285414, 0.000546270755584383, 0.00434180138568129, 
+0.00202958047441477, 0.00293245759031803, -0.00301630489572964, 
+-0.0215961327516928, -0.00949425527147448, -0.0178505767202969, 
+-0.00714548213150955, -0.0119503638594554, 0.00312100989226575, 
+0.0149655574678498, 0.00291576201035892, 0.0180139861949394, 
+0.00381931245630561, 0.00806092589223345, -0.00571086392908497, 
+-0.0244599029741461, -0.00105468116177192, -0.0201525737315705, 
+-0.0086404229768087, -0.0136147717432477, 0.0037726763533303, 
+0.016011254941178, 0.0251535662131155, 0.0131219231341493, 0.00575829481059637, 
+0.0108219059092322, -0.00689423570764354, -0.0174438329534128, 
+-0.0259619297445845, -0.0128203336761957, -0.00812181928331138, 
+-0.0132749148171335, 0.174526364164433, 0, 0, 0, 0, 0.0353573724407229
+), mean_changed = c(0.0646428220117478, 0.0621146459859198, 0.301492537313433, 
+0.290018148820327, 0.0166925771314298, 0.0149753372151331, -0.0778889123144489, 
+-0.084012280287048, -0.206881892415186, -0.254647471391657, -0.040432385349496, 
+-0.0362362078552636, 0.067767882440519, 0.0583413270313319, 0.289059108898251, 
+0.303295865464209, 0.0107620617243975, 0.0166383989753284, -0.0898622665403016, 
+-0.085816632397029, -0.125, -0.229491174563885, -0.0313394370609546, 
+-0.0348454477797491, 0.057339098312145, 0.0573026214566355, 0.230172870930109, 
+0.210436767299512, 0.0123940759898852, 0.017602376911744, -0.0831219589166085, 
+-0.0738964899146852, -0.177223599426849, -0.236398988453097, 
+-0.0202732977898131, -0.0257422937808994, 0.175337188417213, 
+NA, NA, NA, NA, 0.0355216376806871), sd_changed = c(0.00458612760247661, 
+0.0340160496767972, 0.0572762329649604, 0.11860800249511, 0.0390662831501598, 
+0.0123480127918347, 0.0394624378523043, 0.0588208565652962, 0.0551585433837076, 
+0.0622413509591232, 0.0842117599632879, 0.0360089237307019, 0.00767112093524239, 
+0.0274768467453646, 0.120876874841133, 0.210454516662534, 0.0142029583810585, 
+0.0180986662180842, 0.0316995226167023, 0.0630505898226082, 0, 
+0.0737976189527436, 0.049714630586851, 0.0332339218927571, 0.0390945606112292, 
+0.0296398340274406, 0.127389686816152, 0.0858090080295444, 0.0385752605935742, 
+0.0221153947724008, 0.0384672684671662, 0.0542496182453594, 0.0628217845758084, 
+0.0868591316701547, 0.0327263176397955, 0.0312942129944961, 0.0577567332866006, 
+NA, NA, NA, NA, 0.0118315612743461)), row.names = c(NA, -42L), class = c("tbl_df", 
+"tbl", "data.frame"))
+
+
+summary_dodge <- position_dodge(width = 0.65)
+
+ggplot(
+  access_summary,
+  aes(
+    x = mean_changed,
+    y = reorder(scenario, mean_changed),
+    color = category
+  )
+) +
+  geom_errorbar(
+    aes(
+      xmin = mean_changed - sd_changed,
+      xmax = mean_changed + sd_changed
+    ),
+    orientation = "y",
+    position = summary_dodge,
+    width = 0.15,
+    linewidth = 0.6,
+    alpha = 0.7
+  ) +
+  geom_point(
+    aes(size = pct_changed),
+    position = summary_dodge
+  ) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "grey50") +
+  scale_x_continuous(labels = scales::percent) +
+  scale_size("Percent of households changed", range = c(1, 6), labels = scales::percent) +
+  scale_color_brewer("Category", palette = "Dark2") +
+  theme_bw() +
+  xlab("Mean change for affected households (± 1 SD)") +
+  ylab("Scenario")
+```
+
+### Finding 1
+
+Land use changes might affect access more than transportation changes. The
+grocery store scenario has the highest composite change in access, even though
+only one of the sub-categories changes at all.
+
+### Finding 2
+
+This method shows *who* will benefit and *how* they will benefit in a way that LOS analysis by itself does not.
+
+## Implications for Provo
+
+Provo City should consider access to opportunity analysis in its transportation planning and policy.
+
+## Limitations and next steps
+
+This is a demonstration of a potential class of analysis, it is not an actual
+policy analysis. To implement this methodology in policy consideration, Provo City staff or
+its consultants should consider more carefully:
+
+  1. POI and network data correctness, 
+  2. Which land uses to consider,
+  3. Which travel time thresholds to use,
+  4. How to consolidate multi-modal travel times,
+  5. How to weight multiple land uses in a composite score.
+
+Another limitation with this method generally is it relies on *potential* trips,
+not *realized* trips. The activity-based model being built for WFRC / MAG would make that analysis possible.
+
+## Acknowledgments
+
+I'm grateful for Erin Christesen's help with some initial data preparation for
+this analysis. I'm also grateful to OpenAI's Codex for saving me quite a bit of
+frustration and reptetitive work. The findings and opinions expressed in this post
+are my own, and I claim responsibility for any errors or omissions.
