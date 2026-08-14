@@ -1,0 +1,29 @@
+---
+title: "Where’s dinner coming from? A utility-based investigation of food access in Utah"
+description: "*Journal of Transportation and Land Use*"
+author: 
+  - Greg Macfarlane
+  - Emma Stucki
+  - Alisha Redelfs
+  - Lori Spruance
+date: "2026-09-01"
+image: "https://images.unsplash.com/photo-1628102491629-778571d893a3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+draft: true
+categories:
+  - accessibility
+  - emerging data
+---
+
+::: {.callout-note appearance="simple"}
+
+## Citation
+
+**Macfarlane, G.S.**, Stucki, E., Redelfs, A.H., Spruance, L.A. (2026) Where's Dinner Coming From? A Utility-Based Investigation of Food Access in Utah. *Journal of Transportation and Land Use*. 
+
+:::
+
+{{< downloadthis food_access_redacted.pdf dname=macfarlane-groceries.pdf label="Download Preprint" icon=file-earmark-pdf type=primary >}} 
+
+Convenient access to food resources is a critical element of public health as well as an important interface between communities and the transportation system. In this research, we seek to construct a detailed picture of the food environment in three communities in Utah, alongside the community members’ ability to access that environment through multiple transportation modes. In doing so we construct a utility-based accessiblity model enabled by modern mobility device data. This model reveals the tradeoffs between the quality and price of goods on one hand and the distance traveled to reach them on the other. We then apply this model to a series of potential access-improving policies: building a new store, improving an existing store, and improving the non-automobile transport network between residents and existing stores. The results show that new or improved store locations bring substantially higher benefits than improvements to the transportation system, at likely lower costs. The findings suggest that transportation agencies work to increase the availability of community-sized grocery stores in low-access areas and consider activity-based methods of measuring resource access. 
+
+> Photo by <a href="https://unsplash.com/@socialtyvr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tara Clark</a> on <a href="https://unsplash.com/photos/woman-in-white-coat-holding-green-shopping-cart-Gk8LG7dsHWA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
