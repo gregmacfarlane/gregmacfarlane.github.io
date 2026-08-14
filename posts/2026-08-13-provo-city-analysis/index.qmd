@@ -61,7 +61,7 @@ accessibility results. As expected, scenarios where roads get faster improve
 access, and scenarios with roads that get slower decrease access. 
 
 The summary of all the scenarios is below. 
-```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=TRUE}
 library(tidyverse)
 access_summary <- structure(list(scenario = c("2200 North - fast", "2200 North - fast", 
 "2200 North - fast", "2200 North - fast", "2200 North - fast", 
