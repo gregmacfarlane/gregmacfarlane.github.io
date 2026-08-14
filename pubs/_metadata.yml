@@ -1,0 +1,4 @@
+format:
+  html:
+    template-partials:
+      - title-block.html
