@@ -1,7 +1,7 @@
 ---
 title: "Simulating Incident Management Team Response and Performance"
 description: "*The 15th International Conference on Ambient Systems, Networks and Technologies*"
-image: https://www.udot.utah.gov/connect/wp-content/uploads/sites/50/2021/09/IMT_Rollover.jpg
+image: https://images.unsplash.com/photo-1698705444507-fdd098e2eafd?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 author: 
   - Daniel Jarvis
   - Greg Macfarlane
@@ -27,4 +27,4 @@ pp. 91-96.  <https://doi.org/10.1016/j.procs.2024.06.002>
 
 Recent research has shown the power of large-scale regional traffic simulations—such as MATSim—to model the systemic impacts and costs of capacity-reducing incidents. At the same time, observational studies have illustrated the potential for traffic Incident Management Teams (IMTs) to reduce these impacts and costs on a local scale; mathematical optimization models have also attempted to scale or locate these programs. In this research, we connect these two separate lines of scholarly inquiry by simulating the dynamic response of an IMT fleet to incidents arising on a metropolitan highway network. We introduce a MATSim module that handles stochastically-generated incidents of varying severity, dispatches IMT to clear the incidents based on path distance and availability, and measures excess user costs based on the incidents. We apply this module in a scenario with data from the Salt Lake City, Utah metropolitan region. We demonstrate the potential use of the module through an illustrative experiment increasing the IMT fleet size with a collection of simulated incident days.
 
-> Photo by [UDOT](https://www.udot.utah.gov/connect/public/highway-incident-management-team/)
+> Photo by <a href="https://unsplash.com/@himo_beast1996?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ibrahim guetar</a> on <a href="https://unsplash.com/photos/a-couple-of-trucks-that-are-sitting-in-the-street-_mv4_eYTXeY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
